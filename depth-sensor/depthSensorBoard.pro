@@ -1,4 +1,4 @@
-update=10/2/2016 5:03:20 PM
+update=10/13/2016 11:34:13 AM
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=F:/DepthSensor/RoboSub
+LibDir=../lib
 [eeschema/libraries]
 LibName1=power
 LibName2=device
