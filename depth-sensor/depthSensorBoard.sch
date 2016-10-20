@@ -176,11 +176,7 @@ Wire Wire Line
 Wire Wire Line
 	7800 2250 8050 2250
 Wire Wire Line
-	4600 4550 4600 4650
-Wire Wire Line
-	4600 4650 4600 4750
-Wire Wire Line
-	4600 4750 4600 4800
+	4600 4550 4600 4800
 Wire Wire Line
 	4600 4550 4700 4550
 Wire Wire Line
@@ -218,9 +214,7 @@ $EndComp
 Wire Wire Line
 	3200 1100 3200 1250
 Wire Wire Line
-	3200 1250 3400 1250
-Wire Wire Line
-	3400 1250 3650 1250
+	3200 1250 3650 1250
 $Comp
 L C C3
 U 1 1 57EE02CF
@@ -251,9 +245,7 @@ $EndComp
 Wire Wire Line
 	4650 1250 4650 1100
 Wire Wire Line
-	4250 1250 4400 1250
-Wire Wire Line
-	4400 1250 4650 1250
+	4250 1250 4650 1250
 $Comp
 L C C4
 U 1 1 57EE04B1
@@ -441,4 +433,6 @@ Text HLabel 4700 3550 0    60   Input ~ 0
 PA0
 Text HLabel 6800 5900 0    60   Input ~ 0
 PA2
+Text HLabel 4700 3650 0    60   Input ~ 0
+PA1
 $EndSCHEMATC
