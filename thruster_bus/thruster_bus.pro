@@ -1,4 +1,4 @@
-update=Sunday, October 16, 2016 'PMt' 01:45:33 PM
+update=Friday, October 21, 2016 'PMt' 12:53:01 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,9 +23,11 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
+[general]
+version=1
 [eeschema]
 version=1
-LibDir=
+LibDir=../../../RoboSub/pcbs/lib/robosub_footprints.pretty
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -56,5 +58,4 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
-[general]
-version=1
+LibName30=/Users/zacharypratt/RoboSub/pcbs/lib/robosub_parts
