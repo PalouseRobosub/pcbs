@@ -29,7 +29,6 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:robosub_parts
-LIBS:thruster_bus-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -168,6 +167,7 @@ F 0 "P4" H 1800 2100 50  0000 C CNN
 F 1 "CONN_01X06" V 1900 1750 50  0000 C CNN
 F 2 "robosub_footprints:cui-6-board-f" H 1800 1750 50  0001 C CNN
 F 3 "" H 1800 1750 50  0000 C CNN
+F 4 "CP-2360-ND" H 1800 1750 60  0001 C CNN "Part Number"
 	1    1800 1750
 	1    0    0    -1  
 $EndComp
