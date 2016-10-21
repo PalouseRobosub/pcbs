@@ -435,4 +435,25 @@ Text HLabel 6800 5900 0    60   Input ~ 0
 PA2
 Text HLabel 4700 3650 0    60   Input ~ 0
 PA1
+$Comp
+L CONN_01X05 P?
+U 1 1 5809642B
+P 1550 1550
+F 0 "P?" H 1550 1850 50  0000 C CNN
+F 1 "CONN_01X05" V 1650 1550 50  0000 C CNN
+F 2 "robosub_footprints:cui-5-board-f" H 1550 1550 50  0001 C CNN
+F 3 "" H 1550 1550 50  0000 C CNN
+	1    1550 1550
+	-1   0    0    -1  
+$EndComp
+Text HLabel 1750 1350 2    60   Input ~ 0
+Vcc
+Text HLabel 1750 1450 2    60   Input ~ 0
+Gnd
+Text HLabel 1750 1550 2    60   Input ~ 0
+Tx_CPU
+Text HLabel 1750 1650 2    60   Input ~ 0
+Rx_CPU
+Text HLabel 1750 1750 2    60   Input ~ 0
+DTR
 $EndSCHEMATC
