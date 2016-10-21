@@ -6,8 +6,10 @@
 *.bck
 *.kicad_pcb-bak
 *~
-_autosave-*
--cache*
+*.ps
+*_autosave-*
+_save*
+*-cache.*
 *.tmp
 */gerbers/*
 
