@@ -45,10 +45,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L ATMEGA1284P-M IC?
+L ATMEGA1284P-M IC1
 U 1 1 57F7CB80
 P 4650 3500
-F 0 "IC?" H 3800 5380 50  0000 L BNN
+F 0 "IC1" H 3800 5380 50  0000 L BNN
 F 1 "ATMEGA1284P-M" H 5050 1550 50  0000 L BNN
 F 2 "Housings_DFN_QFN:QFN-44-1EP_7x7mm_Pitch0.5mm" H 4650 3500 50  0001 C CIN
 F 3 "" H 4650 3500 50  0000 C CNN
@@ -57,10 +57,10 @@ F 4 "ATMEGA1284P-MURTR-ND" H 4650 3500 60  0001 C CNN "part number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_02X03 P?
+L CONN_02X03 P2
 U 1 1 57F7CD77
 P 7150 1350
-F 0 "P?" H 7150 1550 50  0000 C CNN
+F 0 "P2" H 7150 1550 50  0000 C CNN
 F 1 "CONN_02X03" H 7150 1150 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_2x03" H 7150 150 50  0001 C CNN
 F 3 "" H 7150 150 50  0000 C CNN
@@ -79,10 +79,10 @@ Wire Wire Line
 Text HLabel 1400 1100 0    60   Input ~ 0
 Gnd
 $Comp
-L GND #PWR?
+L GND #PWR17
 U 1 1 57F7D09B
 P 1500 1100
-F 0 "#PWR?" H 1500 850 50  0001 C CNN
+F 0 "#PWR17" H 1500 850 50  0001 C CNN
 F 1 "GND" H 1500 950 50  0000 C CNN
 F 2 "" H 1500 1100 50  0000 C CNN
 F 3 "" H 1500 1100 50  0000 C CNN
@@ -96,10 +96,10 @@ SCK
 Wire Wire Line
 	6800 1350 6900 1350
 $Comp
-L GND #PWR?
+L GND #PWR21
 U 1 1 57F7D5BB
 P 7500 1450
-F 0 "#PWR?" H 7500 1200 50  0001 C CNN
+F 0 "#PWR21" H 7500 1200 50  0001 C CNN
 F 1 "GND" H 7500 1300 50  0000 C CNN
 F 2 "" H 7500 1450 50  0000 C CNN
 F 3 "" H 7500 1450 50  0000 C CNN
@@ -121,10 +121,10 @@ Wire Wire Line
 Text HLabel 2400 1800 0    60   Input ~ 0
 DTR
 $Comp
-L C C?
+L C C5
 U 1 1 57F7DBA7
 P 2650 1800
-F 0 "C?" H 2675 1900 50  0000 L CNN
+F 0 "C5" H 2675 1900 50  0000 L CNN
 F 1 "100nF" H 2675 1700 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603" H 2688 1650 50  0001 C CNN
 F 3 "" H 2650 1800 50  0000 C CNN
@@ -133,10 +133,10 @@ F 4 "311-1343-1-ND" H 2650 1800 60  0001 C CNN "part number"
 	0    1    1    0   
 $EndComp
 $Comp
-L R R?
+L R R2
 U 1 1 57F7DC84
 P 3300 1800
-F 0 "R?" V 3380 1800 50  0000 C CNN
+F 0 "R2" V 3380 1800 50  0000 C CNN
 F 1 "1k" V 3300 1800 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 3230 1800 50  0001 C CNN
 F 3 "" H 3300 1800 50  0000 C CNN
@@ -202,10 +202,10 @@ Tx_CPU
 Wire Wire Line
 	2400 1800 2500 1800
 $Comp
-L Crystal Y?
+L Crystal Y1
 U 1 1 57F80C60
 P 3500 2400
-F 0 "Y?" H 3500 2550 50  0000 C CNN
+F 0 "Y1" H 3500 2550 50  0000 C CNN
 F 1 "16MHz" H 3500 2250 50  0000 C CNN
 F 2 "Crystals:Crystal_HC49-SD_SMD" H 3500 2400 50  0001 C CNN
 F 3 "" H 3500 2400 50  0000 C CNN
@@ -214,10 +214,10 @@ F 4 "535-10226-1-ND" H 3500 2400 60  0001 C CNN "part number"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L C C?
+L C C6
 U 1 1 57F80CAF
 P 3200 2200
-F 0 "C?" H 3225 2300 50  0000 L CNN
+F 0 "C6" H 3225 2300 50  0000 L CNN
 F 1 "30pF" H 3225 2100 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603" H 3238 2050 50  0001 C CNN
 F 3 "" H 3200 2200 50  0000 C CNN
@@ -226,10 +226,10 @@ F 4 "1276-1021-1-ND" H 3200 2200 60  0001 C CNN "part number"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L C C?
+L C C7
 U 1 1 57F80CF6
 P 3200 2600
-F 0 "C?" H 3225 2700 50  0000 L CNN
+F 0 "C7" H 3225 2700 50  0000 L CNN
 F 1 "30pF" H 3225 2500 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603" H 3238 2450 50  0001 C CNN
 F 3 "" H 3200 2600 50  0000 C CNN
@@ -248,10 +248,10 @@ Wire Wire Line
 	3500 2250 3500 2200
 Connection ~ 3500 2200
 $Comp
-L GND #PWR?
+L GND #PWR18
 U 1 1 57F80F16
 P 2900 2600
-F 0 "#PWR?" H 2900 2350 50  0001 C CNN
+F 0 "#PWR18" H 2900 2350 50  0001 C CNN
 F 1 "GND" H 2900 2450 50  0000 C CNN
 F 2 "" H 2900 2600 50  0000 C CNN
 F 3 "" H 2900 2600 50  0000 C CNN
@@ -379,10 +379,10 @@ Note:\nExternal oscillator at 16MHz \nto provide a stable clock for \nuse as the
 Text HLabel 4550 1300 1    59   Input ~ 0
 Vcc
 $Comp
-L GND #PWR?
+L GND #PWR19
 U 1 1 57F7E98B
 P 3550 3000
-F 0 "#PWR?" H 3550 2750 50  0001 C CNN
+F 0 "#PWR19" H 3550 2750 50  0001 C CNN
 F 1 "GND" H 3550 2850 50  0000 C CNN
 F 2 "" H 3550 3000 50  0000 C CNN
 F 3 "" H 3550 3000 50  0000 C CNN
@@ -390,10 +390,10 @@ F 3 "" H 3550 3000 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR?
+L GND #PWR20
 U 1 1 57F7EBBA
 P 4500 5650
-F 0 "#PWR?" H 4500 5400 50  0001 C CNN
+F 0 "#PWR20" H 4500 5400 50  0001 C CNN
 F 1 "GND" H 4500 5500 50  0000 C CNN
 F 2 "" H 4500 5650 50  0000 C CNN
 F 3 "" H 4500 5650 50  0000 C CNN
@@ -415,10 +415,10 @@ Hierarchical Ground Input\n
 Text Notes 1050 5350 0    59   ~ 0
 DTR will spike high the other side \nof the capacitor on a low -> high edge\nif the microcontroller is on, which \nresults in a Reset pin voltage of Vcc \n+ the DTR signal voltage. The Reset \npin is 13V tolerant, so this should be \nokay as long as both Vcc and DTR \nsignals are TLL compliant. When the \nmicrocontroller is on, the opposite \nside of the DTR capacitor will be at Vcc. \nOn a high -> low transition of DTR, the \ncapacitor voltage must not change \ninstantaneously, which means that the \nopposite side of the DTR capacitor will \nalso be pulled low. Since there is no current \nflowing into the Reset pin, the voltage on the\n RESET pin is pulled down to the DTR logic \nlevel. The capacitor then slowly fills and the \nReset pin voltage increases as a result of the \nRC time constant. Minimum Reset pull time \nmust be 2.5ns and the current time constant is \nequal to 1ms, so there should be plenty of time \nfor the microcontroller to detect the reset.\n
 $Comp
-L R R?
+L R R1
 U 1 1 57F7DC1C
 P 3050 1650
-F 0 "R?" V 3130 1650 50  0000 C CNN
+F 0 "R1" V 3130 1650 50  0000 C CNN
 F 1 "10k" V 3050 1650 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 2980 1650 50  0001 C CNN
 F 3 "" H 3050 1650 50  0000 C CNN
