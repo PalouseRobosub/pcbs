@@ -62,8 +62,9 @@ U 1 1 57E89DA5
 P 8250 2100
 F 0 "P3" H 8250 2350 50  0000 C CNN
 F 1 "CONN_01X04" V 8350 2100 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x04" H 8250 2100 50  0001 C CNN
+F 2 "robosub_footprints:cui-4-board-f" H 8250 2100 50  0001 C CNN
 F 3 "" H 8250 2100 50  0000 C CNN
+F 4 "CP-2340-ND" H 8250 2100 60  0001 C CNN "part number"
 	1    8250 2100
 	1    0    0    -1  
 $EndComp
@@ -73,8 +74,9 @@ U 1 1 57E89E44
 P 8250 3200
 F 0 "P4" H 8250 3450 50  0000 C CNN
 F 1 "CONN_01X04" V 8350 3200 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x04" H 8250 3200 50  0001 C CNN
+F 2 "robosub_footprints:cui-4-board-f" H 8250 3200 50  0001 C CNN
 F 3 "" H 8250 3200 50  0000 C CNN
+F 4 "CP-2340-ND" H 8250 3200 60  0001 C CNN "part number"
 	1    8250 3200
 	1    0    0    -1  
 $EndComp
@@ -84,8 +86,9 @@ U 1 1 57E89E7F
 P 8250 4350
 F 0 "P5" H 8250 4600 50  0000 C CNN
 F 1 "CONN_01X04" V 8350 4350 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x04" H 8250 4350 50  0001 C CNN
+F 2 "robosub_footprints:cui-4-board-f" H 8250 4350 50  0001 C CNN
 F 3 "" H 8250 4350 50  0000 C CNN
+F 4 "CP-2340-ND" H 8250 4350 60  0001 C CNN "part number"
 	1    8250 4350
 	1    0    0    -1  
 $EndComp
@@ -95,8 +98,9 @@ U 1 1 57E89EB4
 P 8250 5350
 F 0 "P6" H 8250 5600 50  0000 C CNN
 F 1 "CONN_01X04" V 8350 5350 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x04" H 8250 5350 50  0001 C CNN
+F 2 "robosub_footprints:cui-4-board-f" H 8250 5350 50  0001 C CNN
 F 3 "" H 8250 5350 50  0000 C CNN
+F 4 "CP-2340-ND" H 8250 5350 60  0001 C CNN "part number"
 	1    8250 5350
 	1    0    0    -1  
 $EndComp
@@ -300,6 +304,7 @@ F 0 "P1" H 1550 1850 50  0000 C CNN
 F 1 "CONN_01X05" V 1650 1550 50  0000 C CNN
 F 2 "robosub_footprints:cui-5-board-f" H 1550 1550 50  0001 C CNN
 F 3 "" H 1550 1550 50  0000 C CNN
+F 4 "CP-2350-ND" H 1550 1550 60  0001 C CNN "part number"
 	1    1550 1550
 	-1   0    0    -1  
 $EndComp
@@ -461,10 +466,10 @@ F 4 "ZXMN3B14FCT-ND" H 6600 5750 60  0001 C CNN "part number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR?
+L GND #PWR016
 U 1 1 581C6BD6
 P 1300 3700
-F 0 "#PWR?" H 1300 3450 50  0001 C CNN
+F 0 "#PWR016" H 1300 3450 50  0001 C CNN
 F 1 "GND" H 1300 3550 50  0000 C CNN
 F 2 "" H 1300 3700 50  0000 C CNN
 F 3 "" H 1300 3700 50  0000 C CNN
