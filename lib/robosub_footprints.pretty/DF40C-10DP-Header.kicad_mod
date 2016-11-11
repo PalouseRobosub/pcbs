@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 (module DF40C-10DP-Header (layer F.Cu) (tedit 582623BC)
+=======
+(module DF40C-10DP-Header (layer F.Cu) (tedit 5824D854)
+>>>>>>> Addition of robosub parts, 3d models, and interface converter board
   (fp_text reference REF** (at -2.794 0 90) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
@@ -16,6 +20,7 @@
   (pad 4 smd rect (at -0.4 1.605 90) (size 1.16 0.23) (layers F.Cu F.Paste F.Mask))
   (pad 2 smd rect (at -0.8 1.605 90) (size 1.16 0.23) (layers F.Cu F.Paste F.Mask))
   (pad 3 smd rect (at -0.4 -1.605 90) (size 1.16 0.23) (layers F.Cu F.Paste F.Mask))
+<<<<<<< HEAD
   (pad ~ smd rect (at 1.2 1.605 90) (size 1.16 0.23) (layers F.Cu F.Paste F.Mask))
   (pad 7 smd rect (at 0.4 -1.605 90) (size 1.16 0.23) (layers F.Cu F.Paste F.Mask))
   (pad 9 smd rect (at 0.8 -1.605 90) (size 1.16 0.23) (layers F.Cu F.Paste F.Mask))
@@ -28,4 +33,9 @@
     (scale (xyz 0.4 0.4 0.4))
     (rotate (xyz -90 0 90))
   )
+=======
+  (pad 1 smd rect (at -0.8 -1.605 90) (size 1.16 0.23) (layers F.Cu F.Paste F.Mask))
+  (pad 7 smd rect (at 0.4 -1.605 90) (size 1.16 0.23) (layers F.Cu F.Paste F.Mask))
+  (pad 9 smd rect (at 0.8 -1.605 90) (size 1.16 0.23) (layers F.Cu F.Paste F.Mask))
+>>>>>>> Addition of robosub parts, 3d models, and interface converter board
 )

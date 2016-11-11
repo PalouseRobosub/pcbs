@@ -1,10 +1,15 @@
+<<<<<<< HEAD
 (module 1.5mm-spacer (layer F.Cu) (tedit 58262D60)
+=======
+(module 1.5mm-spacer (layer F.Cu) (tedit 58250D7D)
+>>>>>>> Addition of robosub parts, 3d models, and interface converter board
   (fp_text reference REF** (at -3.302 4.064) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_text value 1.5mm-spacer (at 0 3.302) (layer F.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
+<<<<<<< HEAD
   (fp_circle (center 0 0) (end 0 3.18) (layer Dwgs.User) (width 0.15))
   (fp_circle (center 0 0) (end 0 4.75) (layer Dwgs.User) (width 0.15))
   (pad "" thru_hole circle (at 0 0) (size 3.5 3.5) (drill 3.5) (layers *.Cu *.Mask F.SilkS))
@@ -13,4 +18,8 @@
     (scale (xyz 0.4 0.4 0.4))
     (rotate (xyz 0 0 0))
   )
+=======
+  (pad "" thru_hole circle (at 0 0) (size 3 3) (drill 3) (layers *.Cu *.Mask F.SilkS))
+  (pad "" smd circle (at 0 0) (size 5.3 5.3) (layers F.Cu F.Paste F.Mask))
+>>>>>>> Addition of robosub parts, 3d models, and interface converter board
 )
