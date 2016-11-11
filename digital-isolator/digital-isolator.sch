@@ -1,0 +1,489 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:robosub_parts
+LIBS:digital-isolator-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CONN_02X05 P2
+U 1 1 5825324B
+P 6000 2200
+F 0 "P2" H 6000 2500 50  0000 C CNN
+F 1 "CONN_02X05" H 6000 1900 50  0000 C CNN
+F 2 "robosub_footprints:DF40C-10DS-Receptacle" H 6000 1000 50  0001 C CNN
+F 3 "" H 6000 1000 50  0000 C CNN
+F 4 "H11617CT-ND" H 6000 2200 60  0001 C CNN "part number"
+	1    6000 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L USB_OTG P1
+U 1 1 58253306
+P 1650 2200
+F 0 "P1" H 1975 2075 50  0000 C CNN
+F 1 "USB_OTG" H 1650 2400 50  0000 C CNN
+F 2 "robosub_footprints:USB-Micro-B-TH" V 1600 2100 50  0001 C CNN
+F 3 "" V 1600 2100 50  0000 C CNN
+F 4 "ADUM3160BRWZ-RLCT-ND" H 1650 2200 60  0001 C CNN "part number"
+	1    1650 2200
+	0    -1   1    0   
+$EndComp
+$Comp
+L ADUM3160 U1
+U 1 1 582533A7
+P 3650 2250
+F 0 "U1" H 3400 2650 60  0000 C CNN
+F 1 "ADUM3160" H 3600 1650 60  0000 C CNN
+F 2 "Housings_SOIC:SOIC-16_3.9x9.9mm_Pitch1.27mm" H 3650 2250 60  0001 C CNN
+F 3 "" H 3650 2250 60  0000 C CNN
+F 4 "ADUM3160BRWZ-RLCT-ND" H 3650 2250 60  0001 C CNN "part number"
+	1    3650 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 2000 3150 2000
+Wire Wire Line
+	1950 2100 2300 2100
+Wire Wire Line
+	2250 2100 2250 2500
+Wire Wire Line
+	1950 2200 2300 2200
+Wire Wire Line
+	2200 2200 2200 2600
+NoConn ~ 1950 2300
+$Comp
+L GND #PWR3
+U 1 1 5825362A
+P 2050 2450
+F 0 "#PWR3" H 2050 2200 50  0001 C CNN
+F 1 "GND" H 2050 2300 50  0000 C CNN
+F 2 "" H 2050 2450 50  0000 C CNN
+F 3 "" H 2050 2450 50  0000 C CNN
+	1    2050 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 2450 2050 2400
+Wire Wire Line
+	2050 2400 1950 2400
+$Comp
+L GND #PWR6
+U 1 1 582536ED
+P 3050 2750
+F 0 "#PWR6" H 3050 2500 50  0001 C CNN
+F 1 "GND" H 3050 2600 50  0000 C CNN
+F 2 "" H 3050 2750 50  0000 C CNN
+F 3 "" H 3050 2750 50  0000 C CNN
+	1    3050 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 2100 3050 2750
+Wire Wire Line
+	3050 2700 3150 2700
+Wire Wire Line
+	3150 2100 3050 2100
+Connection ~ 3050 2700
+$Comp
+L C C2
+U 1 1 58253814
+P 1550 3350
+F 0 "C2" H 1575 3450 50  0000 L CNN
+F 1 "100n" H 1575 3250 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 1588 3200 50  0001 C CNN
+F 3 "" H 1550 3350 50  0000 C CNN
+F 4 "490-6328-1-ND" H 1550 3350 60  0001 C CNN "part number"
+	1    1550 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 5825391F
+P 1250 3350
+F 0 "C1" H 1275 3450 50  0000 L CNN
+F 1 "100n" H 1275 3250 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 1288 3200 50  0001 C CNN
+F 3 "" H 1250 3350 50  0000 C CNN
+F 4 "490-6328-1-ND" H 1250 3350 60  0001 C CNN "part number"
+	1    1250 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 5825399B
+P 2400 2600
+F 0 "R1" V 2480 2600 50  0000 C CNN
+F 1 "24/1%" V 2400 2600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 2330 2600 50  0001 C CNN
+F 3 "" H 2400 2600 50  0000 C CNN
+F 4 "YAG3073CT-ND" V 2400 2600 60  0001 C CNN "part number"
+	1    2400 2600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2200 2600 2250 2600
+Wire Wire Line
+	2550 2600 3150 2600
+Wire Wire Line
+	3150 2500 2850 2500
+Wire Wire Line
+	2250 2500 2550 2500
+$Comp
+L GND #PWR1
+U 1 1 58253AD7
+P 1250 3550
+F 0 "#PWR1" H 1250 3300 50  0001 C CNN
+F 1 "GND" H 1250 3400 50  0000 C CNN
+F 2 "" H 1250 3550 50  0000 C CNN
+F 3 "" H 1250 3550 50  0000 C CNN
+	1    1250 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 3550 1250 3500
+Wire Wire Line
+	1550 3550 1550 3500
+Text Label 2950 2200 2    60   ~ 0
+Vdd1
+Wire Wire Line
+	2950 2200 3150 2200
+Wire Wire Line
+	3150 2300 3100 2300
+Wire Wire Line
+	3100 2200 3100 2400
+Connection ~ 3100 2200
+Wire Wire Line
+	3100 2400 3150 2400
+Connection ~ 3100 2300
+Wire Wire Line
+	4150 2400 4250 2400
+Wire Wire Line
+	4250 2400 4250 2200
+Wire Wire Line
+	4150 2200 4450 2200
+Wire Wire Line
+	4150 2300 4250 2300
+Connection ~ 4250 2300
+$Comp
+L GNDPWR #PWR7
+U 1 1 582543AD
+P 4250 2750
+F 0 "#PWR7" H 4250 2550 50  0001 C CNN
+F 1 "GNDPWR" H 4250 2620 50  0000 C CNN
+F 2 "" H 4250 2700 50  0000 C CNN
+F 3 "" H 4250 2700 50  0000 C CNN
+	1    4250 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 2750 4250 2700
+Wire Wire Line
+	4150 2700 4350 2700
+Wire Wire Line
+	4150 2100 4350 2100
+Wire Wire Line
+	4350 2100 4350 2700
+Connection ~ 4250 2700
+$Comp
+L C C3
+U 1 1 58254640
+P 2050 3350
+F 0 "C3" H 2075 3450 50  0000 L CNN
+F 1 "100n" H 2075 3250 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 2088 3200 50  0001 C CNN
+F 3 "" H 2050 3350 50  0000 C CNN
+F 4 "490-6328-1-ND" H 2050 3350 60  0001 C CNN "part number"
+	1    2050 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR4
+U 1 1 58254838
+P 2050 3600
+F 0 "#PWR4" H 2050 3350 50  0001 C CNN
+F 1 "GND" H 2050 3450 50  0000 C CNN
+F 2 "" H 2050 3600 50  0000 C CNN
+F 3 "" H 2050 3600 50  0000 C CNN
+	1    2050 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 3600 2050 3500
+Wire Wire Line
+	2350 3600 2350 3500
+Wire Wire Line
+	4700 2600 4150 2600
+Wire Wire Line
+	4150 2500 4400 2500
+Text Label 5100 2600 0    60   ~ 0
+USB+
+Text Label 5100 2500 0    60   ~ 0
+USB-
+Wire Wire Line
+	5100 2500 4700 2500
+Wire Wire Line
+	5100 2600 5000 2600
+Text Label 4450 2200 0    60   ~ 0
+Vdd2
+Connection ~ 4250 2200
+Text Label 2950 1950 2    60   ~ 0
+Vbus1
+Wire Wire Line
+	2950 1950 2950 2000
+Connection ~ 2950 2000
+Text Label 4300 1950 0    60   ~ 0
+Vbus2
+Wire Wire Line
+	4150 2000 5050 2000
+Wire Wire Line
+	4300 1950 4300 2000
+$Comp
+L +5V #PWR8
+U 1 1 58256191
+P 5050 2000
+F 0 "#PWR8" H 5050 1850 50  0001 C CNN
+F 1 "+5V" H 5050 2140 50  0000 C CNN
+F 2 "" H 5050 2000 50  0000 C CNN
+F 3 "" H 5050 2000 50  0000 C CNN
+	1    5050 2000
+	1    0    0    -1  
+$EndComp
+Connection ~ 4300 2000
+Text Label 2350 3150 0    60   ~ 0
+Vbus2
+Wire Wire Line
+	2350 3150 2350 3200
+Text Label 2050 3150 0    60   ~ 0
+Vbus1
+Wire Wire Line
+	2050 3150 2050 3200
+Text Label 1250 3150 0    60   ~ 0
+Vdd1
+Text Label 1550 3150 0    60   ~ 0
+Vdd2
+Wire Wire Line
+	1550 3150 1550 3200
+Wire Wire Line
+	1250 3150 1250 3200
+$Comp
+L +5V #PWR9
+U 1 1 58257828
+P 5650 1950
+F 0 "#PWR9" H 5650 1800 50  0001 C CNN
+F 1 "+5V" H 5650 2090 50  0000 C CNN
+F 2 "" H 5650 1950 50  0000 C CNN
+F 3 "" H 5650 1950 50  0000 C CNN
+	1    5650 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 1950 5650 2300
+Wire Wire Line
+	5650 2000 5750 2000
+Wire Wire Line
+	5650 2100 5750 2100
+Connection ~ 5650 2000
+Wire Wire Line
+	5650 2200 5750 2200
+Connection ~ 5650 2100
+Wire Wire Line
+	5650 2300 5750 2300
+Connection ~ 5650 2200
+$Comp
+L GNDPWR #PWR10
+U 1 1 58257AB1
+P 6500 2000
+F 0 "#PWR10" H 6500 1800 50  0001 C CNN
+F 1 "GNDPWR" H 6500 1870 50  0000 C CNN
+F 2 "" H 6500 1950 50  0000 C CNN
+F 3 "" H 6500 1950 50  0000 C CNN
+	1    6500 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 2000 6250 2000
+Wire Wire Line
+	6300 2000 6300 2300
+Wire Wire Line
+	6300 2100 6250 2100
+Connection ~ 6300 2000
+Wire Wire Line
+	6300 2200 6250 2200
+Connection ~ 6300 2100
+Wire Wire Line
+	6300 2300 6250 2300
+Connection ~ 6300 2200
+$Comp
+L GNDPWR #PWR2
+U 1 1 58258298
+P 1550 3550
+F 0 "#PWR2" H 1550 3350 50  0001 C CNN
+F 1 "GNDPWR" H 1550 3420 50  0000 C CNN
+F 2 "" H 1550 3500 50  0000 C CNN
+F 3 "" H 1550 3500 50  0000 C CNN
+	1    1550 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDPWR #PWR5
+U 1 1 582582F9
+P 2350 3600
+F 0 "#PWR5" H 2350 3400 50  0001 C CNN
+F 1 "GNDPWR" H 2350 3470 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0402" H 2350 3550 50  0001 C CNN
+F 3 "" H 2350 3550 50  0000 C CNN
+F 4 "490-6328-1-ND" H 2350 3600 60  0001 C CNN "part number"
+	1    2350 3600
+	1    0    0    -1  
+$EndComp
+Text Label 5650 2400 2    60   ~ 0
+USB-
+Wire Wire Line
+	5650 2400 5750 2400
+Text Label 6300 2400 0    60   ~ 0
+USB+
+Wire Wire Line
+	6300 2400 6250 2400
+$Comp
+L R R2
+U 1 1 5825C3F0
+P 2700 2500
+F 0 "R2" V 2780 2500 50  0000 C CNN
+F 1 "24/1%" V 2700 2500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 2630 2500 50  0001 C CNN
+F 3 "" H 2700 2500 50  0000 C CNN
+F 4 "YAG3073CT-ND" V 2700 2500 60  0001 C CNN "part number"
+	1    2700 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L R R3
+U 1 1 5825C43A
+P 4550 2500
+F 0 "R3" V 4630 2500 50  0000 C CNN
+F 1 "24/1%" V 4550 2500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 4480 2500 50  0001 C CNN
+F 3 "" H 4550 2500 50  0000 C CNN
+F 4 "YAG3073CT-ND" V 4550 2500 60  0001 C CNN "part number"
+	1    4550 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L R R4
+U 1 1 5825C5CA
+P 4850 2600
+F 0 "R4" V 4930 2600 50  0000 C CNN
+F 1 "24/1%" V 4850 2600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 4780 2600 50  0001 C CNN
+F 3 "" H 4850 2600 50  0000 C CNN
+F 4 "YAG3073CT-ND" V 4850 2600 60  0001 C CNN "part number"
+	1    4850 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L C C4
+U 1 1 58253F45
+P 2350 3350
+F 0 "C4" H 2375 3450 50  0000 L CNN
+F 1 "100n" H 2375 3250 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 2388 3200 50  0001 C CNN
+F 3 "" H 2350 3350 50  0000 C CNN
+F 4 "490-6328-1-ND" H 2350 3350 60  0001 C CNN "part number"
+	1    2350 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P3
+U 1 1 582540F2
+P 3100 3500
+F 0 "P3" H 3100 3600 50  0000 C CNN
+F 1 "CONN_01X01" V 3200 3500 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_3.5mm" H 3100 3500 50  0001 C CNN
+F 3 "" H 3100 3500 50  0000 C CNN
+F 4 "492-1071-ND" H 3100 3500 60  0001 C CNN "part number"
+	1    3100 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P4
+U 1 1 5825446D
+P 3550 3500
+F 0 "P4" H 3550 3600 50  0000 C CNN
+F 1 "CONN_01X01" V 3650 3500 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_3.5mm" H 3550 3500 50  0001 C CNN
+F 3 "" H 3550 3500 50  0000 C CNN
+F 4 "492-1071-ND" H 3550 3500 60  0001 C CNN "part number"
+	1    3550 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P5
+U 1 1 582544BA
+P 3950 3500
+F 0 "P5" H 3950 3600 50  0000 C CNN
+F 1 "CONN_01X01" V 4050 3500 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_3.5mm" H 3950 3500 50  0001 C CNN
+F 3 "" H 3950 3500 50  0000 C CNN
+F 4 "492-1071-ND" H 3950 3500 60  0001 C CNN "part number"
+	1    3950 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P6
+U 1 1 5825451A
+P 4350 3500
+F 0 "P6" H 4350 3600 50  0000 C CNN
+F 1 "CONN_01X01" V 4450 3500 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_3.5mm" H 4350 3500 50  0001 C CNN
+F 3 "" H 4350 3500 50  0000 C CNN
+F 4 "492-1071-ND" H 4350 3500 60  0001 C CNN "part number"
+	1    4350 3500
+	1    0    0    -1  
+$EndComp
+Text Label 2300 2200 0    60   ~ 0
+USB_H+
+Text Label 2300 2100 0    60   ~ 0
+USB_H-
+Connection ~ 2250 2100
+Connection ~ 2200 2200
+$EndSCHEMATC
