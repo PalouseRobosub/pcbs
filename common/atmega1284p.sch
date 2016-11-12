@@ -32,7 +32,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 2
+Sheet 1 1
 Title ""
 Date ""
 Rev ""
@@ -200,68 +200,29 @@ Tx_CPU
 Wire Wire Line
 	2400 1800 2500 1800
 $Comp
-L Crystal Y?
-U 1 1 57F80C60
-P 3500 2400
-F 0 "Y?" H 3500 2550 50  0000 C CNN
-F 1 "16MHz" H 3500 2250 50  0000 C CNN
-F 2 "Crystals:Crystal_HC49-SD_SMD" H 3500 2400 50  0001 C CNN
-F 3 "" H 3500 2400 50  0000 C CNN
-F 4 "535-10226-1-ND" H 3500 2400 60  0001 C CNN "part number"
-	1    3500 2400
-	0    -1   -1   0   
-$EndComp
-$Comp
 L C C?
 U 1 1 57F80CAF
-P 3200 2200
-F 0 "C?" H 3225 2300 50  0000 L CNN
-F 1 "30pF" H 3225 2100 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 3238 2050 50  0001 C CNN
-F 3 "" H 3200 2200 50  0000 C CNN
-F 4 "1276-1021-1-ND" H 3200 2200 60  0001 C CNN "part number"
-	1    3200 2200
-	0    -1   -1   0   
+P 2900 2900
+F 0 "C?" H 2925 3000 50  0000 L CNN
+F 1 "18p" H 2925 2800 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 2938 2750 50  0001 C CNN
+F 3 "" H 2900 2900 50  0000 C CNN
+F 4 "1276-1089-1-ND" H 2900 2900 60  0001 C CNN "part number"
+	1    2900 2900
+	1    0    0    -1  
 $EndComp
 $Comp
 L C C?
 U 1 1 57F80CF6
-P 3200 2600
-F 0 "C?" H 3225 2700 50  0000 L CNN
-F 1 "30pF" H 3225 2500 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 3238 2450 50  0001 C CNN
-F 3 "" H 3200 2600 50  0000 C CNN
-F 4 "1276-1021-1-ND" H 3200 2600 60  0001 C CNN "part number"
-	1    3200 2600
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3350 2200 3650 2200
-Wire Wire Line
-	3350 2600 3650 2600
-Wire Wire Line
-	3500 2600 3500 2550
-Connection ~ 3500 2600
-Wire Wire Line
-	3500 2250 3500 2200
-Connection ~ 3500 2200
-$Comp
-L GND #PWR?
-U 1 1 57F80F16
-P 2900 2600
-F 0 "#PWR?" H 2900 2350 50  0001 C CNN
-F 1 "GND" H 2900 2450 50  0000 C CNN
-F 2 "" H 2900 2600 50  0000 C CNN
-F 3 "" H 2900 2600 50  0000 C CNN
-	1    2900 2600
+P 3250 2900
+F 0 "C?" H 3275 3000 50  0000 L CNN
+F 1 "18p" H 3275 2800 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 3288 2750 50  0001 C CNN
+F 3 "" H 3250 2900 50  0000 C CNN
+F 4 "1276-1089-1-ND" H 3250 2900 60  0001 C CNN "part number"
+	1    3250 2900
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2900 2600 3050 2600
-Wire Wire Line
-	2900 2600 2900 2200
-Wire Wire Line
-	2900 2200 3050 2200
 Text HLabel 5750 1800 2    60   Input ~ 0
 PA0
 Text HLabel 5750 1900 2    60   Input ~ 0
@@ -372,7 +333,7 @@ Wire Wire Line
 	5650 4700 5750 4700
 Text Notes 6450 1000 0    98   ~ 20
 Programming Header\n6-Pin ISP
-Text Notes 1500 2550 0    59   ~ 0
+Text Notes 550  2700 0    59   ~ 0
 Note:\nExternal oscillator at 16MHz \nto provide a stable clock for \nuse as the microcontroller \nclock source.
 Text HLabel 4550 1300 1    59   Input ~ 0
 Vcc
@@ -424,4 +385,249 @@ F 4 "311-10KGRCT-ND" V 3050 1650 60  0001 C CNN "part number"
 	1    3050 1650
 	1    0    0    -1  
 $EndComp
+$Comp
+L ABM8G-12M U?
+U 1 1 5826A48B
+P 2400 2400
+F 0 "U?" H 2250 2550 60  0000 C CNN
+F 1 "TSX-3225" H 2400 2250 60  0000 C CNN
+F 2 "robosub_footprints:DFN-4" H 2400 2400 60  0001 C CNN
+F 3 "" H 2400 2400 60  0000 C CNN
+F 4 "SER4070CT-ND" H 2400 2400 60  0001 C CNN "part number"
+	1    2400 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 2350 3250 2350
+Wire Wire Line
+	3250 2200 3250 2750
+Wire Wire Line
+	3250 2200 3650 2200
+$Comp
+L GND #PWR?
+U 1 1 5826AEDC
+P 3100 3200
+F 0 "#PWR?" H 3100 2950 50  0001 C CNN
+F 1 "GND" H 3100 3050 50  0000 C CNN
+F 2 "" H 3100 3200 50  0000 C CNN
+F 3 "" H 3100 3200 50  0000 C CNN
+	1    3100 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 3050 2900 3100
+Wire Wire Line
+	2900 3100 3250 3100
+Wire Wire Line
+	3100 3100 3100 3200
+Wire Wire Line
+	3250 3100 3250 3050
+Connection ~ 3100 3100
+Connection ~ 3250 2350
+Wire Wire Line
+	2850 2450 2900 2450
+Wire Wire Line
+	2900 2450 2900 2750
+Wire Wire Line
+	3650 2600 2900 2600
+Connection ~ 2900 2600
+$Comp
+L GND #PWR?
+U 1 1 5826B1B3
+P 1900 2550
+F 0 "#PWR?" H 1900 2300 50  0001 C CNN
+F 1 "GND" H 1900 2400 50  0000 C CNN
+F 2 "" H 1900 2550 50  0000 C CNN
+F 3 "" H 1900 2550 50  0000 C CNN
+	1    1900 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 2350 1900 2550
+Wire Wire Line
+	1900 2450 2000 2450
+Wire Wire Line
+	2000 2350 1900 2350
+Connection ~ 1900 2450
+$Comp
+L C C?
+U 1 1 5826B503
+P 9450 1450
+F 0 "C?" H 9475 1550 50  0000 L CNN
+F 1 "100n" H 9475 1350 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 9488 1300 50  0001 C CNN
+F 3 "" H 9450 1450 50  0000 C CNN
+F 4 "311-1343-1-ND" H 9450 1450 60  0001 C CNN "part number"
+	1    9450 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5826B62A
+P 9800 1450
+F 0 "C?" H 9825 1550 50  0000 L CNN
+F 1 "100n" H 9825 1350 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 9838 1300 50  0001 C CNN
+F 3 "" H 9800 1450 50  0000 C CNN
+F 4 "311-1343-1-ND" H 9800 1450 60  0001 C CNN "part number"
+	1    9800 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5826B94C
+P 9450 1650
+F 0 "#PWR?" H 9450 1400 50  0001 C CNN
+F 1 "GND" H 9450 1500 50  0000 C CNN
+F 2 "" H 9450 1650 50  0000 C CNN
+F 3 "" H 9450 1650 50  0000 C CNN
+	1    9450 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9450 1650 9450 1600
+Text HLabel 9200 1250 0    60   Input ~ 0
+Vcc
+Wire Wire Line
+	9200 1250 10200 1250
+Wire Wire Line
+	9450 1250 9450 1300
+Wire Wire Line
+	9800 1250 9800 1300
+Connection ~ 9450 1250
+$Comp
+L GND #PWR?
+U 1 1 5826BB9F
+P 9800 1650
+F 0 "#PWR?" H 9800 1400 50  0001 C CNN
+F 1 "GND" H 9800 1500 50  0000 C CNN
+F 2 "" H 9800 1650 50  0000 C CNN
+F 3 "" H 9800 1650 50  0000 C CNN
+	1    9800 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9800 1650 9800 1600
+$Comp
+L C C?
+U 1 1 5826BCED
+P 10200 1450
+F 0 "C?" H 10225 1550 50  0000 L CNN
+F 1 "4.7u" H 10225 1350 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 10238 1300 50  0001 C CNN
+F 3 "" H 10200 1450 50  0000 C CNN
+F 4 "1276-2087-1-ND" H 10200 1450 60  0001 C CNN "part number"
+	1    10200 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5826BD9C
+P 10200 1650
+F 0 "#PWR?" H 10200 1400 50  0001 C CNN
+F 1 "GND" H 10200 1500 50  0000 C CNN
+F 2 "" H 10200 1650 50  0000 C CNN
+F 3 "" H 10200 1650 50  0000 C CNN
+	1    10200 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10200 1650 10200 1600
+Wire Wire Line
+	10200 1250 10200 1300
+Connection ~ 9800 1250
+Text Notes 8950 1050 0    98   ~ 20
+Decoupling Capacitors
+Text Notes 9000 2250 0    60   ~ 0
+Place decoupling capacitors \nas close to power inputs \non microcontroller as possible.
+$Comp
+L LED D?
+U 1 1 58268390
+P 6900 2300
+F 0 "D?" H 6900 2400 50  0000 C CNN
+F 1 "LED" H 6900 2200 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 6900 2300 50  0001 C CNN
+F 3 "" H 6900 2300 50  0000 C CNN
+F 4 "160-1446-1-ND" H 6900 2300 60  0001 C CNN "part number"
+	1    6900 2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R?
+U 1 1 58268535
+P 6900 2750
+F 0 "R?" V 6980 2750 50  0000 C CNN
+F 1 "65" V 6900 2750 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 6830 2750 50  0001 C CNN
+F 3 "" H 6900 2750 50  0000 C CNN
+F 4 "311-64.9HRCT-ND" V 6900 2750 60  0001 C CNN "part number"
+	1    6900 2750
+	1    0    0    -1  
+$EndComp
+Text HLabel 6800 2000 0    60   Input ~ 0
+Vin
+Wire Wire Line
+	6800 2000 6900 2000
+Wire Wire Line
+	6900 2000 6900 2100
+Wire Wire Line
+	6900 2500 6900 2600
+$Comp
+L GND #PWR?
+U 1 1 5826897A
+P 6900 3000
+F 0 "#PWR?" H 6900 2750 50  0001 C CNN
+F 1 "GND" H 6900 2850 50  0000 C CNN
+F 2 "" H 6900 3000 50  0000 C CNN
+F 3 "" H 6900 3000 50  0000 C CNN
+	1    6900 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 3000 6900 2900
+Text HLabel 7500 2000 0    60   Input ~ 0
+DBG_LED
+$Comp
+L LED D?
+U 1 1 58268C6C
+P 7600 2250
+F 0 "D?" H 7600 2350 50  0000 C CNN
+F 1 "LED" H 7600 2150 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 7600 2250 50  0001 C CNN
+F 3 "" H 7600 2250 50  0000 C CNN
+F 4 "160-1445-1-ND" H 7600 2250 60  0001 C CNN "part number"
+	1    7600 2250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7600 2050 7600 2000
+Wire Wire Line
+	7600 2000 7500 2000
+$Comp
+L R R?
+U 1 1 58268E36
+P 7600 2750
+F 0 "R?" V 7680 2750 50  0000 C CNN
+F 1 "65" V 7600 2750 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 7530 2750 50  0001 C CNN
+F 3 "" H 7600 2750 50  0000 C CNN
+F 4 "311-64.9HRCT-ND" V 7600 2750 60  0001 C CNN "part number"
+	1    7600 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 2600 7600 2450
+$Comp
+L GND #PWR?
+U 1 1 58268FA1
+P 7600 3000
+F 0 "#PWR?" H 7600 2750 50  0001 C CNN
+F 1 "GND" H 7600 2850 50  0000 C CNN
+F 2 "" H 7600 3000 50  0000 C CNN
+F 3 "" H 7600 3000 50  0000 C CNN
+	1    7600 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 3000 7600 2900
 $EndSCHEMATC
