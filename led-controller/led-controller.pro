@@ -1,4 +1,4 @@
-update=Fri 21 Oct 2016 02:23:38 PM PDT
+update=Fri 11 Nov 2016 04:46:46 PM PST
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,6 +23,8 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
+[general]
+version=1
 [eeschema]
 version=1
 LibDir=
@@ -56,5 +58,4 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
-[general]
-version=1
+LibName30=/home/ryan/repositories/pcbs/lib/robosub_parts
