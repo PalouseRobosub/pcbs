@@ -565,7 +565,7 @@ F 4 "311-64.9HRCT-ND" V 6900 2750 60  0001 C CNN "part number"
 	1    0    0    -1  
 $EndComp
 Text HLabel 6800 2000 0    60   Input ~ 0
-Vin
+Vcc
 Wire Wire Line
 	6800 2000 6900 2000
 Wire Wire Line

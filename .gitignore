@@ -22,3 +22,6 @@ _save*
 # Exported BOM files
 *.xml
 *.csv
+
+# Common schematics that will be annotated.
+common/*
