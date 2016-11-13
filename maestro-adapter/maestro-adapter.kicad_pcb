@@ -1406,10 +1406,10 @@
     (pad 1 np_thru_hole circle (at 0 0) (size 2.2 2.2) (drill 2.2) (layers *.Cu *.Mask))
   )
 
-  (module robosub_footprints:cui-6-board-f (layer F.Cu) (tedit 5800390A) (tstamp 58004080)
+  (module robosub_footprints:cui-6-board-f (layer F.Cu) (tedit 582817FA) (tstamp 58004080)
     (at 181.75416 68.00976 180)
     (path /580098FD)
-    (fp_text reference P14 (at 0 5.08 180) (layer F.SilkS)
+    (fp_text reference P14 (at 0 5.08 180) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value CONN_01X06 (at 3.302 -9.906 180) (layer F.Fab)
@@ -1436,17 +1436,17 @@
     (pad ~ thru_hole circle (at 10 5 180) (size 2 2) (drill 1.3) (layers *.Cu *.Mask F.SilkS))
     (pad 6 thru_hole circle (at 7.5 -10 180) (size 2 2) (drill 1.3) (layers *.Cu *.Mask F.SilkS)
       (net 11 /sig3_isolated))
-    (model ../../../../../../home/ryan/repositories/pcbs/lib/3d-models/sds-60j.wrl
-      (at (xyz 0.3 0.06 0.34))
+    (model ../../../../../../home/ryan/repositories/pcbs/lib/3d-parts/sds-60j.wrl
+      (at (xyz 0.3 0.05 0.35))
       (scale (xyz 4.8 4.8 4.8))
       (rotate (xyz 90 180 180))
     )
   )
 
-  (module robosub_footprints:cui-6-board-f (layer F.Cu) (tedit 5800390A) (tstamp 58004093)
+  (module robosub_footprints:cui-6-board-f (layer F.Cu) (tedit 58281804) (tstamp 58004093)
     (at 166.61508 126.84888)
     (path /5800996A)
-    (fp_text reference P15 (at 0 5.08) (layer F.SilkS)
+    (fp_text reference P15 (at 0 5.08) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value CONN_01X06 (at 3.302 -9.906) (layer F.Fab)
@@ -1473,8 +1473,8 @@
     (pad ~ thru_hole circle (at 10 5) (size 2 2) (drill 1.3) (layers *.Cu *.Mask F.SilkS))
     (pad 6 thru_hole circle (at 7.5 -10) (size 2 2) (drill 1.3) (layers *.Cu *.Mask F.SilkS)
       (net 17 /sig7_isolated))
-    (model ../../../../../../home/ryan/repositories/pcbs/lib/3d-models/sds-60j.wrl
-      (at (xyz 0.3 0.06 0.34))
+    (model ../../../../../../home/ryan/repositories/pcbs/lib/3d-parts/sds-60j.wrl
+      (at (xyz 0.3 0.05 0.35))
       (scale (xyz 4.8 4.8 4.8))
       (rotate (xyz 90 180 180))
     )
