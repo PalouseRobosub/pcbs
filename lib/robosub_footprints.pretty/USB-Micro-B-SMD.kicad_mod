@@ -20,18 +20,9 @@
   (pad "" smd rect (at -1.2 3.35) (size 1.9 1.9) (layers F.Cu F.Paste F.Mask))
   (pad "" smd rect (at 3.8 3.35) (size 1.8 1.9) (layers F.Cu F.Paste F.Mask))
   (pad "" smd rect (at -3.8 3.35) (size 1.8 1.9) (layers F.Cu F.Paste F.Mask))
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> Huge slew of changes for 3D parts, addition of BNO adapter and digital isolator adapter
   (model ../../../../../../home/ryan/repositories/pcbs/lib/3d-parts/micro-ab.wrl
     (at (xyz -0.145 -0.02 0.09))
     (scale (xyz 400 400 400))
     (rotate (xyz 0 0 0))
   )
-<<<<<<< HEAD
-=======
->>>>>>> Addition of robosub parts, 3d models, and interface converter board
-=======
->>>>>>> Huge slew of changes for 3D parts, addition of BNO adapter and digital isolator adapter
 )
