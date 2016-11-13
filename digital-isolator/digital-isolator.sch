@@ -433,7 +433,7 @@ F 4 "490-6328-1-ND" H 2350 3350 60  0001 C CNN "part number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_01X01 P3
+L Spacer P3
 U 1 1 582540F2
 P 3100 3500
 F 0 "P3" H 3100 3600 50  0000 C CNN
@@ -445,7 +445,7 @@ F 4 "492-1071-ND" H 3100 3500 60  0001 C CNN "part number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_01X01 P4
+L Spacer P4
 U 1 1 5825446D
 P 3550 3500
 F 0 "P4" H 3550 3600 50  0000 C CNN
@@ -457,7 +457,7 @@ F 4 "492-1071-ND" H 3550 3500 60  0001 C CNN "part number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_01X01 P5
+L Spacer P5
 U 1 1 582544BA
 P 3950 3500
 F 0 "P5" H 3950 3600 50  0000 C CNN
@@ -469,7 +469,7 @@ F 4 "492-1071-ND" H 3950 3500 60  0001 C CNN "part number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_01X01 P6
+L Spacer P6
 U 1 1 5825451A
 P 4350 3500
 F 0 "P6" H 4350 3600 50  0000 C CNN
@@ -486,4 +486,5 @@ Text Label 2300 2100 0    60   ~ 0
 USB_H-
 Connection ~ 2250 2100
 Connection ~ 2200 2200
+NoConn ~ 1550 2600
 $EndSCHEMATC
