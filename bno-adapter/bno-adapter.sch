@@ -52,7 +52,7 @@ F 0 "P2" H 4450 2150 50  0000 C CNN
 F 1 "CONN_01X04" V 4550 1900 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x04" H 4450 1900 50  0001 C CNN
 F 3 "" H 4450 1900 50  0000 C CNN
-F 4 "3M9449-ND" H 4450 1900 60  0001 C CNN "part number"
+F 4 "S7002-ND" H 4450 1900 60  0001 C CNN "part number"
 	1    4450 1900
 	-1   0    0    1   
 $EndComp
@@ -64,7 +64,7 @@ F 0 "P3" H 5650 2200 50  0000 C CNN
 F 1 "CONN_01X06" V 5750 1850 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x06" H 5650 1850 50  0001 C CNN
 F 3 "" H 5650 1850 50  0000 C CNN
-F 4 "609-3272-ND" H 5650 1850 60  0001 C CNN "part number"
+F 4 "S7004-ND" H 5650 1850 60  0001 C CNN "part number"
 	1    5650 1850
 	1    0    0    -1  
 $EndComp
