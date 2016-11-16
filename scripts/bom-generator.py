@@ -36,7 +36,7 @@ if __name__ == '__main__':
 
     print 'Parsing the following netlists:'
 
-    if not args.netlist and args.quantity:
+    if args.netlist and args.quantity:
         multiple = int(args.quantity[0])
     else:
         multiple = 1
