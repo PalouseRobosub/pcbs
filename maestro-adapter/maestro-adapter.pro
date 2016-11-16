@@ -1,4 +1,4 @@
-update=Thu 13 Oct 2016 04:30:26 PM PDT
+update=Wed 16 Nov 2016 12:23:54 PM PST
 version=1
 last_client=kicad
 [pcbnew]
@@ -59,3 +59,13 @@ LibName27=atmel
 LibName28=contrib
 LibName29=valves
 LibName30=/home/ryan/repositories/pcbs/lib/robosub_parts
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=../schematics/
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=79

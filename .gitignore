@@ -11,7 +11,7 @@
 _save*
 *-cache.*
 *.tmp
-*/gerbers/*
+*.pdf
 
 # Netlist files (exported from Eeschema)
 *.net
