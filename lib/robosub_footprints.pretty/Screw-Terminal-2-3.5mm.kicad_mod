@@ -12,7 +12,7 @@
   (fp_line (start 4.05 -3.4) (end -4.05 -3.4) (layer F.SilkS) (width 0.15))
   (pad 2 thru_hole circle (at 1.75 0) (size 1.6 1.6) (drill 1.2) (layers *.Cu *.Mask))
   (pad 1 thru_hole circle (at -1.75 0) (size 1.6 1.6) (drill 1.2) (layers *.Cu *.Mask))
-  (model ../../../../../../home/ryan/repositories/pcbs/lib/3d-parts/20020327c021b01lf.wrl
+  (model robosub.3dshapes/20020327c021b01lf.wrl
     (at (xyz 0 0 0.105))
     (scale (xyz 2.4 2.4 2.4))
     (rotate (xyz -90 0 90))

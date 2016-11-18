@@ -20,7 +20,7 @@
   (pad "" thru_hole circle (at 2.5 0.675) (size 1.25 1.25) (drill 0.85) (layers *.Cu *.Mask F.SilkS))
   (pad "" thru_hole circle (at -3.5 3.35) (size 1.55 1.55) (drill 1.15) (layers *.Cu *.Mask F.SilkS))
   (pad "" thru_hole circle (at 3.5 3.35) (size 1.55 1.55) (drill 1.15) (layers *.Cu *.Mask F.SilkS))
-  (model ../../../../../../home/ryan/repositories/pcbs/lib/3d-parts/microUSB-TH.wrl
+  (model robosub.3dshapes/microUSB-TH.wrl
     (at (xyz 0 -0.125 0.05))
     (scale (xyz 400 400 400))
     (rotate (xyz -90 0 0))

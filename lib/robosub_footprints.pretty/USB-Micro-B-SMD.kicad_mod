@@ -20,7 +20,7 @@
   (pad "" smd rect (at -1.2 3.35) (size 1.9 1.9) (layers F.Cu F.Paste F.Mask))
   (pad "" smd rect (at 3.8 3.35) (size 1.8 1.9) (layers F.Cu F.Paste F.Mask))
   (pad "" smd rect (at -3.8 3.35) (size 1.8 1.9) (layers F.Cu F.Paste F.Mask))
-  (model ../../../../../../home/ryan/repositories/pcbs/lib/3d-parts/micro-ab.wrl
+  (model robosub.3dshapes/micro-ab.wrl
     (at (xyz -0.145 -0.02 0.09))
     (scale (xyz 400 400 400))
     (rotate (xyz 0 0 0))

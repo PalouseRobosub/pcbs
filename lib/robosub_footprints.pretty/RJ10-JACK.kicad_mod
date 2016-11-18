@@ -15,4 +15,9 @@
   (pad 4 thru_hole circle (at 3.81 -2.54) (size 1.524 1.524) (drill 0.9) (layers *.Cu *.Mask))
   (pad "" thru_hole circle (at -1.91 6.35) (size 3.2 3.2) (drill 3.2) (layers *.Cu *.Mask))
   (pad "" thru_hole circle (at 5.71 6.35) (size 3.2 3.2) (drill 3.2) (layers *.Cu *.Mask))
+  (model robosub.3dshapes/rj10-jack.wrl
+    (at (xyz 0.073 -0.26 0.234))
+    (scale (xyz 4 4 4))
+    (rotate (xyz -90 0 0))
+  )
 )

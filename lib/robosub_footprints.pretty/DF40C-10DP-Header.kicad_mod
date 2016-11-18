@@ -23,7 +23,7 @@
   (pad ~ smd rect (at -1.2 -1.605 90) (size 1.16 0.23) (layers F.Cu F.Paste F.Mask))
   (pad ~ smd rect (at 1.2 -1.605 90) (size 1.16 0.23) (layers F.Cu F.Paste F.Mask))
   (pad ~ smd rect (at -1.2 1.605 90) (size 1.16 0.23) (layers F.Cu F.Paste F.Mask))
-  (model ../../../../../../home/ryan/repositories/pcbs/lib/3d-parts/df40c-10dp.wrl
+  (model robosub.3dshapes/df40c-10dp.wrl
     (at (xyz 0.07000000000000001 -0.035 0.02))
     (scale (xyz 0.4 0.4 0.4))
     (rotate (xyz -90 0 90))
