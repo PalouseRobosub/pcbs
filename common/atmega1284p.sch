@@ -28,6 +28,7 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:robosub_parts
 LIBS:atmega1284p-cache
 EELAYER 25 0
 EELAYER END
@@ -352,15 +353,15 @@ F 4 "311-10KGRCT-ND" V 3050 1650 60  0001 C CNN "part number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L ABM8G-12M U?
+L Osc U?
 U 1 1 5826A48B
-P 2400 2400
-F 0 "U?" H 2250 2550 60  0000 C CNN
-F 1 "TSX-3225" H 2400 2250 60  0000 C CNN
-F 2 "robosub_footprints:DFN-4" H 2400 2400 60  0001 C CNN
-F 3 "" H 2400 2400 60  0000 C CNN
-F 4 "SER4070CT-ND" H 2400 2400 60  0001 C CNN "part number"
-	1    2400 2400
+P 2550 2400
+F 0 "U?" H 2400 2550 60  0000 C CNN
+F 1 "TSX-3225" H 2550 2250 60  0000 C CNN
+F 2 "robosub_footprints:DFN-4" H 2550 2400 60  0001 C CNN
+F 3 "" H 2550 2400 60  0000 C CNN
+F 4 "SER4070CT-ND" H 2550 2400 60  0001 C CNN "part number"
+	1    2550 2400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -387,12 +388,12 @@ Wire Wire Line
 	3650 2600 2900 2600
 Connection ~ 2900 2600
 Wire Wire Line
-	1900 2350 1900 2550
+	2150 2350 2150 2550
 Wire Wire Line
-	1900 2450 2000 2450
+	2150 2450 2250 2450
 Wire Wire Line
-	2000 2350 1900 2350
-Connection ~ 1900 2450
+	2250 2350 2150 2350
+Connection ~ 2150 2450
 $Comp
 L C C?
 U 1 1 5826B503
@@ -541,7 +542,7 @@ Text HLabel 3550 3000 3    60   Input ~ 0
 Gnd
 Text HLabel 4500 5650 3    60   Input ~ 0
 Gnd
-Text HLabel 1900 2550 3    60   Input ~ 0
+Text HLabel 2150 2550 3    60   Input ~ 0
 Gnd
 Text HLabel 8250 5600 3    60   Input ~ 0
 Gnd
