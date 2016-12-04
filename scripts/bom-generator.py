@@ -20,8 +20,9 @@ bom = {}
 if __name__ == '__main__':
 
     parser = argparse.ArgumentParser(description='Generate a Bill-Of-Materials (BOM) from a number of KiCAD XML netlist exports.')
-    parser.add_argument('--bom', nargs=1, help='An existing BOM to load into memory and extend.')
     parser.add_argument('netlist', nargs='*', help='A list of KiCAD netlists exported in XML format.')
+    parser.add_argument('--bom', nargs=1, help='An existing BOM to load into memory and extend.')
+    parser.add_argument('--prefix', nargs=1, help='A prefix to append to component references.')
     parser.add_argument('--quantity', nargs=1, help='Quantity multiple for each netlist specified. If no netlists are specified, this will multiply any BOM selected for export.')
     parser.add_argument('--export', nargs=1, help='Specify that the output format should be exported to CSV.')
 
@@ -33,6 +34,11 @@ if __name__ == '__main__':
             bom = json.load(input_file)
     else:
         print 'Generating a new BOM.'
+
+    # Load any potential prefix supplied in the arguments.
+    prefix = ''
+    if args.prefix is not None:
+        prefix = str(args.prefix[0])
 
     print 'Parsing the following netlists:'
 
@@ -86,7 +92,7 @@ if __name__ == '__main__':
             # If the part number already exists, increment the count.
             if part_number is not None and part_number in bom:
                 bom[part_number]['quantity'] += multiple
-                bom[part_number]['references'] += " " + str(reference)
+                bom[part_number]['references'] += " " + prefix + ":" + str(reference)
                 added = True
 
             # Check to see if an element of same value and footprint exists already.
@@ -95,7 +101,7 @@ if __name__ == '__main__':
                     if bom[key]['value'] == value and bom[key]['footprint'] == footprint:
                         print 'Consolidating reference {} with digikey part {}.'.format(reference, key)
                         bom[key]['quantity'] += multiple
-                        bom[key]['references'] += " " + str(reference)
+                        bom[key]['references'] += " " + prefix + ":" + str(reference)
                         added = True
                         break
 
@@ -103,7 +109,7 @@ if __name__ == '__main__':
             if not added and part_number is not None:
                 bom[part_number] = {'quantity': 0, 'footprint':'', 'references': '', 'value': ''}
                 bom[part_number]['quantity'] = multiple
-                bom[part_number]['references'] = str(reference)
+                bom[part_number]['references'] += " " + prefix + ":" + str(reference)
                 bom[part_number]['value'] = str(value)
                 bom[part_number]['footprint'] = str(footprint)
 
