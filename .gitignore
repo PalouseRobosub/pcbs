@@ -25,3 +25,6 @@ _save*
 
 # Common schematics that will be annotated.
 common/*
+
+# 3D model files
+*.wrl
