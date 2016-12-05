@@ -1346,7 +1346,7 @@ U 1 1 5844FD7D
 P 9150 1650
 F 0 "P2" H 8900 2200 60  0000 C CNN
 F 1 "Mezzanine-Receptacle" H 9150 1500 60  0000 C CNN
-F 2 "robosub_footprints:3mm-10pos-outer-outer-shroud" H 8800 2050 60  0001 C CNN
+F 2 "robosub_footprints:3mm-10pos-outer-shroud" H 8800 2050 60  0001 C CNN
 F 3 "" H 9150 1650 60  0001 C CNN
 F 4 "609-5020-1-ND" H 9100 2300 60  0001 C CNN "part number"
 	1    9150 1650
