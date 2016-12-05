@@ -530,7 +530,7 @@ F 0 "P1" H 1250 2500 60  0000 C CNN
 F 1 "Mezzanine-Header" H 1500 1750 60  0000 C CNN
 F 2 "robosub_footprints:DF40C-10DP-Header" H 1150 2350 60  0001 C CNN
 F 3 "" H 1500 1950 60  0001 C CNN
-F 4 "H11616CT-ND" H 1350 2550 60  0001 C CNN "part number"
+F 4 "H11736TR-ND" H 1350 2550 60  0001 C CNN "part number"
 	1    1500 1950
 	1    0    0    -1  
 $EndComp
