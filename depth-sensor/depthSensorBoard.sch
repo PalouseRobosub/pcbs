@@ -602,4 +602,52 @@ NoConn ~ 3050 5700
 NoConn ~ 3050 5800
 NoConn ~ 3050 5900
 NoConn ~ 3050 6000
+$Comp
+L TEST_1P W1
+U 1 1 585238F0
+P 5600 1150
+F 0 "W1" H 5600 1420 50  0000 C CNN
+F 1 "TEST_1P" H 5600 1350 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-TH_Small" H 5800 1150 50  0001 C CNN
+F 3 "" H 5800 1150 50  0000 C CNN
+	1    5600 1150
+	1    0    0    -1  
+$EndComp
+Text Label 5600 1150 3    60   ~ 0
+SDA
+$Comp
+L TEST_1P W2
+U 1 1 58524B44
+P 5950 1150
+F 0 "W2" H 5950 1420 50  0000 C CNN
+F 1 "TEST_1P" H 5950 1350 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-TH_Small" H 6150 1150 50  0001 C CNN
+F 3 "" H 6150 1150 50  0000 C CNN
+	1    5950 1150
+	1    0    0    -1  
+$EndComp
+Text Label 5950 1150 3    60   ~ 0
+SCL
+$Comp
+L TEST_1P W3
+U 1 1 58524D93
+P 6300 1150
+F 0 "W3" H 6300 1420 50  0000 C CNN
+F 1 "TEST_1P" H 6300 1350 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-TH_Small" H 6500 1150 50  0001 C CNN
+F 3 "" H 6500 1150 50  0000 C CNN
+	1    6300 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR017
+U 1 1 58524E9E
+P 6300 1150
+F 0 "#PWR017" H 6300 900 50  0001 C CNN
+F 1 "GND" H 6300 1000 50  0000 C CNN
+F 2 "" H 6300 1150 50  0000 C CNN
+F 3 "" H 6300 1150 50  0000 C CNN
+	1    6300 1150
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
