@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:depthSensorBoard-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -650,4 +651,34 @@ F 3 "" H 6300 1150 50  0000 C CNN
 	1    6300 1150
 	1    0    0    -1  
 $EndComp
+$Comp
+L R R3
+U 1 1 5861C82A
+P 4400 3850
+F 0 "R3" V 4480 3850 50  0000 C CNN
+F 1 "10k" V 4400 3850 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 4330 3850 50  0001 C CNN
+F 3 "" H 4400 3850 50  0000 C CNN
+F 4 "311-10KGRCT-ND" V 4400 3850 60  0001 C CNN "part number"
+	1    4400 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR018
+U 1 1 5861C941
+P 4400 4050
+F 0 "#PWR018" H 4400 3800 50  0001 C CNN
+F 1 "GND" H 4400 3900 50  0000 C CNN
+F 2 "" H 4400 4050 50  0000 C CNN
+F 3 "" H 4400 4050 50  0000 C CNN
+	1    4400 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 4000 4400 4050
+Wire Wire Line
+	4400 3700 4550 3700
+Wire Wire Line
+	4550 3700 4550 3650
+Connection ~ 4550 3650
 $EndSCHEMATC
