@@ -48,6 +48,7 @@ if __name__ == '__main__':
         multiple = 1
 
     for xml in args.netlist:
+        visited = {}
         print xml
 
         # Read in the XML file into a BeautifulSoup Python object.
@@ -92,7 +93,14 @@ if __name__ == '__main__':
             # If the part number already exists, increment the count.
             if part_number is not None and part_number in bom:
                 bom[part_number]['quantity'] += multiple
-                bom[part_number]['references'] += " " + prefix + ":" + str(reference)
+                try:
+                    if visited[part_number] is True:
+                        visited[part_number] = True
+                except KeyError:
+                    print('Appending Prefix for {}'.format(part_number));
+                    bom[part_number]['references'] += prefix + ":"
+                    visited[part_number] = True
+                bom[part_number]['references'] += str(reference) + " "
                 added = True
 
             # Check to see if an element of same value and footprint exists already.
@@ -100,8 +108,14 @@ if __name__ == '__main__':
                 for key in bom:
                     if bom[key]['value'] == value and bom[key]['footprint'] == footprint:
                         print 'Consolidating reference {} with digikey part {}.'.format(reference, key)
+                        try:
+                            if visited[key] is True:
+                                visited[key] = True
+                        except KeyError:
+                            bom[key]['references'] += prefix + ":"
+                            visited[key] = True
                         bom[key]['quantity'] += multiple
-                        bom[key]['references'] += " " + prefix + ":" + str(reference)
+                        bom[key]['references'] += str(reference) + " "
                         added = True
                         break
 
@@ -109,9 +123,10 @@ if __name__ == '__main__':
             if not added and part_number is not None:
                 bom[part_number] = {'quantity': 0, 'footprint':'', 'references': '', 'value': ''}
                 bom[part_number]['quantity'] = multiple
-                bom[part_number]['references'] += " " + prefix + ":" + str(reference)
+                bom[part_number]['references'] = prefix + ":" + str(reference) + ' '
                 bom[part_number]['value'] = str(value)
                 bom[part_number]['footprint'] = str(footprint)
+                visited[part_number] = True
 
     if args.netlist:
         output_file_name = os.path.basename(args.netlist[0]).split('.')[0]
