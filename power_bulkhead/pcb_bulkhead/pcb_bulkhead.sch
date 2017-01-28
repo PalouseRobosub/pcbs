@@ -49,7 +49,7 @@ U 1 1 5883CA47
 P 4200 4300
 F 0 "R1" V 4280 4300 50  0000 C CNN
 F 1 "20k" V 4200 4300 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402" V 4130 4300 50  0001 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4130 4300 50  0001 C CNN
 F 3 "" H 4200 4300 50  0000 C CNN
 	1    4200 4300
 	1    0    0    -1  
@@ -71,7 +71,7 @@ U 1 1 5883CD0E
 P 4950 4100
 F 0 "R2" V 5030 4100 50  0000 C CNN
 F 1 "1k" V 4950 4100 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402" V 4880 4100 50  0001 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4880 4100 50  0001 C CNN
 F 3 "" H 4950 4100 50  0000 C CNN
 	1    4950 4100
 	0    1    1    0   
@@ -115,7 +115,7 @@ U 1 1 5883D2D7
 P 5850 4200
 F 0 "R3" V 5930 4200 50  0000 C CNN
 F 1 "15k" V 5850 4200 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402" V 5780 4200 50  0001 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5780 4200 50  0001 C CNN
 F 3 "" H 5850 4200 50  0000 C CNN
 	1    5850 4200
 	0    1    1    0   
@@ -148,7 +148,7 @@ U 1 1 5883EBCA
 P 4500 4750
 F 0 "C1" H 4525 4850 50  0000 L CNN
 F 1 "10u" H 4525 4650 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0402" H 4538 4600 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4538 4600 50  0001 C CNN
 F 3 "" H 4500 4750 50  0000 C CNN
 	1    4500 4750
 	1    0    0    -1  
@@ -182,11 +182,11 @@ Battery+
 Text GLabel 4200 4450 3    60   Input ~ 0
 Battery+
 Text GLabel 6600 3900 2    60   Input ~ 0
-ThrusterCoil
+ThrusterGate
 Text GLabel 4900 4500 2    60   Input ~ 0
-BulkheadCoil
+BulkheadGate
 Text GLabel 7550 1600 0    60   Input ~ 0
-BulkheadCoil
+BulkheadGate
 $Comp
 L SW_PUSH SW1
 U 1 1 588444A9
@@ -281,13 +281,13 @@ U 1 1 5889439D
 P 7750 2100
 F 0 "P1" H 7750 3000 50  0000 C CNN
 F 1 "CONN_01X17" V 7850 2100 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Angled_1x19_Pitch1.27mm" H 7750 2100 50  0001 C CNN
+F 2 "robosub_footprints:Pin_Header_Angled_2x10_Pitch2.54mm" H 7750 2100 50  0001 C CNN
 F 3 "" H 7750 2100 50  0000 C CNN
 	1    7750 2100
 	1    0    0    -1  
 $EndComp
 Text GLabel 7550 1700 0    60   Input ~ 0
-ThrusterCoil
+ThrusterGate
 Wire Wire Line
 	6500 1000 6500 1800
 Wire Wire Line
