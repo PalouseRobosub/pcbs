@@ -12,6 +12,7 @@ _save*
 *-cache.*
 *.tmp
 *.pdf
+*-rescue.lib
 
 # Netlist files (exported from Eeschema)
 *.net
