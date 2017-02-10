@@ -163,7 +163,7 @@ ENDDEF
 DEF Mezzanine-Header P 0 40 Y Y 1 F N
 F0 "P" -250 550 60 H V C CNN
 F1 "Mezzanine-Header" 0 -200 60 H V C CNN
-F2 "robosub_footprints:3mm-10pos-outer-receptacle" -350 400 60 H I C CNN
+F2 "robosub_footprints:3mm-10pos-receptacle" -350 400 60 H I C CNN
 F3 "" 0 0 60 H I C CNN
 F4 "609-5026-1-ND" -150 600 60 H I C CNN "part number"
 DRAW

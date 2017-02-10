@@ -108,18 +108,6 @@ Wire Wire Line
 	9350 1700 9400 1700
 Wire Wire Line
 	9350 1600 9400 1600
-$Comp
-L Mezzanine-Header P1
-U 1 1 58260A62
-P 2250 2250
-F 0 "P1" H 2250 2700 50  0000 C CNN
-F 1 "CONN_02X05" H 2150 2100 50  0000 C CNN
-F 2 "robosub_footprints:DF40C-10DP-Header" H 2250 1050 50  0001 C CNN
-F 3 "" H 2250 1050 50  0000 C CNN
-F 4 "H11616CT-ND" H 2250 2250 60  0001 C CNN "part number"
-	1    2250 2250
-	1    0    0    -1  
-$EndComp
 Text Label 1650 1900 2    60   ~ 0
 Vbus
 Text Label 1650 2000 2    60   ~ 0
@@ -132,17 +120,6 @@ Wire Wire Line
 	1650 2200 1750 2200
 Wire Wire Line
 	1750 2100 1650 2100
-$Comp
-L R R3
-U 1 1 58260C45
-P 9000 3500
-F 0 "R3" V 9080 3500 50  0000 C CNN
-F 1 "0" V 9000 3500 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402" V 8930 3500 50  0001 C CNN
-F 3 "" H 9000 3500 50  0000 C CNN
-	1    9000 3500
-	0    1    1    0   
-$EndComp
 Text Label 8700 3500 2    60   ~ 0
 RX/SDA_0
 Text Label 9300 3500 0    60   ~ 0
@@ -197,7 +174,7 @@ U 1 1 58261EA4
 P 5150 2100
 F 0 "R2" V 5230 2100 50  0000 C CNN
 F 1 "0" V 5150 2100 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402" V 5080 2100 50  0001 C CNN
+F 2 "Resistors_SMD:R_0805" V 5080 2100 50  0001 C CNN
 F 3 "" H 5150 2100 50  0000 C CNN
 	1    5150 2100
 	1    0    0    -1  
@@ -212,17 +189,6 @@ Text Label 5150 2350 0    60   ~ 0
 PS0
 Wire Wire Line
 	5150 2350 5150 2250
-$Comp
-L R R5
-U 1 1 5826226E
-P 5650 2100
-F 0 "R5" V 5730 2100 50  0000 C CNN
-F 1 "0" V 5650 2100 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402" V 5580 2100 50  0001 C CNN
-F 3 "" H 5650 2100 50  0000 C CNN
-	1    5650 2100
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5650 1950 5650 1900
 Text Label 5650 1550 0    60   ~ 0
@@ -243,17 +209,6 @@ F 2 "Resistors_SMD:R_0402" V 5930 1750 50  0001 C CNN
 F 3 "" H 6000 1750 50  0000 C CNN
 F 4 "311-10KJRCT-ND" V 6000 1750 60  0001 C CNN "part number"
 	1    6000 1750
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R7
-U 1 1 58262300
-P 6000 2100
-F 0 "R7" V 6080 2100 50  0000 C CNN
-F 1 "0" V 6000 2100 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402" V 5930 2100 50  0001 C CNN
-F 3 "" H 6000 2100 50  0000 C CNN
-	1    6000 2100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -298,54 +253,6 @@ F 4 "311-10KJRCT-ND" V 5150 1750 60  0001 C CNN "part number"
 	1    5150 1750
 	1    0    0    -1  
 $EndComp
-$Comp
-L Spacer P4
-U 1 1 58264CC9
-P 8200 5900
-F 0 "P4" H 8200 6000 50  0000 C CNN
-F 1 "CONN_01X01" V 8300 5900 50  0000 C CNN
-F 2 "Mounting_Holes:MountingHole_3.5mm" H 8200 5900 50  0001 C CNN
-F 3 "" H 8200 5900 50  0000 C CNN
-F 4 "492-1071-ND" H 8200 5900 60  0001 C CNN "part number"
-	1    8200 5900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Spacer P5
-U 1 1 58264D77
-P 8600 5900
-F 0 "P5" H 8600 6000 50  0000 C CNN
-F 1 "CONN_01X01" V 8700 5900 50  0000 C CNN
-F 2 "Mounting_Holes:MountingHole_3.5mm" H 8600 5900 50  0001 C CNN
-F 3 "" H 8600 5900 50  0000 C CNN
-F 4 "492-1071-ND" H 8600 5900 60  0001 C CNN "part number"
-	1    8600 5900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Spacer P6
-U 1 1 58264DBF
-P 9000 5900
-F 0 "P6" H 9000 6000 50  0000 C CNN
-F 1 "CONN_01X01" V 9100 5900 50  0000 C CNN
-F 2 "Mounting_Holes:MountingHole_3.5mm" H 9000 5900 50  0001 C CNN
-F 3 "" H 9000 5900 50  0000 C CNN
-F 4 "492-1071-ND" H 9000 5900 60  0001 C CNN "part number"
-	1    9000 5900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Spacer P7
-U 1 1 58264E0E
-P 9400 5900
-F 0 "P7" H 9400 6000 50  0000 C CNN
-F 1 "CONN_01X01" V 9500 5900 50  0000 C CNN
-F 2 "Mounting_Holes:MountingHole_3.5mm" H 9400 5900 50  0001 C CNN
-F 3 "" H 9400 5900 50  0000 C CNN
-F 4 "492-1071-ND" H 9400 5900 60  0001 C CNN "part number"
-	1    9400 5900
-	1    0    0    -1  
-$EndComp
 Text Notes 8050 5300 0    118  ~ 24
 Mounting Spacers
 Text Notes 8000 3150 0    118  ~ 24
@@ -364,4 +271,97 @@ Wire Notes Line
 	7400 4900 10500 4900
 Wire Notes Line
 	10500 2750 7400 2750
+$Comp
+L Spacer P4
+U 1 1 589D2B8C
+P 8150 5750
+F 0 "P4" H 8100 5850 60  0000 C CNN
+F 1 "Spacer" H 8150 5650 60  0000 C CNN
+F 2 "robosub_footprints:3mm-spacer" H 8000 5750 60  0001 C CNN
+F 3 "" H 8100 5850 60  0001 C CNN
+F 4 "492-1071-ND" H 8200 5950 60  0001 C CNN "part number"
+	1    8150 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Spacer P5
+U 1 1 589D2CA7
+P 8600 5750
+F 0 "P5" H 8550 5850 60  0000 C CNN
+F 1 "Spacer" H 8600 5650 60  0000 C CNN
+F 2 "robosub_footprints:3mm-spacer" H 8450 5750 60  0001 C CNN
+F 3 "" H 8550 5850 60  0001 C CNN
+F 4 "492-1071-ND" H 8650 5950 60  0001 C CNN "part number"
+	1    8600 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Spacer P6
+U 1 1 589D2D01
+P 9050 5750
+F 0 "P6" H 9000 5850 60  0000 C CNN
+F 1 "Spacer" H 9050 5650 60  0000 C CNN
+F 2 "robosub_footprints:3mm-spacer" H 8900 5750 60  0001 C CNN
+F 3 "" H 9000 5850 60  0001 C CNN
+F 4 "492-1071-ND" H 9100 5950 60  0001 C CNN "part number"
+	1    9050 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Spacer P7
+U 1 1 589D2D7D
+P 9450 5750
+F 0 "P7" H 9400 5850 60  0000 C CNN
+F 1 "Spacer" H 9450 5650 60  0000 C CNN
+F 2 "robosub_footprints:3mm-spacer" H 9300 5750 60  0001 C CNN
+F 3 "" H 9400 5850 60  0001 C CNN
+F 4 "492-1071-ND" H 9500 5950 60  0001 C CNN "part number"
+	1    9450 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 589D3633
+P 5650 2100
+F 0 "R3" V 5730 2100 50  0000 C CNN
+F 1 "0" V 5650 2100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 5580 2100 50  0001 C CNN
+F 3 "" H 5650 2100 50  0000 C CNN
+	1    5650 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R5
+U 1 1 589D3689
+P 6000 2100
+F 0 "R5" V 6080 2100 50  0000 C CNN
+F 1 "0" V 6000 2100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 5930 2100 50  0001 C CNN
+F 3 "" H 6000 2100 50  0000 C CNN
+	1    6000 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R7
+U 1 1 589D3DAE
+P 9000 3500
+F 0 "R7" V 9080 3500 50  0000 C CNN
+F 1 "0" V 9000 3500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 8930 3500 50  0001 C CNN
+F 3 "" H 9000 3500 50  0000 C CNN
+	1    9000 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L Mezzanine-Header P1
+U 1 1 589D4228
+P 2250 2250
+F 0 "P1" H 2000 2800 60  0000 C CNN
+F 1 "Mezzanine-Header" H 2250 2050 60  0000 C CNN
+F 2 "robosub_footprints:3mm-10pos-receptacle" H 1900 2650 60  0001 C CNN
+F 3 "" H 2250 2250 60  0001 C CNN
+F 4 "609-5026-1-ND" H 2100 2850 60  0001 C CNN "part number"
+	1    2250 2250
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
