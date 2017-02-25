@@ -455,7 +455,7 @@ Decoupling Capacitors
 Text Notes 8000 6200 0    60   ~ 0
 Place decoupling capacitors \nas close to power inputs \non microcontroller as possible.
 $Comp
-L LED D?
+L LED-RESCUE-LiPoCharger D?
 U 1 1 58268390
 P 8150 3200
 F 0 "D?" H 8150 3300 50  0000 C CNN
@@ -491,7 +491,7 @@ Wire Wire Line
 Text HLabel 8750 2900 0    60   Input ~ 0
 DBG_LED
 $Comp
-L LED D?
+L LED-RESCUE-LiPoCharger D?
 U 1 1 58268C6C
 P 8850 3150
 F 0 "D?" H 8850 3250 50  0000 C CNN
