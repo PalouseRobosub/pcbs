@@ -3,7 +3,7 @@
   (general
     (links 68)
     (no_connects 0)
-    (area 101.169399 72.832266 159.739401 118.820001)
+    (area 101.169399 72.949999 159.739401 118.820001)
     (thickness 1.6)
     (drawings 27)
     (tracks 382)
@@ -1109,9 +1109,9 @@
       (net 13 /microcontroller/~RST))
     (pad 6 thru_hole oval (at 2.54 5.08 90) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
       (net 2 GND))
-    (model Pin_Headers.3dshapes/Pin_Header_Straight_2x03_Pitch2.54mm.wrl
-      (at (xyz 0.05 -0.1 0))
-      (scale (xyz 1 1 1))
+    (model robosub.3dshapes/idc-6.wrl
+      (at (xyz 0 -0.2 0.1))
+      (scale (xyz 400 400 400))
       (rotate (xyz 0 0 90))
     )
   )
@@ -1760,7 +1760,7 @@
   (gr_text "LED Controller\nRyan Summers\nRS17\nRev B" (at 138.6586 95.4532) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.2)) (justify left))
   )
-  (gr_text STATUS (at 112.5982 75.1332) (layer F.SilkS) (tstamp 5827ECB5)
+  (gr_text STATUS (at 111.2774 75.2856) (layer F.SilkS) (tstamp 5827ECB5)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
   )
   (gr_text ON (at 144.7546 75.184) (layer F.SilkS)
