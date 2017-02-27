@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:atmega1284p-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -62,7 +63,7 @@ U 1 1 57F7CD77
 P 8500 1550
 F 0 "P?" H 8500 1750 50  0000 C CNN
 F 1 "CONN_02X03" H 8500 1350 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x03" H 8500 350 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x03_Pitch2.54mm" H 8500 350 50  0001 C CNN
 F 3 "" H 8500 350 50  0000 C CNN
 F 4 "A122812-ND" H 8500 1550 60  0001 C CNN "part number"
 	1    8500 1550
@@ -453,7 +454,7 @@ Decoupling Capacitors
 Text Notes 8000 6200 0    60   ~ 0
 Place decoupling capacitors \nas close to power inputs \non microcontroller as possible.
 $Comp
-L LED D?
+L LED-RESCUE-atmega1284p D?
 U 1 1 58268390
 P 8150 3200
 F 0 "D?" H 8150 3300 50  0000 C CNN
@@ -489,7 +490,7 @@ Wire Wire Line
 Text HLabel 8750 2900 0    60   Input ~ 0
 DBG_LED
 $Comp
-L LED D?
+L LED-RESCUE-atmega1284p D?
 U 1 1 58268C6C
 P 8850 3150
 F 0 "D?" H 8850 3250 50  0000 C CNN
