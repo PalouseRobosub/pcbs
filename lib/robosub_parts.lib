@@ -1,6 +1,19 @@
 EESchema-LIBRARY Version 2.3
 #encoding utf-8
 #
+# 3mm-support
+#
+DEF ~3mm-support U 0 40 Y Y 1 F N
+F0 "U" 0 0 118 H V C CNN
+F1 "3mm-support" 0 0 118 H I C CNN
+F2 "robosub_footprints:3mm-support" -100 -100 118 H I C CNN
+F3 "" 0 0 118 H I C CNN
+F4 "RPC1225-ND" 100 100 118 H I C CNN "part number"
+DRAW
+C 0 0 100 0 1 0 N
+ENDDRAW
+ENDDEF
+#
 # 93LCxxB-6
 #
 DEF 93LCxxB-6 U 0 40 Y Y 1 F N
