@@ -1,5 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:atmega1284p-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -30,12 +29,11 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:robosub_parts
-LIBS:atmega1284p-cache
 EELAYER 25 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
-Sheet 1 1
+Sheet 2 2
 Title "ATMega1284"
 Date ""
 Rev ""
@@ -454,7 +452,7 @@ Decoupling Capacitors
 Text Notes 8000 6200 0    60   ~ 0
 Place decoupling capacitors \nas close to power inputs \non microcontroller as possible.
 $Comp
-L LED-RESCUE-atmega1284p D?
+L LED D?
 U 1 1 58268390
 P 8150 3200
 F 0 "D?" H 8150 3300 50  0000 C CNN
@@ -482,15 +480,15 @@ Vcc
 Wire Wire Line
 	8050 2900 8150 2900
 Wire Wire Line
-	8150 2900 8150 3000
+	8150 2900 8150 3050
 Wire Wire Line
-	8150 3400 8150 3500
+	8150 3350 8150 3500
 Wire Wire Line
 	8150 3900 8150 3800
 Text HLabel 8750 2900 0    60   Input ~ 0
 DBG_LED
 $Comp
-L LED-RESCUE-atmega1284p D?
+L LED D?
 U 1 1 58268C6C
 P 8850 3150
 F 0 "D?" H 8850 3250 50  0000 C CNN
@@ -502,7 +500,7 @@ F 4 "160-1445-1-ND" H 8850 3150 60  0001 C CNN "part number"
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	8850 2950 8850 2900
+	8850 2900 8850 3000
 Wire Wire Line
 	8850 2900 8750 2900
 $Comp
@@ -518,7 +516,7 @@ F 4 "311-64.9HRCT-ND" V 8850 3650 60  0001 C CNN "part number"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8850 3500 8850 3350
+	8850 3300 8850 3500
 Wire Wire Line
 	8850 3900 8850 3800
 Text Notes 7850 2650 0    118  ~ 24
