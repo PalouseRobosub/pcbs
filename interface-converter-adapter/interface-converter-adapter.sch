@@ -29,7 +29,6 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:robosub_parts
-LIBS:interferenceconverterplugin-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -62,7 +61,7 @@ U 1 1 58B8D485
 P 5850 5550
 F 0 "P2" H 5850 5900 50  0000 C CNN
 F 1 "CONN_02X06" H 5850 5200 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Angled_2x06_Pitch2.54mm" H 5850 4350 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x06_Pitch2.54mm" H 5850 4350 50  0001 C CNN
 F 3 "" H 5850 4350 50  0000 C CNN
 F 4 "S5520-ND" H 5850 5550 60  0001 C CNN "part number"
 	1    5850 5550

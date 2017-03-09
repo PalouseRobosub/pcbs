@@ -1,4 +1,4 @@
-update=3/2/2017 5:03:20 PM
+update=Thu 09 Mar 2017 12:13:14 PM PST
 version=1
 last_client=kicad
 [pcbnew]
@@ -59,3 +59,4 @@ LibName27=atmel
 LibName28=contrib
 LibName29=valves
 LibName30=C:/Users/jason hardwick/Desktop/repositories/pcbs/lib/robosub_parts
+LibName31=/home/ryan/repositories/pcbs/lib/robosub_parts
