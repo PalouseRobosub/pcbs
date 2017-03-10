@@ -3,7 +3,7 @@
   (general
     (links 10)
     (no_connects 0)
-    (area 101.817099 81.116099 162.927101 119.366101)
+    (area 95.573529 79.3261 165.170672 121.2561)
     (thickness 1.6)
     (drawings 11)
     (tracks 103)
@@ -977,7 +977,7 @@
     )
   )
 
-  (gr_text "Interface Converter\nAdapter\nLung-Chi Lin\nRS17 - RevA" (at 105.8611 111.3155 90) (layer F.SilkS)
+  (gr_text "Interface Converter\nAdapter\nLiudi Yang\nRS17 - RevA" (at 105.8611 111.3155 90) (layer F.SilkS)
     (effects (font (size 1.5 1.5) (thickness 0.3)) (justify left))
   )
   (gr_text "NC NC\nAC5 GND\nAC4 SDI\nAC3 SDO\nDTR SCK\nCS V+" (at 145.1991 100.584) (layer B.SilkS) (tstamp 58C1BA91)
