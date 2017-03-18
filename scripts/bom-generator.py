@@ -147,7 +147,11 @@ if __name__ == '__main__':
                 output_file.write('{}, {}, {}\n'.format(str(part_key), int(bom[part_key]['quantity'])*multiple, bom[part_key]['references']))
     else:
         # Output the BOM in JSON format to an output file.
-        output_file_name += '.json'
+        if args.bom is not None:
+            output_file_name = args.bom[0]
+        else:
+            output_file_name = output_file + '.json'
+
         with open(output_file_name, 'w+') as output_file:
             json.dump(bom, output_file, indent=4)
 
