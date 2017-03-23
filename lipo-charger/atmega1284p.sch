@@ -31,6 +31,7 @@ LIBS:contrib
 LIBS:valves
 LIBS:LiPoCharger
 LIBS:robosub_parts
+LIBS:LiPoCharger-cache
 EELAYER 25 0
 EELAYER END
 $Descr A 11000 8500
