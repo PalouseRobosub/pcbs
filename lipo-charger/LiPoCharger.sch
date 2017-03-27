@@ -102,7 +102,7 @@ F4 "PC0" I L 4600 4900 60
 $EndSheet
 Text HLabel 4600 5100 2    60   Input ~ 0
 PA0
-Text HLabel 5700 4700 0    60   Input ~ 0
+Text HLabel 4600 5200 2    60   Input ~ 0
 PA1
 Text HLabel 5700 4850 0    60   Input ~ 0
 PA2
@@ -1517,12 +1517,8 @@ Text Label 1100 4300 2    60   ~ 0
 VC1
 Text Label 1100 4400 2    60   ~ 0
 VC0
-Text Label 3150 4550 0    60   ~ 0
-VC1
 Wire Wire Line
-	3150 4550 3150 4400
-Wire Wire Line
-	3150 4200 3150 4250
+	3150 4200 3150 5200
 Wire Wire Line
 	6900 4550 6900 4450
 Text Label 6900 4450 1    60   ~ 0
@@ -1697,4 +1693,6 @@ Wire Wire Line
 	950  4600 950  5200
 Wire Wire Line
 	850  5300 850  4500
+Wire Wire Line
+	3150 5200 4600 5200
 $EndSCHEMATC
