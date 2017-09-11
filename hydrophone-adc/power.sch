@@ -34,7 +34,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 10 13
+Sheet 13 13
 Title ""
 Date ""
 Rev ""
@@ -80,7 +80,7 @@ F 4 "587-2985-1-ND" H 3500 1750 60  0001 C CNN "part number"
 	1    3500 1750
 	1    0    0    -1  
 $EndComp
-Text HLabel 1350 2000 0    60   Input ~ 0
+Text HLabel 6850 2350 2    60   Input ~ 0
 v_good
 $Comp
 L L L?
@@ -141,8 +141,6 @@ F 3 "" H 6000 2100 50  0001 C CNN
 	1    6000 2100
 	1    0    0    -1  
 $EndComp
-Text HLabel 1350 2150 0    60   Input ~ 0
-5v
 Wire Wire Line
 	5150 1900 5250 1900
 Wire Wire Line
@@ -326,18 +324,14 @@ F 4 "LT1963ES8-1.8#PBF-ND" H 3250 5200 60  0001 C CNN "part number"
 	1    4550 4800
 	1    0    0    -1  
 $EndComp
-Text HLabel 5450 4600 2    60   Input ~ 0
-1.8v
 Wire Wire Line
 	5450 4600 5000 4600
-Text Label 4000 4750 2    60   ~ 0
-v_good
 Wire Wire Line
 	4000 4750 4100 4750
-Text Label 3450 4600 2    60   ~ 0
+Text Label 3300 4600 2    60   ~ 0
 Vin
 Wire Wire Line
-	3450 4600 4100 4600
+	3300 4600 4100 4600
 $Comp
 L C C?
 U 1 1 59B5C0BA
@@ -394,37 +388,31 @@ Connection ~ 4550 5250
 $Comp
 L C C?
 U 1 1 59B5CA4B
-P 3500 4800
-F 0 "C?" H 3525 4900 50  0000 L CNN
-F 1 "10u" H 3525 4700 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 3538 4650 50  0001 C CNN
-F 3 "" H 3500 4800 50  0001 C CNN
-F 4 "587-2985-1-ND" H 3500 4800 60  0001 C CNN "part number"
-	1    3500 4800
+P 3350 4800
+F 0 "C?" H 3375 4900 50  0000 L CNN
+F 1 "10u" H 3375 4700 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 3388 4650 50  0001 C CNN
+F 3 "" H 3350 4800 50  0001 C CNN
+F 4 "587-2985-1-ND" H 3350 4800 60  0001 C CNN "part number"
+	1    3350 4800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3500 4600 3500 4650
-Connection ~ 3500 4600
+	3350 4600 3350 4650
+Connection ~ 3350 4600
 $Comp
 L GND #PWR?
 U 1 1 59B5CC32
-P 3500 5000
-F 0 "#PWR?" H 3500 4750 50  0001 C CNN
-F 1 "GND" H 3500 4850 50  0000 C CNN
-F 2 "" H 3500 5000 50  0001 C CNN
-F 3 "" H 3500 5000 50  0001 C CNN
-	1    3500 5000
+P 3350 5000
+F 0 "#PWR?" H 3350 4750 50  0001 C CNN
+F 1 "GND" H 3350 4850 50  0000 C CNN
+F 2 "" H 3350 5000 50  0001 C CNN
+F 3 "" H 3350 5000 50  0001 C CNN
+	1    3350 5000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3500 5000 3500 4950
-Text Label 6850 2350 0    60   ~ 0
-v_good
-Text Label 1500 2000 0    60   ~ 0
-v_good
-Wire Wire Line
-	1500 2000 1350 2000
+	3350 5000 3350 4950
 $Comp
 L R R?
 U 1 1 59B5E7D5
@@ -503,8 +491,6 @@ Wire Wire Line
 	5050 3750 5050 3900
 Wire Wire Line
 	5050 3850 5000 3850
-Text HLabel 5250 3400 2    60   Input ~ 0
--5v
 $Comp
 L C C?
 U 1 1 59B692EA
@@ -535,12 +521,6 @@ Wire Wire Line
 Wire Wire Line
 	5000 3400 5250 3400
 Connection ~ 5050 3400
-Text Label 6700 1600 0    60   ~ 0
-5v
-Text Label 1500 2150 0    60   ~ 0
-5v
-Wire Wire Line
-	1500 2150 1350 2150
 Wire Wire Line
 	3500 3400 3500 3450
 Connection ~ 3500 3400
@@ -571,4 +551,45 @@ Wire Wire Line
 	4000 3550 4000 3650
 Wire Wire Line
 	4000 3650 4050 3650
+Text HLabel 4000 4750 0    60   Input ~ 0
+Vccio_en
+$Comp
+L +5V #PWR?
+U 1 1 59BE3053
+P 6700 1550
+F 0 "#PWR?" H 6700 1400 50  0001 C CNN
+F 1 "+5V" H 6700 1690 50  0000 C CNN
+F 2 "" H 6700 1550 50  0001 C CNN
+F 3 "" H 6700 1550 50  0001 C CNN
+	1    6700 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 1600 6700 1550
+$Comp
+L -5V #PWR?
+U 1 1 59BE339F
+P 5250 3350
+F 0 "#PWR?" H 5250 3450 50  0001 C CNN
+F 1 "-5V" H 5250 3500 50  0000 C CNN
+F 2 "" H 5250 3350 50  0001 C CNN
+F 3 "" H 5250 3350 50  0001 C CNN
+	1    5250 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 3400 5250 3350
+$Comp
+L +1V8 #PWR?
+U 1 1 59BE34F0
+P 5450 4550
+F 0 "#PWR?" H 5450 4400 50  0001 C CNN
+F 1 "+1V8" H 5450 4690 50  0000 C CNN
+F 2 "" H 5450 4550 50  0001 C CNN
+F 3 "" H 5450 4550 50  0001 C CNN
+	1    5450 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 4550 5450 4600
 $EndSCHEMATC

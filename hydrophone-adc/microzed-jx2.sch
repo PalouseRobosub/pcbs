@@ -66,4 +66,177 @@ F 3 "" H 8000 6500 60  0001 C CNN
 	2    7500 3700
 	1    0    0    -1  
 $EndComp
+NoConn ~ 2950 1300
+NoConn ~ 2950 1400
+NoConn ~ 2950 1500
+NoConn ~ 2950 1600
+NoConn ~ 8050 1250
+NoConn ~ 8050 1350
+NoConn ~ 8050 1450
+NoConn ~ 8050 1550
+Text HLabel 8150 1650 2    60   Input ~ 0
+Vccio_en
+Wire Wire Line
+	8150 1650 8050 1650
+NoConn ~ 8050 5850
+NoConn ~ 8050 5950
+NoConn ~ 2950 5900
+NoConn ~ 2950 6000
+NoConn ~ 2950 6100
+NoConn ~ 2950 6200
+NoConn ~ 8050 6150
+NoConn ~ 8050 6050
+$Comp
+L +5V #PWR?
+U 1 1 59BEBD66
+P 8700 1700
+F 0 "#PWR?" H 8700 1550 50  0001 C CNN
+F 1 "+5V" H 8700 1840 50  0000 C CNN
+F 2 "" H 8700 1700 50  0001 C CNN
+F 3 "" H 8700 1700 50  0001 C CNN
+	1    8700 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 1700 8700 1750
+Wire Wire Line
+	8700 1750 8050 1750
+$Comp
+L +5V #PWR?
+U 1 1 59BEBE45
+P 8800 4000
+F 0 "#PWR?" H 8800 3850 50  0001 C CNN
+F 1 "+5V" H 8800 4140 50  0000 C CNN
+F 2 "" H 8800 4000 50  0001 C CNN
+F 3 "" H 8800 4000 50  0001 C CNN
+	1    8800 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 4000 8800 4050
+Wire Wire Line
+	8800 4050 8050 4050
+Wire Wire Line
+	8050 4150 8100 4150
+Wire Wire Line
+	8100 4150 8100 4050
+Connection ~ 8100 4050
+Wire Wire Line
+	2950 4100 3650 4100
+Wire Wire Line
+	3650 4100 3650 4050
+Wire Wire Line
+	2950 4200 3000 4200
+Wire Wire Line
+	3000 4200 3000 4100
+Connection ~ 3000 4100
+$Comp
+L +5V #PWR?
+U 1 1 59BEBEC8
+P 3650 4050
+F 0 "#PWR?" H 3650 3900 50  0001 C CNN
+F 1 "+5V" H 3650 4190 50  0000 C CNN
+F 2 "" H 3650 4050 50  0001 C CNN
+F 3 "" H 3650 4050 50  0001 C CNN
+	1    3650 4050
+	1    0    0    -1  
+$EndComp
+Text HLabel 3050 1800 2    60   Input ~ 0
+PG_MODULE
+Wire Wire Line
+	3050 1800 2950 1800
+NoConn ~ 2950 1700
+Wire Wire Line
+	2950 2300 3800 2300
+Wire Wire Line
+	3800 2000 3800 5850
+Wire Wire Line
+	3800 2000 2950 2000
+Wire Wire Line
+	3800 2600 2950 2600
+Connection ~ 3800 2300
+Wire Wire Line
+	3800 2900 2950 2900
+Connection ~ 3800 2600
+Wire Wire Line
+	3800 3200 2950 3200
+Connection ~ 3800 2900
+Wire Wire Line
+	3800 3500 2950 3500
+Connection ~ 3800 3200
+Wire Wire Line
+	3800 3800 2950 3800
+Connection ~ 3800 3500
+Wire Wire Line
+	3800 4500 2950 4500
+Connection ~ 3800 3800
+Wire Wire Line
+	3800 4800 2950 4800
+Connection ~ 3800 4500
+Wire Wire Line
+	3800 5100 2950 5100
+Connection ~ 3800 4800
+Wire Wire Line
+	3800 5500 2950 5500
+Connection ~ 3800 5100
+Wire Wire Line
+	3800 5800 2950 5800
+Connection ~ 3800 5500
+Wire Wire Line
+	8050 2250 8900 2250
+Wire Wire Line
+	8900 1950 8900 5800
+Wire Wire Line
+	8900 1950 8050 1950
+Wire Wire Line
+	8900 2550 8050 2550
+Connection ~ 8900 2250
+Wire Wire Line
+	8900 2850 8050 2850
+Connection ~ 8900 2550
+Wire Wire Line
+	8900 3150 8050 3150
+Connection ~ 8900 2850
+Wire Wire Line
+	8900 3450 8050 3450
+Connection ~ 8900 3150
+Wire Wire Line
+	8900 3750 8050 3750
+Connection ~ 8900 3450
+Wire Wire Line
+	8900 4450 8050 4450
+Connection ~ 8900 3750
+Wire Wire Line
+	8900 4750 8050 4750
+Connection ~ 8900 4450
+Connection ~ 8900 4750
+Wire Wire Line
+	8900 5450 8050 5450
+Wire Wire Line
+	8900 5750 8050 5750
+Connection ~ 8900 5450
+$Comp
+L GND #PWR?
+U 1 1 59BF45EE
+P 3800 5850
+F 0 "#PWR?" H 3800 5600 50  0001 C CNN
+F 1 "GND" H 3800 5700 50  0000 C CNN
+F 2 "" H 3800 5850 50  0001 C CNN
+F 3 "" H 3800 5850 50  0001 C CNN
+	1    3800 5850
+	1    0    0    -1  
+$EndComp
+Connection ~ 3800 5800
+$Comp
+L GND #PWR?
+U 1 1 59BF465D
+P 8900 5800
+F 0 "#PWR?" H 8900 5550 50  0001 C CNN
+F 1 "GND" H 8900 5650 50  0000 C CNN
+F 2 "" H 8900 5800 50  0001 C CNN
+F 3 "" H 8900 5800 50  0001 C CNN
+	1    8900 5800
+	1    0    0    -1  
+$EndComp
+Connection ~ 8900 5750
 $EndSCHEMATC
