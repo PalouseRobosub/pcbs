@@ -1,0 +1,651 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:robosub_parts
+LIBS:hydrophone-adc-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 13
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LM324 U?
+U 1 1 59B7EE67
+P 2700 3550
+F 0 "U?" H 2700 3750 50  0000 L CNN
+F 1 "LM324" H 2700 3350 50  0000 L CNN
+F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 2650 3650 50  0001 C CNN
+F 3 "" H 2750 3750 50  0001 C CNN
+F 4 "497-1580-1-ND" H 2700 3550 60  0001 C CNN "part number"
+	1    2700 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM324 U?
+U 2 1 59B7EEE8
+P 4000 3550
+F 0 "U?" H 4000 3750 50  0000 L CNN
+F 1 "LM324" H 4000 3350 50  0000 L CNN
+F 2 "" H 3950 3650 50  0001 C CNN
+F 3 "" H 4050 3750 50  0001 C CNN
+	2    4000 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM324 U?
+U 3 1 59B7EF35
+P 6000 3650
+F 0 "U?" H 6000 3850 50  0000 L CNN
+F 1 "LM324" H 6000 3450 50  0000 L CNN
+F 2 "" H 5950 3750 50  0001 C CNN
+F 3 "" H 6050 3850 50  0001 C CNN
+	3    6000 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM324 U?
+U 4 1 59B7EF6D
+P 8050 3650
+F 0 "U?" H 8050 3850 50  0000 L CNN
+F 1 "LM324" H 8050 3450 50  0000 L CNN
+F 2 "" H 8000 3750 50  0001 C CNN
+F 3 "" H 8100 3850 50  0001 C CNN
+	4    8050 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L -5V #PWR?
+U 1 1 59B7F1B7
+P 2600 3900
+F 0 "#PWR?" H 2600 4000 50  0001 C CNN
+F 1 "-5V" H 2600 4050 50  0000 C CNN
+F 2 "" H 2600 3900 50  0001 C CNN
+F 3 "" H 2600 3900 50  0001 C CNN
+	1    2600 3900
+	-1   0    0    1   
+$EndComp
+$Comp
+L -5V #PWR?
+U 1 1 59B7F286
+P 3900 3900
+F 0 "#PWR?" H 3900 4000 50  0001 C CNN
+F 1 "-5V" H 3900 4050 50  0000 C CNN
+F 2 "" H 3900 3900 50  0001 C CNN
+F 3 "" H 3900 3900 50  0001 C CNN
+	1    3900 3900
+	-1   0    0    1   
+$EndComp
+$Comp
+L -5V #PWR?
+U 1 1 59B7F2F5
+P 5900 4000
+F 0 "#PWR?" H 5900 4100 50  0001 C CNN
+F 1 "-5V" H 5900 4150 50  0000 C CNN
+F 2 "" H 5900 4000 50  0001 C CNN
+F 3 "" H 5900 4000 50  0001 C CNN
+	1    5900 4000
+	-1   0    0    1   
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 59B7F335
+P 5900 3300
+F 0 "#PWR?" H 5900 3150 50  0001 C CNN
+F 1 "+5V" H 5900 3440 50  0000 C CNN
+F 2 "" H 5900 3300 50  0001 C CNN
+F 3 "" H 5900 3300 50  0001 C CNN
+	1    5900 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 59B7F35E
+P 3900 3200
+F 0 "#PWR?" H 3900 3050 50  0001 C CNN
+F 1 "+5V" H 3900 3340 50  0000 C CNN
+F 2 "" H 3900 3200 50  0001 C CNN
+F 3 "" H 3900 3200 50  0001 C CNN
+	1    3900 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 59B7F3BC
+P 2600 3200
+F 0 "#PWR?" H 2600 3050 50  0001 C CNN
+F 1 "+5V" H 2600 3340 50  0000 C CNN
+F 2 "" H 2600 3200 50  0001 C CNN
+F 3 "" H 2600 3200 50  0001 C CNN
+	1    2600 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 59B7F467
+P 7950 3300
+F 0 "#PWR?" H 7950 3150 50  0001 C CNN
+F 1 "+5V" H 7950 3440 50  0000 C CNN
+F 2 "" H 7950 3300 50  0001 C CNN
+F 3 "" H 7950 3300 50  0001 C CNN
+	1    7950 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L -5V #PWR?
+U 1 1 59B7F493
+P 7950 4000
+F 0 "#PWR?" H 7950 4100 50  0001 C CNN
+F 1 "-5V" H 7950 4150 50  0000 C CNN
+F 2 "" H 7950 4000 50  0001 C CNN
+F 3 "" H 7950 4000 50  0001 C CNN
+	1    7950 4000
+	-1   0    0    1   
+$EndComp
+Text HLabel 2100 3450 0    60   Input ~ 0
+Vin
+$Comp
+L POT RV?
+U 1 1 59B7F84B
+P 4350 4200
+F 0 "RV?" V 4175 4200 50  0000 C CNN
+F 1 "POT" V 4250 4200 50  0000 C CNN
+F 2 "robosub_footprints:TC33X-2" H 4350 4200 50  0001 C CNN
+F 3 "" H 4350 4200 50  0001 C CNN
+F 4 "TC33X-2-105ECT-ND" V 4350 4200 60  0001 C CNN "part number"
+	1    4350 4200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GNDREF #PWR?
+U 1 1 59B7FD83
+P 3550 4200
+F 0 "#PWR?" H 3550 3950 50  0001 C CNN
+F 1 "GNDREF" H 3550 4050 50  0000 C CNN
+F 2 "" H 3550 4200 50  0001 C CNN
+F 3 "" H 3550 4200 50  0001 C CNN
+	1    3550 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 59B80973
+P 3550 3900
+F 0 "R?" V 3630 3900 50  0000 C CNN
+F 1 "10k" V 3550 3900 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 3480 3900 50  0001 C CNN
+F 3 "" H 3550 3900 50  0001 C CNN
+F 4 "311-10KGRCT-ND" V 3550 3900 60  0001 C CNN "part number"
+	1    3550 3900
+	1    0    0    1   
+$EndComp
+$Comp
+L R R?
+U 1 1 59B80CDF
+P 2200 3850
+F 0 "R?" V 2280 3850 50  0000 C CNN
+F 1 "10k" V 2200 3850 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 2130 3850 50  0001 C CNN
+F 3 "" H 2200 3850 50  0001 C CNN
+F 4 "311-10KGRCT-ND" V 2200 3850 60  0001 C CNN "part number"
+	1    2200 3850
+	1    0    0    1   
+$EndComp
+$Comp
+L POT RV?
+U 1 1 59B80D42
+P 3050 4200
+F 0 "RV?" V 2875 4200 50  0000 C CNN
+F 1 "POT" V 2950 4200 50  0000 C CNN
+F 2 "robosub_footprints:TC33X-2" H 3050 4200 50  0001 C CNN
+F 3 "" H 3050 4200 50  0001 C CNN
+F 4 "TC33X-2-105ECT-ND" V 3050 4200 60  0001 C CNN "part number"
+	1    3050 4200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GNDREF #PWR?
+U 1 1 59B80E86
+P 2200 4200
+F 0 "#PWR?" H 2200 3950 50  0001 C CNN
+F 1 "GNDREF" H 2200 4050 50  0000 C CNN
+F 2 "" H 2200 4200 50  0001 C CNN
+F 3 "" H 2200 4200 50  0001 C CNN
+	1    2200 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 59B81305
+P 5450 3750
+F 0 "C?" H 5475 3850 50  0000 L CNN
+F 1 "1n" H 5475 3650 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 5488 3600 50  0001 C CNN
+F 3 "" H 5450 3750 50  0001 C CNN
+F 4 "478-1215-1-ND" H 5450 3750 60  0001 C CNN "part number"
+	1    5450 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 3900 2600 3850
+Wire Wire Line
+	3900 3900 3900 3850
+Wire Wire Line
+	5900 4000 5900 3950
+Wire Wire Line
+	5900 3300 5900 3350
+Wire Wire Line
+	3900 3200 3900 3250
+Wire Wire Line
+	2600 3200 2600 3250
+Wire Wire Line
+	7950 3300 7950 3350
+Wire Wire Line
+	7950 4000 7950 3950
+Wire Wire Line
+	2200 3650 2400 3650
+Wire Wire Line
+	3000 3550 3550 3550
+Wire Wire Line
+	2100 3450 2400 3450
+Wire Wire Line
+	3700 3650 3550 3650
+Wire Wire Line
+	3550 3650 3550 3750
+Wire Wire Line
+	3550 3550 3550 3450
+Wire Wire Line
+	3550 3450 3700 3450
+Wire Wire Line
+	3650 3650 3650 4200
+Connection ~ 3650 3650
+Wire Wire Line
+	3650 4200 4200 4200
+Wire Wire Line
+	3550 4200 3550 4050
+Wire Wire Line
+	3050 3500 3050 4050
+Connection ~ 3050 3550
+Wire Wire Line
+	2900 4200 2350 4200
+Wire Wire Line
+	2350 4200 2350 3650
+Wire Wire Line
+	2200 3650 2200 3700
+Connection ~ 2350 3650
+Wire Wire Line
+	2200 4200 2200 4000
+Wire Wire Line
+	2350 2650 4750 2650
+Connection ~ 2350 3450
+Wire Wire Line
+	4350 3500 4350 4050
+Wire Wire Line
+	4300 3550 4400 3550
+$Comp
+L R R?
+U 1 1 59B8247F
+P 4550 3550
+F 0 "R?" V 4630 3550 50  0000 C CNN
+F 1 "0" V 4550 3550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 4480 3550 50  0001 C CNN
+F 3 "" H 4550 3550 50  0001 C CNN
+F 4 "311-0.0GRCT-ND" V 4550 3550 60  0001 C CNN "part number"
+	1    4550 3550
+	0    1    1    0   
+$EndComp
+Connection ~ 4350 3550
+Wire Wire Line
+	4700 3550 5100 3550
+Wire Wire Line
+	4750 3550 4750 3500
+Wire Wire Line
+	4750 2650 4750 3200
+Wire Wire Line
+	2350 3400 2350 3450
+Wire Wire Line
+	2350 3100 2350 2650
+Text Notes 2550 2550 0    60   ~ 0
+Note that these bypass resistors are optional\nfor bypassing the amplification stage. Do not\npopulate them if the amplifier is not bypassed\nas they can result in an antenna on the PCBA.
+Text Notes 2550 2900 0    60   ~ 0
+If amplification is bypassed, unpopulate the\nresistor on the amplification stage output.
+$Comp
+L R R?
+U 1 1 59B8371A
+P 4750 3350
+F 0 "R?" V 4830 3350 50  0000 C CNN
+F 1 "0" V 4750 3350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 4680 3350 50  0001 C CNN
+F 3 "" H 4750 3350 50  0001 C CNN
+F 4 "311-0.0GRCT-ND" V 4750 3350 60  0001 C CNN "part number"
+	1    4750 3350
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R?
+U 1 1 59B83762
+P 2350 3250
+F 0 "R?" V 2430 3250 50  0000 C CNN
+F 1 "0" V 2350 3250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 2280 3250 50  0001 C CNN
+F 3 "" H 2350 3250 50  0001 C CNN
+F 4 "311-0.0GRCT-ND" V 2350 3250 60  0001 C CNN "part number"
+	1    2350 3250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5700 3750 5700 3750
+Wire Wire Line
+	5700 3750 5700 4250
+Wire Wire Line
+	5700 4250 6350 4250
+Wire Wire Line
+	6350 4250 6350 3500
+$Comp
+L R R?
+U 1 1 59B83FFF
+P 7550 3750
+F 0 "R?" V 7630 3750 50  0000 C CNN
+F 1 "3.16k" V 7550 3750 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 7480 3750 50  0001 C CNN
+F 3 "" H 7550 3750 50  0001 C CNN
+F 4 "311-3.16KHRCT-ND" V 7550 3750 60  0001 C CNN "part number"
+	1    7550 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 3750 7700 3750
+Wire Wire Line
+	7700 3750 7700 4250
+Wire Wire Line
+	7700 4250 8400 4250
+Wire Wire Line
+	8400 4250 8400 3600
+Wire Wire Line
+	8350 3650 8450 3650
+Wire Wire Line
+	5400 3550 5700 3550
+Wire Wire Line
+	5450 3500 5450 3600
+Connection ~ 5450 3550
+$Comp
+L R R?
+U 1 1 59B84FAA
+P 5250 3550
+F 0 "R?" V 5330 3550 50  0000 C CNN
+F 1 "10k" V 5250 3550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 5180 3550 50  0001 C CNN
+F 3 "" H 5250 3550 50  0001 C CNN
+F 4 "311-10KGRCT-ND" V 5250 3550 60  0001 C CNN "part number"
+	1    5250 3550
+	0    -1   1    0   
+$EndComp
+$Comp
+L C C?
+U 1 1 59B85363
+P 7350 3550
+F 0 "C?" H 7375 3650 50  0000 L CNN
+F 1 "1n" H 7375 3450 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 7388 3400 50  0001 C CNN
+F 3 "" H 7350 3550 50  0001 C CNN
+F 4 "478-1215-1-ND" H 7350 3550 60  0001 C CNN "part number"
+	1    7350 3550
+	0    1    1    0   
+$EndComp
+Connection ~ 4750 3550
+Wire Wire Line
+	7500 3550 7750 3550
+Wire Wire Line
+	7550 3500 7550 3600
+Connection ~ 7550 3550
+Connection ~ 6350 3650
+$Comp
+L GNDREF #PWR?
+U 1 1 59B85BF9
+P 7550 4250
+F 0 "#PWR?" H 7550 4000 50  0001 C CNN
+F 1 "GNDREF" H 7550 4100 50  0000 C CNN
+F 2 "" H 7550 4250 50  0001 C CNN
+F 3 "" H 7550 4250 50  0001 C CNN
+	1    7550 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 4250 7550 3900
+$Comp
+L GNDREF #PWR?
+U 1 1 59B85D55
+P 5450 4250
+F 0 "#PWR?" H 5450 4000 50  0001 C CNN
+F 1 "GNDREF" H 5450 4100 50  0000 C CNN
+F 2 "" H 5450 4250 50  0001 C CNN
+F 3 "" H 5450 4250 50  0001 C CNN
+	1    5450 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 4250 5450 3900
+$Comp
+L R R?
+U 1 1 59B863C0
+P 6650 3550
+F 0 "R?" V 6730 3550 50  0000 C CNN
+F 1 "0" V 6650 3550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 6580 3550 50  0001 C CNN
+F 3 "" H 6650 3550 50  0001 C CNN
+F 4 "311-0.0GRCT-ND" V 6650 3550 60  0001 C CNN "part number"
+	1    6650 3550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6350 3550 6500 3550
+Wire Wire Line
+	6350 3650 6300 3650
+Wire Wire Line
+	6800 3550 7200 3550
+$Comp
+L R R?
+U 1 1 59B866DB
+P 6850 3350
+F 0 "R?" V 6930 3350 50  0000 C CNN
+F 1 "0" V 6850 3350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 6780 3350 50  0001 C CNN
+F 3 "" H 6850 3350 50  0001 C CNN
+F 4 "311-0.0GRCT-ND" V 6850 3350 60  0001 C CNN "part number"
+	1    6850 3350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6850 3500 6850 3550
+Connection ~ 6850 3550
+$Comp
+L R R?
+U 1 1 59B8677E
+P 5000 3350
+F 0 "R?" V 5080 3350 50  0000 C CNN
+F 1 "0" V 5000 3350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 4930 3350 50  0001 C CNN
+F 3 "" H 5000 3350 50  0001 C CNN
+F 4 "311-0.0GRCT-ND" V 5000 3350 60  0001 C CNN "part number"
+	1    5000 3350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5000 3500 5000 3550
+Connection ~ 5000 3550
+Wire Wire Line
+	5000 3200 5000 2650
+Wire Wire Line
+	5000 2650 6850 2650
+Wire Wire Line
+	6850 2650 6850 3200
+$Comp
+L R R?
+U 1 1 59B86914
+P 7050 3350
+F 0 "R?" V 7130 3350 50  0000 C CNN
+F 1 "0" V 7050 3350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 6980 3350 50  0001 C CNN
+F 3 "" H 7050 3350 50  0001 C CNN
+F 4 "311-0.0GRCT-ND" V 7050 3350 60  0001 C CNN "part number"
+	1    7050 3350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7050 3500 7050 3550
+Connection ~ 7050 3550
+$Comp
+L R R?
+U 1 1 59B86C07
+P 8600 3650
+F 0 "R?" V 8680 3650 50  0000 C CNN
+F 1 "0" V 8600 3650 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 8530 3650 50  0001 C CNN
+F 3 "" H 8600 3650 50  0001 C CNN
+F 4 "311-0.0GRCT-ND" V 8600 3650 60  0001 C CNN "part number"
+	1    8600 3650
+	0    1    1    0   
+$EndComp
+Connection ~ 8400 3650
+Wire Wire Line
+	7050 3200 7050 2650
+Wire Wire Line
+	7050 2650 8800 2650
+Wire Wire Line
+	8800 2650 8800 3300
+$Comp
+L R R?
+U 1 1 59B86D86
+P 8800 3450
+F 0 "R?" V 8880 3450 50  0000 C CNN
+F 1 "0" V 8800 3450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 8730 3450 50  0001 C CNN
+F 3 "" H 8800 3450 50  0001 C CNN
+F 4 "311-0.0GRCT-ND" V 8800 3450 60  0001 C CNN "part number"
+	1    8800 3450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8750 3650 8850 3650
+Wire Wire Line
+	8800 3650 8800 3600
+Text HLabel 8850 3650 2    60   Input ~ 0
+Vout
+Connection ~ 8800 3650
+$Comp
+L TEST_1P J?
+U 1 1 59B89D58
+P 3050 3500
+F 0 "J?" H 3050 3770 50  0000 C CNN
+F 1 "TEST_1P" H 3050 3700 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-TH_Big" H 3250 3500 50  0001 C CNN
+F 3 "" H 3250 3500 50  0001 C CNN
+	1    3050 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST_1P J?
+U 1 1 59B8A0FF
+P 2150 3250
+F 0 "J?" H 2150 3520 50  0000 C CNN
+F 1 "TEST_1P" H 2150 3450 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-TH_Big" H 2350 3250 50  0001 C CNN
+F 3 "" H 2350 3250 50  0001 C CNN
+	1    2150 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 3250 2150 3450
+Connection ~ 2150 3450
+$Comp
+L TEST_1P J?
+U 1 1 59B8A3B5
+P 4350 3500
+F 0 "J?" H 4350 3770 50  0000 C CNN
+F 1 "TEST_1P" H 4350 3700 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-TH_Big" H 4550 3500 50  0001 C CNN
+F 3 "" H 4550 3500 50  0001 C CNN
+	1    4350 3500
+	1    0    0    -1  
+$EndComp
+Connection ~ 6350 3550
+$Comp
+L TEST_1P J?
+U 1 1 59B8A95E
+P 8400 3600
+F 0 "J?" H 8400 3870 50  0000 C CNN
+F 1 "TEST_1P" H 8400 3800 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-TH_Big" H 8600 3600 50  0001 C CNN
+F 3 "" H 8600 3600 50  0001 C CNN
+	1    8400 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST_1P J?
+U 1 1 59B8B3CB
+P 6350 3500
+F 0 "J?" H 6350 3770 50  0000 C CNN
+F 1 "TEST_1P" H 6350 3700 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-TH_Big" H 6550 3500 50  0001 C CNN
+F 3 "" H 6550 3500 50  0001 C CNN
+	1    6350 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST_1P J?
+U 1 1 59B96F23
+P 5450 3500
+F 0 "J?" H 5450 3770 50  0000 C CNN
+F 1 "TEST_1P" H 5450 3700 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-TH_Big" H 5650 3500 50  0001 C CNN
+F 3 "" H 5650 3500 50  0001 C CNN
+	1    5450 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST_1P J?
+U 1 1 59B980F4
+P 7550 3500
+F 0 "J?" H 7550 3770 50  0000 C CNN
+F 1 "TEST_1P" H 7550 3700 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-TH_Big" H 7750 3500 50  0001 C CNN
+F 3 "" H 7750 3500 50  0001 C CNN
+	1    7550 3500
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

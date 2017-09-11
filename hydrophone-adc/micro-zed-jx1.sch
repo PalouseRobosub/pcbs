@@ -34,7 +34,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 13
+Sheet 2 13
 Title ""
 Date ""
 Rev ""
@@ -44,33 +44,26 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Sheet
-S 1600 1050 1650 2000
-U 59B57308
-F0 "MicroZed-JX1" 60
-F1 "micro-zed-jx1.sch" 60
-F2 "v_good" I R 3250 2800 60 
-$EndSheet
-$Sheet
-S 4600 1100 2200 2050
-U 59B576AA
-F0 "MicroZed-JX2" 60
-F1 "microzed-jx2.sch" 60
-$EndSheet
-$Sheet
-S 8350 1700 1600 1450
-U 59B58ABF
-F0 "ADC" 60
-F1 "adc.sch" 60
-$EndSheet
-$Sheet
-S 1800 4100 600  700 
-U 59B574D9
-F0 "Power" 60
-F1 "power.sch" 60
-F2 "v_good" I R 2400 4300 60 
-F3 "5v" I R 2400 4450 60 
-F4 "1.8v" I R 2400 4600 60 
-F5 "-5v" I R 2400 4750 60 
-$EndSheet
+$Comp
+L micro-zed-jx1 U?
+U 1 1 59B59973
+P 2000 3600
+F 0 "U?" H 1600 1000 60  0000 C CNN
+F 1 "micro-zed-jx1" H 1850 6200 60  0000 C CNN
+F 2 "" H 2500 6400 60  0001 C CNN
+F 3 "" H 2500 6400 60  0001 C CNN
+	1    2000 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L micro-zed-jx1 U?
+U 2 1 59B599C6
+P 6400 3650
+F 0 "U?" H 6000 1050 60  0000 C CNN
+F 1 "micro-zed-jx1" H 6250 6250 60  0000 C CNN
+F 2 "" H 6900 6450 60  0001 C CNN
+F 3 "" H 6900 6450 60  0001 C CNN
+	2    6400 3650
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

@@ -1,0 +1,483 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:robosub_parts
+LIBS:hydrophone-adc-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 13
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LTC2171-14 U?
+U 1 1 59B59374
+P 4850 1300
+F 0 "U?" H 5150 950 60  0000 C CNN
+F 1 "LTC2171-14" H 4800 1650 60  0000 C CNN
+F 2 "Housings_DFN_QFN:QFN-52-1EP_7x8mm_Pitch0.5mm" H 2200 -950 60  0001 C CNN
+F 3 "" H 4800 1300 60  0001 C CNN
+F 4 "LTC2171CUKG-14#PBF-ND" H 2250 -1150 60  0001 C CNN "part number"
+	1    4850 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L LTC2171-14 U?
+U 2 1 59B59410
+P 4850 2800
+F 0 "U?" H 5150 2450 60  0000 C CNN
+F 1 "LTC2171-14" H 4800 3150 60  0000 C CNN
+F 2 "Housings_DFN_QFN:QFN-52-1EP_7x8mm_Pitch0.5mm" H 2200 550 60  0001 C CNN
+F 3 "" H 4800 2800 60  0001 C CNN
+F 4 "LTC2171CUKG-14#PBF-ND" H 2250 350 60  0001 C CNN "part number"
+	2    4850 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L LTC2171-14 U?
+U 3 1 59B5943E
+P 4850 4350
+F 0 "U?" H 5150 4000 60  0000 C CNN
+F 1 "LTC2171-14" H 4800 4700 60  0000 C CNN
+F 2 "Housings_DFN_QFN:QFN-52-1EP_7x8mm_Pitch0.5mm" H 2200 2100 60  0001 C CNN
+F 3 "" H 4800 4350 60  0001 C CNN
+F 4 "LTC2171CUKG-14#PBF-ND" H 2250 1900 60  0001 C CNN "part number"
+	3    4850 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L LTC2171-14 U?
+U 4 1 59B59480
+P 4850 5850
+F 0 "U?" H 5150 5500 60  0000 C CNN
+F 1 "LTC2171-14" H 4800 6200 60  0000 C CNN
+F 2 "Housings_DFN_QFN:QFN-52-1EP_7x8mm_Pitch0.5mm" H 2200 3600 60  0001 C CNN
+F 3 "" H 4800 5850 60  0001 C CNN
+F 4 "LTC2171CUKG-14#PBF-ND" H 2250 3400 60  0001 C CNN "part number"
+	4    4850 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L LTC2171-14 U?
+U 5 1 59B594DE
+P 9950 1950
+F 0 "U?" H 10300 550 60  0000 C CNN
+F 1 "LTC2171-14" H 10450 2300 60  0000 C CNN
+F 2 "Housings_DFN_QFN:QFN-52-1EP_7x8mm_Pitch0.5mm" H 7300 -300 60  0001 C CNN
+F 3 "" H 9900 1950 60  0001 C CNN
+F 4 "LTC2171CUKG-14#PBF-ND" H 7350 -500 60  0001 C CNN "part number"
+	5    9950 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_COAXIAL J?
+U 1 1 59B59590
+P 1500 1150
+F 0 "J?" H 1510 1270 50  0000 C CNN
+F 1 "CONN_COAXIAL" V 1615 1150 50  0000 C CNN
+F 2 "robosub_footprints:BNC-Coax-TE" H 1500 1150 50  0001 C CNN
+F 3 "" H 1500 1150 50  0001 C CNN
+F 4 "A97555-ND" H 1500 1150 60  0001 C CNN "part number"
+	1    1500 1150
+	-1   0    0    -1  
+$EndComp
+Text HLabel 5550 1100 2    60   Input ~ 0
+OUT1A+
+Text HLabel 5550 1200 2    60   Input ~ 0
+OUT1A-
+Text HLabel 5550 1400 2    60   Input ~ 0
+OUT1B+
+Text HLabel 5550 1500 2    60   Input ~ 0
+OUT1B-
+Wire Wire Line
+	5550 1500 5450 1500
+Wire Wire Line
+	5450 1400 5550 1400
+Wire Wire Line
+	5450 1200 5550 1200
+Wire Wire Line
+	5450 1100 5550 1100
+Text HLabel 5550 2600 2    60   Input ~ 0
+OUT2A+
+Text HLabel 5550 2700 2    60   Input ~ 0
+OUT2A-
+Text HLabel 5550 2900 2    60   Input ~ 0
+OUT2B+
+Text HLabel 5550 3000 2    60   Input ~ 0
+OUT2B-
+Wire Wire Line
+	5550 2700 5450 2700
+Wire Wire Line
+	5450 2600 5550 2600
+Wire Wire Line
+	5450 2900 5550 2900
+Wire Wire Line
+	5450 3000 5550 3000
+Text HLabel 5550 4150 2    60   Input ~ 0
+OUT3A+
+Text HLabel 5550 4250 2    60   Input ~ 0
+OUT3A-
+Text HLabel 5550 4450 2    60   Input ~ 0
+OUT3B+
+Text HLabel 5550 4550 2    60   Input ~ 0
+OUT3B-
+Wire Wire Line
+	5450 4150 5550 4150
+Wire Wire Line
+	5450 4250 5550 4250
+Wire Wire Line
+	5450 4450 5550 4450
+Wire Wire Line
+	5450 4550 5550 4550
+Text HLabel 5550 5650 2    60   Input ~ 0
+OUT4A+
+Text HLabel 5550 5750 2    60   Input ~ 0
+OUT4A-
+Text HLabel 5550 5950 2    60   Input ~ 0
+OUT4B+
+Text HLabel 5550 6050 2    60   Input ~ 0
+OUT4B-
+Wire Wire Line
+	5450 5650 5550 5650
+Wire Wire Line
+	5450 5750 5550 5750
+Wire Wire Line
+	5450 5950 5550 5950
+Wire Wire Line
+	5450 6050 5550 6050
+$Sheet
+S 2950 950  850  700 
+U 59B768AA
+F0 "Diff Conv1" 60
+F1 "differential.sch" 60
+F2 "Vin" I L 2950 1150 60 
+F3 "Vout-" I R 3800 1150 60 
+F4 "Vout+" I R 3800 1450 60 
+$EndSheet
+$Sheet
+S 1950 950  700  400 
+U 59B7EDF2
+F0 "Filter1" 60
+F1 "filter.sch" 60
+F2 "Vin" I L 1950 1150 60 
+F3 "Vout" I R 2650 1150 60 
+$EndSheet
+Wire Wire Line
+	2650 1150 2950 1150
+Wire Wire Line
+	3800 1150 4200 1150
+Wire Wire Line
+	3800 1450 4200 1450
+$Comp
+L TEST_1P J?
+U 1 1 59B90913
+P 4100 1100
+F 0 "J?" H 4100 1370 50  0000 C CNN
+F 1 "TEST_1P" H 4100 1300 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-TH_Big" H 4300 1100 50  0001 C CNN
+F 3 "" H 4300 1100 50  0001 C CNN
+	1    4100 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 1100 4100 1150
+Connection ~ 4100 1150
+$Comp
+L TEST_1P J?
+U 1 1 59B90F30
+P 4100 1500
+F 0 "J?" H 4100 1770 50  0000 C CNN
+F 1 "TEST_1P" H 4100 1700 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-TH_Big" H 4300 1500 50  0001 C CNN
+F 3 "" H 4300 1500 50  0001 C CNN
+	1    4100 1500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4100 1500 4100 1450
+Connection ~ 4100 1450
+Wire Wire Line
+	1650 1150 1950 1150
+$Comp
+L GNDREF #PWR?
+U 1 1 59B9234D
+P 1500 1400
+F 0 "#PWR?" H 1500 1150 50  0001 C CNN
+F 1 "GNDREF" H 1500 1250 50  0000 C CNN
+F 2 "" H 1500 1400 50  0001 C CNN
+F 3 "" H 1500 1400 50  0001 C CNN
+	1    1500 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 1400 1500 1350
+$Comp
+L CONN_COAXIAL J?
+U 1 1 59B9CD21
+P 1500 2650
+F 0 "J?" H 1510 2770 50  0000 C CNN
+F 1 "CONN_COAXIAL" V 1615 2650 50  0000 C CNN
+F 2 "robosub_footprints:BNC-Coax-TE" H 1500 2650 50  0001 C CNN
+F 3 "" H 1500 2650 50  0001 C CNN
+F 4 "A97555-ND" H 1500 2650 60  0001 C CNN "part number"
+	1    1500 2650
+	-1   0    0    -1  
+$EndComp
+$Sheet
+S 2950 2450 850  700 
+U 59B9CD26
+F0 "Diff Conv2" 60
+F1 "differential.sch" 60
+F2 "Vin" I L 2950 2650 60 
+F3 "Vout-" I R 3800 2650 60 
+F4 "Vout+" I R 3800 2950 60 
+$EndSheet
+$Sheet
+S 1950 2450 700  400 
+U 59B9CD2A
+F0 "Filter2" 60
+F1 "filter.sch" 60
+F2 "Vin" I L 1950 2650 60 
+F3 "Vout" I R 2650 2650 60 
+$EndSheet
+Wire Wire Line
+	2650 2650 2950 2650
+Wire Wire Line
+	3800 2650 4200 2650
+Wire Wire Line
+	3800 2950 4200 2950
+$Comp
+L TEST_1P J?
+U 1 1 59B9CD33
+P 4100 2600
+F 0 "J?" H 4100 2870 50  0000 C CNN
+F 1 "TEST_1P" H 4100 2800 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-TH_Big" H 4300 2600 50  0001 C CNN
+F 3 "" H 4300 2600 50  0001 C CNN
+	1    4100 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 2600 4100 2650
+Connection ~ 4100 2650
+$Comp
+L TEST_1P J?
+U 1 1 59B9CD3B
+P 4100 3000
+F 0 "J?" H 4100 3270 50  0000 C CNN
+F 1 "TEST_1P" H 4100 3200 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-TH_Big" H 4300 3000 50  0001 C CNN
+F 3 "" H 4300 3000 50  0001 C CNN
+	1    4100 3000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4100 3000 4100 2950
+Connection ~ 4100 2950
+Wire Wire Line
+	1650 2650 1950 2650
+$Comp
+L GNDREF #PWR?
+U 1 1 59B9CD44
+P 1500 2900
+F 0 "#PWR?" H 1500 2650 50  0001 C CNN
+F 1 "GNDREF" H 1500 2750 50  0000 C CNN
+F 2 "" H 1500 2900 50  0001 C CNN
+F 3 "" H 1500 2900 50  0001 C CNN
+	1    1500 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 2900 1500 2850
+$Comp
+L CONN_COAXIAL J?
+U 1 1 59B9E184
+P 1500 4200
+F 0 "J?" H 1510 4320 50  0000 C CNN
+F 1 "CONN_COAXIAL" V 1615 4200 50  0000 C CNN
+F 2 "robosub_footprints:BNC-Coax-TE" H 1500 4200 50  0001 C CNN
+F 3 "" H 1500 4200 50  0001 C CNN
+F 4 "A97555-ND" H 1500 4200 60  0001 C CNN "part number"
+	1    1500 4200
+	-1   0    0    -1  
+$EndComp
+$Sheet
+S 2950 4000 850  700 
+U 59B9E189
+F0 "Diff Conv3" 60
+F1 "differential.sch" 60
+F2 "Vin" I L 2950 4200 60 
+F3 "Vout-" I R 3800 4200 60 
+F4 "Vout+" I R 3800 4500 60 
+$EndSheet
+$Sheet
+S 1950 4000 700  400 
+U 59B9E18D
+F0 "Filter3" 60
+F1 "filter.sch" 60
+F2 "Vin" I L 1950 4200 60 
+F3 "Vout" I R 2650 4200 60 
+$EndSheet
+Wire Wire Line
+	2650 4200 2950 4200
+Wire Wire Line
+	3800 4200 4200 4200
+Wire Wire Line
+	3800 4500 4200 4500
+$Comp
+L TEST_1P J?
+U 1 1 59B9E196
+P 4100 4150
+F 0 "J?" H 4100 4420 50  0000 C CNN
+F 1 "TEST_1P" H 4100 4350 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-TH_Big" H 4300 4150 50  0001 C CNN
+F 3 "" H 4300 4150 50  0001 C CNN
+	1    4100 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 4150 4100 4200
+Connection ~ 4100 4200
+$Comp
+L TEST_1P J?
+U 1 1 59B9E19E
+P 4100 4550
+F 0 "J?" H 4100 4820 50  0000 C CNN
+F 1 "TEST_1P" H 4100 4750 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-TH_Big" H 4300 4550 50  0001 C CNN
+F 3 "" H 4300 4550 50  0001 C CNN
+	1    4100 4550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4100 4550 4100 4500
+Connection ~ 4100 4500
+Wire Wire Line
+	1650 4200 1950 4200
+$Comp
+L GNDREF #PWR?
+U 1 1 59B9E1A7
+P 1500 4450
+F 0 "#PWR?" H 1500 4200 50  0001 C CNN
+F 1 "GNDREF" H 1500 4300 50  0000 C CNN
+F 2 "" H 1500 4450 50  0001 C CNN
+F 3 "" H 1500 4450 50  0001 C CNN
+	1    1500 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 4450 1500 4400
+$Comp
+L CONN_COAXIAL J?
+U 1 1 59B9E1AF
+P 1500 5700
+F 0 "J?" H 1510 5820 50  0000 C CNN
+F 1 "CONN_COAXIAL" V 1615 5700 50  0000 C CNN
+F 2 "robosub_footprints:BNC-Coax-TE" H 1500 5700 50  0001 C CNN
+F 3 "" H 1500 5700 50  0001 C CNN
+F 4 "A97555-ND" H 1500 5700 60  0001 C CNN "part number"
+	1    1500 5700
+	-1   0    0    -1  
+$EndComp
+$Sheet
+S 2950 5500 850  700 
+U 59B9E1B4
+F0 "Diff Conv4" 60
+F1 "differential.sch" 60
+F2 "Vin" I L 2950 5700 60 
+F3 "Vout-" I R 3800 5700 60 
+F4 "Vout+" I R 3800 6000 60 
+$EndSheet
+$Sheet
+S 1950 5500 700  400 
+U 59B9E1B8
+F0 "Filter4" 60
+F1 "filter.sch" 60
+F2 "Vin" I L 1950 5700 60 
+F3 "Vout" I R 2650 5700 60 
+$EndSheet
+Wire Wire Line
+	2650 5700 2950 5700
+Wire Wire Line
+	3800 5700 4200 5700
+Wire Wire Line
+	3800 6000 4200 6000
+$Comp
+L TEST_1P J?
+U 1 1 59B9E1C1
+P 4100 5650
+F 0 "J?" H 4100 5920 50  0000 C CNN
+F 1 "TEST_1P" H 4100 5850 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-TH_Big" H 4300 5650 50  0001 C CNN
+F 3 "" H 4300 5650 50  0001 C CNN
+	1    4100 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 5650 4100 5700
+Connection ~ 4100 5700
+$Comp
+L TEST_1P J?
+U 1 1 59B9E1C9
+P 4100 6050
+F 0 "J?" H 4100 6320 50  0000 C CNN
+F 1 "TEST_1P" H 4100 6250 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-TH_Big" H 4300 6050 50  0001 C CNN
+F 3 "" H 4300 6050 50  0001 C CNN
+	1    4100 6050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4100 6050 4100 6000
+Connection ~ 4100 6000
+Wire Wire Line
+	1650 5700 1950 5700
+$Comp
+L GNDREF #PWR?
+U 1 1 59B9E1D2
+P 1500 5950
+F 0 "#PWR?" H 1500 5700 50  0001 C CNN
+F 1 "GNDREF" H 1500 5800 50  0000 C CNN
+F 2 "" H 1500 5950 50  0001 C CNN
+F 3 "" H 1500 5950 50  0001 C CNN
+	1    1500 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 5950 1500 5900
+$EndSCHEMATC
