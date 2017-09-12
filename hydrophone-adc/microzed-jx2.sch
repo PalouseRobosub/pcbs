@@ -116,10 +116,6 @@ Wire Wire Line
 	8800 4000 8800 4050
 Wire Wire Line
 	8800 4050 8050 4050
-Wire Wire Line
-	8050 4150 8100 4150
-Wire Wire Line
-	8100 4150 8100 4050
 Connection ~ 8100 4050
 Wire Wire Line
 	2950 4100 3650 4100
@@ -279,46 +275,46 @@ Wire Wire Line
 	8150 3250 8050 3250
 Wire Wire Line
 	8050 3350 8150 3350
-Text HLabel 8150 4250 2    60   Input ~ 0
+Text HLabel 8150 3550 2    60   Input ~ 0
 LVDS11+
-Text HLabel 8150 4350 2    60   Input ~ 0
+Text HLabel 8150 3650 2    60   Input ~ 0
 LVDS11-
+Wire Wire Line
+	8150 3550 8050 3550
+Wire Wire Line
+	8050 3650 8150 3650
+Text HLabel 8150 3850 2    60   Input ~ 0
+LVDS13+
+Text HLabel 8150 3950 2    60   Input ~ 0
+LVDS13-
+Wire Wire Line
+	8150 3850 8050 3850
+Wire Wire Line
+	8050 3950 8150 3950
+Text HLabel 8150 4250 2    60   Input ~ 0
+LVDS15+
+Text HLabel 8150 4350 2    60   Input ~ 0
+LVDS15-
 Wire Wire Line
 	8150 4250 8050 4250
 Wire Wire Line
 	8050 4350 8150 4350
 Text HLabel 8150 4550 2    60   Input ~ 0
-LVDS13+
+LVDS17+
 Text HLabel 8150 4650 2    60   Input ~ 0
-LVDS13-
+LVDS17-
 Wire Wire Line
 	8150 4550 8050 4550
 Wire Wire Line
 	8050 4650 8150 4650
 Text HLabel 8150 4850 2    60   Input ~ 0
-LVDS15+
+LVDS19+
 Text HLabel 8150 4950 2    60   Input ~ 0
-LVDS15-
+LVDS19-
 Wire Wire Line
 	8150 4850 8050 4850
 Wire Wire Line
 	8050 4950 8150 4950
-Text HLabel 8150 5250 2    60   Input ~ 0
-LVDS17+
-Text HLabel 8150 5350 2    60   Input ~ 0
-LVDS17-
-Wire Wire Line
-	8150 5250 8050 5250
-Wire Wire Line
-	8050 5350 8150 5350
-Text HLabel 8150 5550 2    60   Input ~ 0
-LVDS19+
-Text HLabel 8150 5650 2    60   Input ~ 0
-LVDS19-
-Wire Wire Line
-	8150 5550 8050 5550
-Wire Wire Line
-	8050 5650 8150 5650
 $Comp
 L +1V8 #PWR015
 U 1 1 59C2B02C
@@ -358,4 +354,8 @@ Wire Wire Line
 	3500 5350 3500 5200
 Wire Wire Line
 	3500 5200 2950 5200
+Wire Wire Line
+	8050 4150 8100 4150
+Wire Wire Line
+	8100 4150 8100 4050
 $EndSCHEMATC

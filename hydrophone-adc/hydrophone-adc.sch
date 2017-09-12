@@ -252,54 +252,54 @@ Wire Wire Line
 	7600 1100 7500 1100
 Wire Wire Line
 	7500 1200 7600 1200
-Text Label 9450 4100 0    60   ~ 0
+Text Label 7600 1600 0    60   ~ 0
 out4b+
-Text Label 9450 4200 0    60   ~ 0
+Text Label 7600 1700 0    60   ~ 0
 out4b-
-Text Label 9450 3850 0    60   ~ 0
+Text Label 7600 2100 0    60   ~ 0
 out4a+
-Text Label 9450 3950 0    60   ~ 0
+Text Label 7600 2200 0    60   ~ 0
 out4a-
 Wire Wire Line
-	9450 3950 9350 3950
+	7600 2200 7500 2200
 Wire Wire Line
-	9450 3850 9350 3850
+	7600 2100 7500 2100
 Wire Wire Line
-	9450 4200 9350 4200
+	7600 1700 7500 1700
 Wire Wire Line
-	9450 4100 9350 4100
-Text Label 9450 3350 0    60   ~ 0
+	7600 1600 7500 1600
+Text Label 7600 3100 0    60   ~ 0
 out3a+
-Text Label 9450 3450 0    60   ~ 0
+Text Label 7600 3200 0    60   ~ 0
 out3a-
-Text Label 9450 3600 0    60   ~ 0
+Text Label 7600 2850 0    60   ~ 0
 out3b+
-Text Label 9450 3700 0    60   ~ 0
+Text Label 7600 2950 0    60   ~ 0
 out3b-
 Wire Wire Line
-	9450 3600 9350 3600
+	7600 2850 7500 2850
 Wire Wire Line
-	9350 3700 9450 3700
+	7500 2950 7600 2950
+Wire Wire Line
+	7600 3100 7500 3100
+Wire Wire Line
+	7500 3200 7600 3200
+Text Label 9450 3600 0    60   ~ 0
+fr_clk+
+Wire Wire Line
+	9450 3600 9350 3600
+Text Label 9450 3700 0    60   ~ 0
+fr_clk-
+Wire Wire Line
+	9450 3700 9350 3700
+Text Label 9450 3350 0    60   ~ 0
+data_clk+
+Text Label 9450 3450 0    60   ~ 0
+data_clk-
 Wire Wire Line
 	9450 3350 9350 3350
 Wire Wire Line
 	9350 3450 9450 3450
-Text Label 9450 3100 0    60   ~ 0
-fr_clk+
-Wire Wire Line
-	9450 3100 9350 3100
-Text Label 9450 3200 0    60   ~ 0
-fr_clk-
-Wire Wire Line
-	9450 3200 9350 3200
-Text Label 9450 2850 0    60   ~ 0
-data_clk+
-Text Label 9450 2950 0    60   ~ 0
-data_clk-
-Wire Wire Line
-	9450 2850 9350 2850
-Wire Wire Line
-	9350 2950 9450 2950
 Text Label 9450 1850 0    60   ~ 0
 out1a+
 Text Label 9450 1950 0    60   ~ 0
@@ -320,16 +320,16 @@ Text Label 9450 2350 0    60   ~ 0
 out2a+
 Text Label 9450 2450 0    60   ~ 0
 out2a-
-Text Label 9450 2600 0    60   ~ 0
+Text Label 9450 3100 0    60   ~ 0
 out2b+
-Text Label 9450 2700 0    60   ~ 0
+Text Label 9450 3200 0    60   ~ 0
 out2b-
 Wire Wire Line
 	9350 2350 9450 2350
 Wire Wire Line
 	9350 2450 9450 2450
 Wire Wire Line
-	9350 2600 9450 2600
+	9350 3100 9450 3100
 Wire Wire Line
-	9350 2700 9450 2700
+	9350 3200 9450 3200
 $EndSCHEMATC
