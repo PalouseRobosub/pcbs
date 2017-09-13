@@ -71,6 +71,8 @@ F20 "LVDS18+" I R 7500 3350 60
 F21 "LVDS18-" I R 7500 3450 60 
 F22 "LVDS20+" I R 7500 3600 60 
 F23 "LVDS20-" I R 7500 3700 60 
+F24 "SE0" I R 7500 3900 60 
+F25 "SE1" I R 7500 4000 60 
 $EndSheet
 $Sheet
 S 8300 1050 1050 3250
@@ -284,22 +286,22 @@ Wire Wire Line
 	7600 3100 7500 3100
 Wire Wire Line
 	7500 3200 7600 3200
-Text Label 9450 3600 0    60   ~ 0
+Text Label 9450 3850 0    60   ~ 0
 fr_clk+
 Wire Wire Line
-	9450 3600 9350 3600
-Text Label 9450 3700 0    60   ~ 0
+	9450 3850 9350 3850
+Text Label 9450 3950 0    60   ~ 0
 fr_clk-
 Wire Wire Line
-	9450 3700 9350 3700
-Text Label 9450 3350 0    60   ~ 0
+	9450 3950 9350 3950
+Text Label 9450 3600 0    60   ~ 0
 data_clk+
-Text Label 9450 3450 0    60   ~ 0
+Text Label 9450 3700 0    60   ~ 0
 data_clk-
 Wire Wire Line
-	9450 3350 9350 3350
+	9450 3600 9350 3600
 Wire Wire Line
-	9350 3450 9450 3450
+	9350 3700 9450 3700
 Text Label 9450 1850 0    60   ~ 0
 out1a+
 Text Label 9450 1950 0    60   ~ 0
@@ -320,16 +322,48 @@ Text Label 9450 2350 0    60   ~ 0
 out2a+
 Text Label 9450 2450 0    60   ~ 0
 out2a-
-Text Label 9450 3100 0    60   ~ 0
+Text Label 9450 3350 0    60   ~ 0
 out2b+
-Text Label 9450 3200 0    60   ~ 0
+Text Label 9450 3450 0    60   ~ 0
 out2b-
 Wire Wire Line
 	9350 2350 9450 2350
 Wire Wire Line
 	9350 2450 9450 2450
 Wire Wire Line
-	9350 3100 9450 3100
+	9350 3350 9450 3350
 Wire Wire Line
-	9350 3200 9450 3200
+	9350 3450 9450 3450
+Text Label 3200 1450 2    60   ~ 0
+~CS
+Wire Wire Line
+	3200 1450 3300 1450
+Text Label 3200 1550 2    60   ~ 0
+SCK
+Wire Wire Line
+	3200 1550 3300 1550
+Text Label 3200 1650 2    60   ~ 0
+MOSI
+Wire Wire Line
+	3200 1650 3300 1650
+Text Label 3200 1750 2    60   ~ 0
+MISO
+Wire Wire Line
+	3200 1750 3300 1750
+Text Label 7600 1350 0    60   ~ 0
+SCK
+Wire Wire Line
+	7600 1350 7500 1350
+Text Label 7600 1450 0    60   ~ 0
+MOSI
+Wire Wire Line
+	7600 1450 7500 1450
+Text Label 7600 3900 0    60   ~ 0
+~CS
+Wire Wire Line
+	7600 3900 7500 3900
+Text Label 9450 2600 0    60   ~ 0
+MISO
+Wire Wire Line
+	9450 2600 9350 2600
 $EndSCHEMATC
