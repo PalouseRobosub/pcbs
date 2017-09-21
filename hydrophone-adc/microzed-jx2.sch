@@ -34,12 +34,12 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 13
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
+Sheet 2 13
+Title "MicroZed-ADC"
+Date "2017-09-20"
+Rev "A"
+Comp "Palouse Robosub"
+Comment1 "Author: Ryan Summers"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -58,65 +58,65 @@ $EndComp
 $Comp
 L micro-zed-jx2 U301
 U 2 1 59B59AAC
-P 7500 3700
-F 0 "U301" H 7100 1100 60  0000 C CNN
-F 1 "micro-zed-jx2" H 7350 6300 60  0000 C CNN
-F 2 "" H 8000 6500 60  0001 C CNN
-F 3 "" H 8000 6500 60  0001 C CNN
-	2    7500 3700
+P 5700 3800
+F 0 "U301" H 5300 1200 60  0000 C CNN
+F 1 "micro-zed-jx2" H 5550 6400 60  0000 C CNN
+F 2 "" H 6200 6600 60  0001 C CNN
+F 3 "" H 6200 6600 60  0001 C CNN
+	2    5700 3800
 	1    0    0    -1  
 $EndComp
 NoConn ~ 2950 1300
 NoConn ~ 2950 1400
 NoConn ~ 2950 1500
 NoConn ~ 2950 1600
-NoConn ~ 8050 1250
-NoConn ~ 8050 1350
-NoConn ~ 8050 1450
-NoConn ~ 8050 1550
-Text HLabel 8150 1650 2    60   Input ~ 0
+NoConn ~ 6250 1350
+NoConn ~ 6250 1450
+NoConn ~ 6250 1550
+NoConn ~ 6250 1650
+Text HLabel 6350 1750 2    60   Input ~ 0
 Vccio_en
 Wire Wire Line
-	8150 1650 8050 1650
-NoConn ~ 8050 5850
-NoConn ~ 8050 5950
+	6350 1750 6250 1750
+NoConn ~ 6250 5950
+NoConn ~ 6250 6050
 NoConn ~ 2950 5900
 NoConn ~ 2950 6000
 NoConn ~ 2950 6100
 NoConn ~ 2950 6200
-NoConn ~ 8050 6150
-NoConn ~ 8050 6050
+NoConn ~ 6250 6250
+NoConn ~ 6250 6150
 $Comp
 L +5V #PWR010
 U 1 1 59BEBD66
-P 8700 1700
-F 0 "#PWR010" H 8700 1550 50  0001 C CNN
-F 1 "+5V" H 8700 1840 50  0000 C CNN
-F 2 "" H 8700 1700 50  0001 C CNN
-F 3 "" H 8700 1700 50  0001 C CNN
-	1    8700 1700
+P 6900 1800
+F 0 "#PWR010" H 6900 1650 50  0001 C CNN
+F 1 "+5V" H 6900 1940 50  0000 C CNN
+F 2 "" H 6900 1800 50  0001 C CNN
+F 3 "" H 6900 1800 50  0001 C CNN
+	1    6900 1800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8700 1700 8700 1750
+	6900 1800 6900 1850
 Wire Wire Line
-	8700 1750 8050 1750
+	6900 1850 6250 1850
 $Comp
 L +5V #PWR011
 U 1 1 59BEBE45
-P 8800 4000
-F 0 "#PWR011" H 8800 3850 50  0001 C CNN
-F 1 "+5V" H 8800 4140 50  0000 C CNN
-F 2 "" H 8800 4000 50  0001 C CNN
-F 3 "" H 8800 4000 50  0001 C CNN
-	1    8800 4000
+P 7000 4100
+F 0 "#PWR011" H 7000 3950 50  0001 C CNN
+F 1 "+5V" H 7000 4240 50  0000 C CNN
+F 2 "" H 7000 4100 50  0001 C CNN
+F 3 "" H 7000 4100 50  0001 C CNN
+	1    7000 4100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8800 4000 8800 4050
+	7000 4100 7000 4150
 Wire Wire Line
-	8800 4050 8050 4050
-Connection ~ 8100 4050
+	7000 4150 6250 4150
+Connection ~ 6300 4150
 Wire Wire Line
 	2950 4100 3650 4100
 Wire Wire Line
@@ -179,38 +179,38 @@ Wire Wire Line
 	3800 5800 2950 5800
 Connection ~ 3800 5500
 Wire Wire Line
-	8050 2250 8900 2250
+	6250 2350 7100 2350
 Wire Wire Line
-	8900 1950 8900 5800
+	7100 2050 7100 5900
 Wire Wire Line
-	8900 1950 8050 1950
+	7100 2050 6250 2050
 Wire Wire Line
-	8900 2550 8050 2550
-Connection ~ 8900 2250
+	7100 2650 6250 2650
+Connection ~ 7100 2350
 Wire Wire Line
-	8900 2850 8050 2850
-Connection ~ 8900 2550
+	7100 2950 6250 2950
+Connection ~ 7100 2650
 Wire Wire Line
-	8900 3150 8050 3150
-Connection ~ 8900 2850
+	7100 3250 6250 3250
+Connection ~ 7100 2950
 Wire Wire Line
-	8900 3450 8050 3450
-Connection ~ 8900 3150
+	7100 3550 6250 3550
+Connection ~ 7100 3250
 Wire Wire Line
-	8900 3750 8050 3750
-Connection ~ 8900 3450
+	7100 3850 6250 3850
+Connection ~ 7100 3550
 Wire Wire Line
-	8900 4450 8050 4450
-Connection ~ 8900 3750
+	7100 4550 6250 4550
+Connection ~ 7100 3850
 Wire Wire Line
-	8900 4750 8050 4750
-Connection ~ 8900 4450
-Connection ~ 8900 4750
+	7100 4850 6250 4850
+Connection ~ 7100 4550
+Connection ~ 7100 4850
 Wire Wire Line
-	8900 5450 8050 5450
+	7100 5550 6250 5550
 Wire Wire Line
-	8900 5750 8050 5750
-Connection ~ 8900 5450
+	7100 5850 6250 5850
+Connection ~ 7100 5550
 $Comp
 L GND #PWR013
 U 1 1 59BF45EE
@@ -226,115 +226,115 @@ Connection ~ 3800 5800
 $Comp
 L GND #PWR014
 U 1 1 59BF465D
-P 8900 5800
-F 0 "#PWR014" H 8900 5550 50  0001 C CNN
-F 1 "GND" H 8900 5650 50  0000 C CNN
-F 2 "" H 8900 5800 50  0001 C CNN
-F 3 "" H 8900 5800 50  0001 C CNN
-	1    8900 5800
+P 7100 5900
+F 0 "#PWR014" H 7100 5650 50  0001 C CNN
+F 1 "GND" H 7100 5750 50  0000 C CNN
+F 2 "" H 7100 5900 50  0001 C CNN
+F 3 "" H 7100 5900 50  0001 C CNN
+	1    7100 5900
 	1    0    0    -1  
 $EndComp
-Connection ~ 8900 5750
-Text HLabel 8150 2050 2    60   Input ~ 0
+Connection ~ 7100 5850
+Text HLabel 6350 2150 2    60   Input ~ 0
 LVDS1+
-Text HLabel 8150 2150 2    60   Input ~ 0
+Text HLabel 6350 2250 2    60   Input ~ 0
 LVDS1-
 Wire Wire Line
-	8150 2050 8050 2050
+	6350 2150 6250 2150
 Wire Wire Line
-	8050 2150 8150 2150
-Text HLabel 8150 2350 2    60   Input ~ 0
+	6250 2250 6350 2250
+Text HLabel 6350 2450 2    60   Input ~ 0
 LVDS3+
-Text HLabel 8150 2450 2    60   Input ~ 0
+Text HLabel 6350 2550 2    60   Input ~ 0
 LVDS3-
 Wire Wire Line
-	8150 2350 8050 2350
+	6350 2450 6250 2450
 Wire Wire Line
-	8050 2450 8150 2450
-Text HLabel 8150 2650 2    60   Input ~ 0
+	6250 2550 6350 2550
+Text HLabel 6350 2750 2    60   Input ~ 0
 LVDS5+
-Text HLabel 8150 2750 2    60   Input ~ 0
+Text HLabel 6350 2850 2    60   Input ~ 0
 LVDS5-
 Wire Wire Line
-	8150 2650 8050 2650
+	6350 2750 6250 2750
 Wire Wire Line
-	8050 2750 8150 2750
-Text HLabel 8150 2950 2    60   Input ~ 0
+	6250 2850 6350 2850
+Text HLabel 6350 3050 2    60   Input ~ 0
 LVDS7+
-Text HLabel 8150 3050 2    60   Input ~ 0
+Text HLabel 6350 3150 2    60   Input ~ 0
 LVDS7-
 Wire Wire Line
-	8150 2950 8050 2950
+	6350 3050 6250 3050
 Wire Wire Line
-	8050 3050 8150 3050
-Text HLabel 8150 3250 2    60   Input ~ 0
+	6250 3150 6350 3150
+Text HLabel 6350 3350 2    60   Input ~ 0
 LVDS9+
-Text HLabel 8150 3350 2    60   Input ~ 0
+Text HLabel 6350 3450 2    60   Input ~ 0
 LVDS9-
 Wire Wire Line
-	8150 3250 8050 3250
+	6350 3350 6250 3350
 Wire Wire Line
-	8050 3350 8150 3350
-Text HLabel 8150 3550 2    60   Input ~ 0
+	6250 3450 6350 3450
+Text HLabel 6350 3650 2    60   Input ~ 0
 LVDS11+
-Text HLabel 8150 3650 2    60   Input ~ 0
+Text HLabel 6350 3750 2    60   Input ~ 0
 LVDS11-
 Wire Wire Line
-	8150 3550 8050 3550
+	6350 3650 6250 3650
 Wire Wire Line
-	8050 3650 8150 3650
-Text HLabel 8150 3850 2    60   Input ~ 0
+	6250 3750 6350 3750
+Text HLabel 6350 3950 2    60   Input ~ 0
 LVDS13+
-Text HLabel 8150 3950 2    60   Input ~ 0
+Text HLabel 6350 4050 2    60   Input ~ 0
 LVDS13-
 Wire Wire Line
-	8150 3850 8050 3850
+	6350 3950 6250 3950
 Wire Wire Line
-	8050 3950 8150 3950
-Text HLabel 8150 4250 2    60   Input ~ 0
+	6250 4050 6350 4050
+Text HLabel 6350 4350 2    60   Input ~ 0
 LVDS15+
-Text HLabel 8150 4350 2    60   Input ~ 0
+Text HLabel 6350 4450 2    60   Input ~ 0
 LVDS15-
 Wire Wire Line
-	8150 4250 8050 4250
+	6350 4350 6250 4350
 Wire Wire Line
-	8050 4350 8150 4350
-Text HLabel 8150 4550 2    60   Input ~ 0
+	6250 4450 6350 4450
+Text HLabel 6350 4650 2    60   Input ~ 0
 LVDS17+
-Text HLabel 8150 4650 2    60   Input ~ 0
+Text HLabel 6350 4750 2    60   Input ~ 0
 LVDS17-
 Wire Wire Line
-	8150 4550 8050 4550
+	6350 4650 6250 4650
 Wire Wire Line
-	8050 4650 8150 4650
-Text HLabel 8150 4850 2    60   Input ~ 0
+	6250 4750 6350 4750
+Text HLabel 6350 4950 2    60   Input ~ 0
 LVDS19+
-Text HLabel 8150 4950 2    60   Input ~ 0
+Text HLabel 6350 5050 2    60   Input ~ 0
 LVDS19-
 Wire Wire Line
-	8150 4850 8050 4850
+	6350 4950 6250 4950
 Wire Wire Line
-	8050 4950 8150 4950
+	6250 5050 6350 5050
 $Comp
 L +1V8 #PWR015
 U 1 1 59C2B02C
-P 8750 4950
-F 0 "#PWR015" H 8750 4800 50  0001 C CNN
-F 1 "+1V8" H 8750 5090 50  0000 C CNN
-F 2 "" H 8750 4950 50  0001 C CNN
-F 3 "" H 8750 4950 50  0001 C CNN
-	1    8750 4950
+P 6950 5050
+F 0 "#PWR015" H 6950 4900 50  0001 C CNN
+F 1 "+1V8" H 6950 5190 50  0000 C CNN
+F 2 "" H 6950 5050 50  0001 C CNN
+F 3 "" H 6950 5050 50  0001 C CNN
+	1    6950 5050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8750 4950 8750 5050
+	6950 5050 6950 5150
 Wire Wire Line
-	8750 5050 8050 5050
+	6950 5150 6250 5150
 Wire Wire Line
-	8050 5150 8150 5150
+	6250 5250 6350 5250
 Wire Wire Line
-	8150 5150 8150 5050
-Connection ~ 8150 5050
+	6350 5250 6350 5150
+Connection ~ 6350 5150
 $Comp
 L +1V8 #PWR016
 U 1 1 59C2B143
@@ -355,7 +355,7 @@ Wire Wire Line
 Wire Wire Line
 	3500 5200 2950 5200
 Wire Wire Line
-	8050 4150 8100 4150
+	6250 4250 6300 4250
 Wire Wire Line
-	8100 4150 8100 4050
+	6300 4250 6300 4150
 $EndSCHEMATC

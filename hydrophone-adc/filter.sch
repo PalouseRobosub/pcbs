@@ -35,11 +35,11 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 10 13
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
+Title "MicroZed-ADC"
+Date "2017-09-20"
+Rev "A"
+Comp "Palouse Robosub"
+Comment1 "Author: Ryan Summers"
 Comment2 ""
 Comment3 ""
 Comment4 ""
