@@ -1,5 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:depthSensorBoard-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -262,7 +261,7 @@ L C C3
 U 1 1 5826A5AE
 P 2950 1500
 F 0 "C3" H 2975 1600 50  0000 L CNN
-F 1 "1µF" H 2975 1400 50  0000 L CNN
+F 1 "1uF" H 2975 1400 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603" H 2988 1350 50  0001 C CNN
 F 3 "" H 2950 1500 50  0000 C CNN
 F 4 "311-1372-1-ND" H 2950 1500 60  0001 C CNN "part number"
@@ -285,7 +284,7 @@ L C C4
 U 1 1 5826A9B2
 P 4300 1450
 F 0 "C4" H 4325 1550 50  0000 L CNN
-F 1 "1µF" H 4325 1350 50  0000 L CNN
+F 1 "1uF" H 4325 1350 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603" H 4338 1300 50  0001 C CNN
 F 3 "" H 4300 1450 50  0000 C CNN
 F 4 "311-1372-1-ND" H 4300 1450 60  0001 C CNN "part number"
@@ -861,4 +860,52 @@ Connection ~ 7800 1750
 Wire Wire Line
 	7250 1750 7250 1850
 Connection ~ 7450 1750
+$Comp
+L Spacer P7
+U 1 1 58B34073
+P 4750 6050
+F 0 "P7" H 4700 6150 60  0000 C CNN
+F 1 "Spacer" H 4750 5950 60  0000 C CNN
+F 2 "robosub_footprints:3mm-support" H 4600 6050 60  0001 C CNN
+F 3 "" H 4700 6150 60  0001 C CNN
+F 4 "RPC1225-ND" H 4800 6250 60  0001 C CNN "part number"
+	1    4750 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Spacer P8
+U 1 1 58B345C4
+P 5100 6050
+F 0 "P8" H 5050 6150 60  0000 C CNN
+F 1 "Spacer" H 5100 5950 60  0000 C CNN
+F 2 "robosub_footprints:3mm-support" H 4950 6050 60  0001 C CNN
+F 3 "" H 5050 6150 60  0001 C CNN
+F 4 "RPC1225-ND" H 5150 6250 60  0001 C CNN "part number"
+	1    5100 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Spacer P9
+U 1 1 58B346F5
+P 5450 6050
+F 0 "P9" H 5400 6150 60  0000 C CNN
+F 1 "Spacer" H 5450 5950 60  0000 C CNN
+F 2 "robosub_footprints:3mm-support" H 5300 6050 60  0001 C CNN
+F 3 "" H 5400 6150 60  0001 C CNN
+F 4 "RPC1225-ND" H 5500 6250 60  0001 C CNN "part number"
+	1    5450 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Spacer P10
+U 1 1 58B34829
+P 5800 6050
+F 0 "P10" H 5750 6150 60  0000 C CNN
+F 1 "Spacer" H 5800 5950 60  0000 C CNN
+F 2 "robosub_footprints:3mm-support" H 5650 6050 60  0001 C CNN
+F 3 "" H 5750 6150 60  0001 C CNN
+F 4 "RPC1225-ND" H 5850 6250 60  0001 C CNN "part number"
+	1    5800 6050
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

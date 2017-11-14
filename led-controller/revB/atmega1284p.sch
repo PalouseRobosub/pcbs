@@ -29,6 +29,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:robosub_parts
+LIBS:led-controller-cache
 EELAYER 25 0
 EELAYER END
 $Descr A 11000 8500
@@ -44,10 +45,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L ATMEGA1284P-M IC?
+L ATMEGA1284P-M IC1
 U 1 1 57F7CB80
 P 4650 3500
-F 0 "IC?" H 3800 5380 50  0000 L BNN
+F 0 "IC1" H 3800 5380 50  0000 L BNN
 F 1 "ATMEGA1284P-M" H 5050 1550 50  0000 L BNN
 F 2 "Housings_DFN_QFN:QFN-44-1EP_7x7mm_Pitch0.5mm" H 4650 3500 50  0001 C CIN
 F 3 "" H 4650 3500 50  0000 C CNN
@@ -56,10 +57,10 @@ F 4 "ATMEGA1284P-MURTR-ND" H 4650 3500 60  0001 C CNN "part number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_02X03 P?
+L CONN_02X03 P9
 U 1 1 57F7CD77
 P 8500 1550
-F 0 "P?" H 8500 1750 50  0000 C CNN
+F 0 "P9" H 8500 1750 50  0000 C CNN
 F 1 "CONN_02X03" H 8500 1350 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_2x03_Pitch2.54mm" H 8500 350 50  0001 C CNN
 F 3 "" H 8500 350 50  0000 C CNN
@@ -78,10 +79,10 @@ Wire Wire Line
 Text HLabel 1250 1950 0    60   Input ~ 0
 Gnd
 $Comp
-L GND #PWR?
+L GND #PWR016
 U 1 1 57F7D09B
 P 1350 1950
-F 0 "#PWR?" H 1350 1700 50  0001 C CNN
+F 0 "#PWR016" H 1350 1700 50  0001 C CNN
 F 1 "GND" H 1350 1800 50  0000 C CNN
 F 2 "" H 1350 1950 50  0000 C CNN
 F 3 "" H 1350 1950 50  0000 C CNN
@@ -109,10 +110,10 @@ Wire Wire Line
 Text HLabel 2400 1800 0    60   Input ~ 0
 DTR
 $Comp
-L C C?
+L C C4
 U 1 1 57F7DBA7
 P 2650 1800
-F 0 "C?" H 2675 1900 50  0000 L CNN
+F 0 "C4" H 2675 1900 50  0000 L CNN
 F 1 "100nF" H 2675 1700 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603" H 2688 1650 50  0001 C CNN
 F 3 "" H 2650 1800 50  0000 C CNN
@@ -121,10 +122,10 @@ F 4 "311-1343-1-ND" H 2650 1800 60  0001 C CNN "part number"
 	0    1    1    0   
 $EndComp
 $Comp
-L R R?
+L R R2
 U 1 1 57F7DC84
 P 3300 1800
-F 0 "R?" V 3380 1800 50  0000 C CNN
+F 0 "R2" V 3380 1800 50  0000 C CNN
 F 1 "1k" V 3300 1800 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 3230 1800 50  0001 C CNN
 F 3 "" H 3300 1800 50  0000 C CNN
@@ -190,10 +191,10 @@ Tx_CPU
 Wire Wire Line
 	2400 1800 2500 1800
 $Comp
-L C C?
+L C C5
 U 1 1 57F80CAF
 P 2900 2900
-F 0 "C?" H 2925 3000 50  0000 L CNN
+F 0 "C5" H 2925 3000 50  0000 L CNN
 F 1 "18p" H 2925 2800 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603" H 2938 2750 50  0001 C CNN
 F 3 "" H 2900 2900 50  0000 C CNN
@@ -202,10 +203,10 @@ F 4 "1276-1089-1-ND" H 2900 2900 60  0001 C CNN "part number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C?
+L C C6
 U 1 1 57F80CF6
 P 3250 2900
-F 0 "C?" H 3275 3000 50  0000 L CNN
+F 0 "C6" H 3275 3000 50  0000 L CNN
 F 1 "18p" H 3275 2800 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603" H 3288 2750 50  0001 C CNN
 F 3 "" H 3250 2900 50  0000 C CNN
@@ -340,10 +341,10 @@ Hierarchical Ground Input\n
 Text Notes 800  5800 0    59   ~ 0
 DTR will spike high the other side \nof the capacitor on a low -> high edge\nif the microcontroller is on, which \nresults in a Reset pin voltage of Vcc \n+ the DTR signal voltage. The Reset \npin is 13V tolerant, so this should be \nokay as long as both Vcc and DTR \nsignals are TLL compliant. When the \nmicrocontroller is on, the opposite \nside of the DTR capacitor will be at Vcc. \nOn a high -> low transition of DTR, the \ncapacitor voltage must not change \ninstantaneously, which means that the \nopposite side of the DTR capacitor will \nalso be pulled low. Since there is no current \nflowing into the Reset pin, the voltage on the\n RESET pin is pulled down to the DTR logic \nlevel. The capacitor then slowly fills and the \nReset pin voltage increases as a result of the \nRC time constant. Minimum Reset pull time \nmust be 2.5ns and the current time constant is \nequal to 1ms, so there should be plenty of time \nfor the microcontroller to detect the reset.\n
 $Comp
-L R R?
+L R R1
 U 1 1 57F7DC1C
 P 3050 1650
-F 0 "R?" V 3130 1650 50  0000 C CNN
+F 0 "R1" V 3130 1650 50  0000 C CNN
 F 1 "10k" V 3050 1650 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 2980 1650 50  0001 C CNN
 F 3 "" H 3050 1650 50  0000 C CNN
@@ -352,10 +353,10 @@ F 4 "311-10KGRCT-ND" V 3050 1650 60  0001 C CNN "part number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Osc U?
+L Osc U2
 U 1 1 5826A48B
 P 2550 2400
-F 0 "U?" H 2400 2550 60  0000 C CNN
+F 0 "U2" H 2400 2550 60  0000 C CNN
 F 1 "TSX-3225" H 2550 2250 60  0000 C CNN
 F 2 "robosub_footprints:DFN-4" H 2550 2400 60  0001 C CNN
 F 3 "" H 2550 2400 60  0000 C CNN
@@ -394,10 +395,10 @@ Wire Wire Line
 	2250 2350 2150 2350
 Connection ~ 2150 2450
 $Comp
-L C C?
+L C C7
 U 1 1 5826B503
 P 8250 5400
-F 0 "C?" H 8275 5500 50  0000 L CNN
+F 0 "C7" H 8275 5500 50  0000 L CNN
 F 1 "100n" H 8275 5300 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603" H 8288 5250 50  0001 C CNN
 F 3 "" H 8250 5400 50  0000 C CNN
@@ -406,10 +407,10 @@ F 4 "311-1343-1-ND" H 8250 5400 60  0001 C CNN "part number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C?
+L C C8
 U 1 1 5826B62A
 P 8600 5400
-F 0 "C?" H 8625 5500 50  0000 L CNN
+F 0 "C8" H 8625 5500 50  0000 L CNN
 F 1 "100n" H 8625 5300 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603" H 8638 5250 50  0001 C CNN
 F 3 "" H 8600 5400 50  0000 C CNN
@@ -431,10 +432,10 @@ Connection ~ 8250 5200
 Wire Wire Line
 	8600 5600 8600 5550
 $Comp
-L C C?
+L C C9
 U 1 1 5826BCED
 P 9000 5400
-F 0 "C?" H 9025 5500 50  0000 L CNN
+F 0 "C9" H 9025 5500 50  0000 L CNN
 F 1 "4.7u" H 9025 5300 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603" H 9038 5250 50  0001 C CNN
 F 3 "" H 9000 5400 50  0000 C CNN
@@ -452,10 +453,10 @@ Decoupling Capacitors
 Text Notes 8000 6200 0    60   ~ 0
 Place decoupling capacitors \nas close to power inputs \non microcontroller as possible.
 $Comp
-L LED D?
+L LED D1
 U 1 1 58268390
 P 8150 3200
-F 0 "D?" H 8150 3300 50  0000 C CNN
+F 0 "D1" H 8150 3300 50  0000 C CNN
 F 1 "LED" H 8150 3100 50  0000 C CNN
 F 2 "LEDs:LED_0603" H 8150 3200 50  0001 C CNN
 F 3 "" H 8150 3200 50  0000 C CNN
@@ -464,10 +465,10 @@ F 4 "160-1446-1-ND" H 8150 3200 60  0001 C CNN "part number"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R R?
+L R R3
 U 1 1 58268535
 P 8150 3650
-F 0 "R?" V 8230 3650 50  0000 C CNN
+F 0 "R3" V 8230 3650 50  0000 C CNN
 F 1 "65" V 8150 3650 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 8080 3650 50  0001 C CNN
 F 3 "" H 8150 3650 50  0000 C CNN
@@ -488,10 +489,10 @@ Wire Wire Line
 Text HLabel 8750 2900 0    60   Input ~ 0
 DBG_LED
 $Comp
-L LED D?
+L LED D2
 U 1 1 58268C6C
 P 8850 3150
-F 0 "D?" H 8850 3250 50  0000 C CNN
+F 0 "D2" H 8850 3250 50  0000 C CNN
 F 1 "LED" H 8850 3050 50  0000 C CNN
 F 2 "LEDs:LED_0603" H 8850 3150 50  0001 C CNN
 F 3 "" H 8850 3150 50  0000 C CNN
@@ -504,10 +505,10 @@ Wire Wire Line
 Wire Wire Line
 	8850 2900 8750 2900
 $Comp
-L R R?
+L R R4
 U 1 1 58268E36
 P 8850 3650
-F 0 "R?" V 8930 3650 50  0000 C CNN
+F 0 "R4" V 8930 3650 50  0000 C CNN
 F 1 "65" V 8850 3650 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 8780 3650 50  0001 C CNN
 F 3 "" H 8850 3650 50  0000 C CNN

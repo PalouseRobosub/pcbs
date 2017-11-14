@@ -29,6 +29,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:robosub_parts
+LIBS:prossuretester-cache
 EELAYER 25 0
 EELAYER END
 $Descr A 11000 8500
