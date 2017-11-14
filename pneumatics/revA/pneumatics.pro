@@ -1,4 +1,4 @@
-update=Thu 02 Mar 2017 10:33:27 AM PST
+update=Thu 12 Oct 2017 05:48:32 AM PDT
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=
+LibDir=../../lib
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -58,4 +58,4 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
-LibName30=/home/ryan/repositories/pcbs/lib/robosub_parts
+LibName30=/home/meeseeks/Robosub/pcbs/lib/robosub_parts
