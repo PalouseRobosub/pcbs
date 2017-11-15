@@ -1,0 +1,13 @@
+Problems with Rev A of board:
+----------------------------
+- JX1 and JX2 are mirrored
+- The USB and Ethernet ports are on the wrong side
+- The vccio_enable pin only goes up to 1.8V but the 1.8V regulator enable needs 2.2V min
+- The 5V regulator enable pin is only tolerant to 6V but is connected to Vdd
+- The gain stage is causing some odd signal distortion with certain gain values - Maybe use nicer op amps?
+- MISO and MOSI schematic labels are backwards on top-level schematic
+- Pin 12 of JX1 needs to be removed from 5V as a result of the mirror
+- The board has no mounting holes
+- There aren't test points for differential signals or SPI
+- Board edges are too long
+- 1.8V LED resistor is too strong
