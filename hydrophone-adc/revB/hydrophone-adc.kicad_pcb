@@ -7870,6 +7870,11 @@
       (net 23 +5V))
     (pad 1 smd rect (at -0.975 -0.55) (size 0.45 0.35) (layers F.Cu F.Paste F.Mask)
       (net 8 GND))
+    (model robosub.3dshapes/6-ufdfn.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 0.4 0.4 0.4))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module TO_SOT_Packages_SMD:SOT-23-5_HandSoldering (layer F.Cu) (tedit 58CE4E7E) (tstamp 5A127FB7)
@@ -8796,7 +8801,7 @@
   (gr_text v1- (at 131.38 59.54) (layer B.SilkS) (tstamp 5A134B8A)
     (effects (font (size 0.762 0.762) (thickness 0.127)) (justify mirror))
   )
-  (gr_text v1+ (at 133.81 59.54 360) (layer B.SilkS) (tstamp 5A134B86)
+  (gr_text v1+ (at 133.81 59.54) (layer B.SilkS) (tstamp 5A134B86)
     (effects (font (size 0.762 0.762) (thickness 0.127)) (justify mirror))
   )
   (gr_text ~cs (at 143.27 48.92 90) (layer B.SilkS) (tstamp 5A134B7C)
