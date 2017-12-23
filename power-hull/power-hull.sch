@@ -1,0 +1,450 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:switches
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Cobalt Power Route"
+Date "2017-12-23"
+Rev "A"
+Comp "Palouse Robosub"
+Comment1 "Author: Ryan Summers"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L SW_Push SW101
+U 1 1 5A3E97CC
+P 8250 2100
+F 0 "SW101" H 8300 2200 50  0000 L CNN
+F 1 "SW_ON" H 8250 2040 50  0000 C CNN
+F 2 "Connectors_JST:JST_PH_S2B-PH-SM4-TB_02x2.00mm_Angled" H 8250 2300 50  0001 C CNN
+F 3 "" H 8250 2300 50  0001 C CNN
+F 4 "455-1749-1-ND" H 8250 2100 60  0001 C CNN "part number"
+	1    8250 2100
+	0    1    1    0   
+$EndComp
+$Comp
+L CONN_01X02 J102
+U 1 1 5A3E98E9
+P 7150 2050
+F 0 "J102" H 7150 2200 50  0000 C CNN
+F 1 "CONN_01X02" V 7250 2050 50  0000 C CNN
+F 2 "Connectors_JST:JST_PH_S2B-PH-SM4-TB_02x2.00mm_Angled" H 7150 2050 50  0001 C CNN
+F 3 "" H 7150 2050 50  0001 C CNN
+F 4 "455-1749-1-ND" H 7150 2050 60  0001 C CNN "part number"
+	1    7150 2050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 5A3E9A7A
+P 7400 2150
+F 0 "#PWR01" H 7400 1900 50  0001 C CNN
+F 1 "GND" H 7400 2000 50  0000 C CNN
+F 2 "" H 7400 2150 50  0001 C CNN
+F 3 "" H 7400 2150 50  0001 C CNN
+	1    7400 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 5A3E9A98
+P 3500 1950
+F 0 "#PWR02" H 3500 1700 50  0001 C CNN
+F 1 "GND" H 3500 1800 50  0000 C CNN
+F 2 "" H 3500 1950 50  0001 C CNN
+F 3 "" H 3500 1950 50  0001 C CNN
+	1    3500 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X03 J101
+U 1 1 5A3E9BA1
+P 1400 1600
+F 0 "J101" H 1400 1800 50  0000 C CNN
+F 1 "CONN_01X03" V 1500 1600 50  0000 C CNN
+F 2 "Connectors_JST:JST_PH_S3B-PH-SM4-TB_03x2.00mm_Angled" H 1400 1600 50  0001 C CNN
+F 3 "" H 1400 1600 50  0001 C CNN
+F 4 "455-1750-1-ND" H 1400 1600 60  0001 C CNN "part number"
+	1    1400 1600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1650 1500 1600 1500
+Wire Wire Line
+	1650 1400 1650 1500
+Text Label 1650 1400 0    60   ~ 0
+Vbattery
+Text Label 1650 1600 0    60   ~ 0
+Vbulkhead
+Wire Wire Line
+	1650 1600 1600 1600
+$Comp
+L GND #PWR03
+U 1 1 5A3E9CF4
+P 1650 1750
+F 0 "#PWR03" H 1650 1500 50  0001 C CNN
+F 1 "GND" H 1650 1600 50  0000 C CNN
+F 2 "" H 1650 1750 50  0001 C CNN
+F 3 "" H 1650 1750 50  0001 C CNN
+	1    1650 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 1750 1650 1700
+Wire Wire Line
+	1650 1700 1600 1700
+Wire Wire Line
+	7350 2100 7400 2100
+Wire Wire Line
+	7400 2100 7400 2150
+Wire Wire Line
+	3450 1900 3500 1900
+Wire Wire Line
+	3500 1900 3500 1950
+Text Label 4250 1350 0    60   ~ 0
+Vbulkhead
+Wire Wire Line
+	4100 2150 4250 2150
+Wire Wire Line
+	4250 1950 4250 2200
+Connection ~ 4250 2150
+$Comp
+L GND #PWR04
+U 1 1 5A3EA657
+P 4250 2550
+F 0 "#PWR04" H 4250 2300 50  0001 C CNN
+F 1 "GND" H 4250 2400 50  0000 C CNN
+F 2 "" H 4250 2550 50  0001 C CNN
+F 3 "" H 4250 2550 50  0001 C CNN
+	1    4250 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 2550 4250 2500
+Wire Wire Line
+	3800 1700 3800 1950
+Wire Wire Line
+	3450 1800 3800 1800
+Connection ~ 3800 1800
+Text Label 3800 1350 0    60   ~ 0
+Vbattery
+Wire Wire Line
+	3800 1350 3800 1400
+$Comp
+L GND #PWR05
+U 1 1 5A3EAA63
+P 3800 2550
+F 0 "#PWR05" H 3800 2300 50  0001 C CNN
+F 1 "GND" H 3800 2400 50  0000 C CNN
+F 2 "" H 3800 2550 50  0001 C CNN
+F 3 "" H 3800 2550 50  0001 C CNN
+	1    3800 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 2550 3800 2350
+Wire Wire Line
+	7700 1900 7700 2150
+Wire Wire Line
+	7350 2000 7700 2000
+Connection ~ 7700 2000
+Text Label 7700 1500 0    60   ~ 0
+Vbattery
+Wire Wire Line
+	7700 1500 7700 1600
+$Comp
+L GND #PWR06
+U 1 1 5A3EB5D0
+P 7700 3200
+F 0 "#PWR06" H 7700 2950 50  0001 C CNN
+F 1 "GND" H 7700 3050 50  0000 C CNN
+F 2 "" H 7700 3200 50  0001 C CNN
+F 3 "" H 7700 3200 50  0001 C CNN
+	1    7700 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 2550 7700 3200
+$Comp
+L C C101
+U 1 1 5A3EBB15
+P 8650 2750
+F 0 "C101" H 8675 2850 50  0000 L CNN
+F 1 "1u" H 8675 2650 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 8688 2600 50  0001 C CNN
+F 3 "" H 8650 2750 50  0001 C CNN
+F 4 "311-1365-1-ND" H 8650 2750 60  0001 C CNN "part number"
+	1    8650 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R104
+U 1 1 5A3EBB6C
+P 9000 2750
+F 0 "R104" V 9080 2750 50  0000 C CNN
+F 1 "10k" V 9000 2750 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 8930 2750 50  0001 C CNN
+F 3 "" H 9000 2750 50  0001 C CNN
+F 4 "RR12P10.0KDCT-ND" V 9000 2750 60  0001 C CNN "part number"
+	1    9000 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L POT RV101
+U 1 1 5A3EBBAD
+P 9150 2100
+F 0 "RV101" V 8975 2100 50  0000 C CNN
+F 1 "POT" V 9050 2100 50  0000 C CNN
+F 2 "Potentiometers:Potentiometer_Trimmer_Bourns_3296W" H 9150 2100 50  0001 C CNN
+F 3 "" H 9150 2100 50  0001 C CNN
+F 4 "3296W-103LF-ND" V 9150 2100 60  0001 C CNN "part number"
+	1    9150 2100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R103
+U 1 1 5A3ECD09
+P 8250 3000
+F 0 "R103" V 8330 3000 50  0000 C CNN
+F 1 "1k" V 8250 3000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 8180 3000 50  0001 C CNN
+F 3 "" H 8250 3000 50  0001 C CNN
+F 4 "RR12P1.0KDCT-ND" V 8250 3000 60  0001 C CNN "part number"
+	1    8250 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R102
+U 1 1 5A3ECDA8
+P 8250 1700
+F 0 "R102" V 8330 1700 50  0000 C CNN
+F 1 "1k" V 8250 1700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 8180 1700 50  0001 C CNN
+F 3 "" H 8250 1700 50  0001 C CNN
+F 4 "RR12P1.0KDCT-ND" V 8250 1700 60  0001 C CNN "part number"
+	1    8250 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8250 1900 8250 1850
+Wire Wire Line
+	8000 2350 9000 2350
+Wire Wire Line
+	8250 2300 8250 2400
+Connection ~ 8250 2350
+Wire Wire Line
+	8250 2850 8250 2800
+$Comp
+L GND #PWR07
+U 1 1 5A3ED3EB
+P 8250 3200
+F 0 "#PWR07" H 8250 2950 50  0001 C CNN
+F 1 "GND" H 8250 3050 50  0000 C CNN
+F 2 "" H 8250 3200 50  0001 C CNN
+F 3 "" H 8250 3200 50  0001 C CNN
+	1    8250 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8250 3200 8250 3150
+Text Label 8250 1500 0    60   ~ 0
+Vbattery
+Wire Wire Line
+	8250 1500 8250 1550
+Wire Wire Line
+	8650 2350 8650 2600
+$Comp
+L GND #PWR08
+U 1 1 5A3EDC3D
+P 8650 3200
+F 0 "#PWR08" H 8650 2950 50  0001 C CNN
+F 1 "GND" H 8650 3050 50  0000 C CNN
+F 2 "" H 8650 3200 50  0001 C CNN
+F 3 "" H 8650 3200 50  0001 C CNN
+	1    8650 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 3200 8650 2900
+Wire Wire Line
+	9000 2100 9000 2600
+Connection ~ 8650 2350
+$Comp
+L GND #PWR09
+U 1 1 5A3EDE7D
+P 9000 3200
+F 0 "#PWR09" H 9000 2950 50  0001 C CNN
+F 1 "GND" H 9000 3050 50  0000 C CNN
+F 2 "" H 9000 3200 50  0001 C CNN
+F 3 "" H 9000 3200 50  0001 C CNN
+	1    9000 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9000 3200 9000 2900
+Connection ~ 9000 2350
+Text Label 9150 1500 0    60   ~ 0
+Vbattery
+Wire Wire Line
+	9150 1500 9150 1950
+NoConn ~ 9300 2100
+Wire Wire Line
+	4250 1350 4250 1550
+$Comp
+L R R105
+U 1 1 5A3F1A05
+P 3800 1550
+F 0 "R105" V 3880 1550 50  0000 C CNN
+F 1 "10k" V 3800 1550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 3730 1550 50  0001 C CNN
+F 3 "" H 3800 1550 50  0001 C CNN
+F 4 "RR12P10.0KDCT-ND" V 3800 1550 60  0001 C CNN "part number"
+	1    3800 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R106
+U 1 1 5A3F1D5A
+P 4250 2350
+F 0 "R106" V 4330 2350 50  0000 C CNN
+F 1 "10k" V 4250 2350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 4180 2350 50  0001 C CNN
+F 3 "" H 4250 2350 50  0001 C CNN
+F 4 "RR12P10.0KDCT-ND" V 4250 2350 60  0001 C CNN "part number"
+	1    4250 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R101
+U 1 1 5A3F205B
+P 7700 1750
+F 0 "R101" V 7780 1750 50  0000 C CNN
+F 1 "10k" V 7700 1750 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 7630 1750 50  0001 C CNN
+F 3 "" H 7700 1750 50  0001 C CNN
+F 4 "RR12P10.0KDCT-ND" V 7700 1750 60  0001 C CNN "part number"
+	1    7700 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Q_NMOS_GDS Q101
+U 1 1 5A3F37D9
+P 7800 2350
+F 0 "Q101" H 8000 2400 50  0000 L CNN
+F 1 "Q_NMOS_GDS" H 8000 2300 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-223" H 8000 2450 50  0001 C CNN
+F 3 "" H 7800 2350 50  0001 C CNN
+F 4 "497-3523-1-ND" H 7800 2350 60  0001 C CNN "part number"
+	1    7800 2350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Q_NMOS_GDS Q102
+U 1 1 5A3F3B85
+P 3900 2150
+F 0 "Q102" H 4100 2200 50  0000 L CNN
+F 1 "Q_NMOS_GDS" H 4100 2100 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-223" H 4100 2250 50  0001 C CNN
+F 3 "" H 3900 2150 50  0001 C CNN
+F 4 "497-3523-1-ND" H 3900 2150 60  0001 C CNN "part number"
+	1    3900 2150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 J103
+U 1 1 5A3F3E98
+P 3250 1850
+F 0 "J103" H 3250 2000 50  0000 C CNN
+F 1 "CONN_01X02" V 3350 1850 50  0000 C CNN
+F 2 "Connectors_JST:JST_PH_S2B-PH-SM4-TB_02x2.00mm_Angled" H 3250 1850 50  0001 C CNN
+F 3 "" H 3250 1850 50  0001 C CNN
+F 4 "455-1749-1-ND" H 3250 1850 60  0001 C CNN "part number"
+	1    3250 1850
+	-1   0    0    -1  
+$EndComp
+$Comp
+L SW_Push SW102
+U 1 1 5A3F4A22
+P 8250 2600
+F 0 "SW102" H 8300 2700 50  0000 L CNN
+F 1 "SW_OFF" H 8250 2540 50  0000 C CNN
+F 2 "Connectors_JST:JST_PH_S2B-PH-SM4-TB_02x2.00mm_Angled" H 8250 2800 50  0001 C CNN
+F 3 "" H 8250 2800 50  0001 C CNN
+F 4 "455-1749-1-ND" H 8250 2600 60  0001 C CNN "part number"
+	1    8250 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L SW_Push SW103
+U 1 1 5A3F4A85
+P 4250 1750
+F 0 "SW103" H 4300 1850 50  0000 L CNN
+F 1 "SW_TEN" H 4250 1690 50  0000 C CNN
+F 2 "Connectors_JST:JST_PH_S2B-PH-SM4-TB_02x2.00mm_Angled" H 4250 1950 50  0001 C CNN
+F 3 "" H 4250 1950 50  0001 C CNN
+F 4 "455-1749-1-ND" H 4250 1750 60  0001 C CNN "part number"
+	1    4250 1750
+	0    1    1    0   
+$EndComp
+Text Notes 4900 2150 0    60   ~ 0
+The thruster power can only be\nenabled when bulkhead power\nis available.
+Text Notes 1100 2450 0    60   ~ 0
+The power routing board\nrequires raw battery voltage\nand bulkhead power for\nkick-starting the power\nMOSFETs.
+Text Notes 9550 3250 0    60   ~ 0
+The bulkhead power can be\nenabled through the ON\nswitch and will hold its self\non unless the OFF button\nis asserted or the voltage\nof the bulkhead falls too low.
+Wire Notes Line
+	2750 500  2750 3050
+Wire Notes Line
+	6850 6500 7000 6500
+Text Notes 3700 950  0    118  ~ 24
+Thruster Power Enable
+Text Notes 800  950  0    118  ~ 24
+Battery Connection
+Text Notes 8100 950  0    118  ~ 24
+Bulkhead Power Enable
+Wire Notes Line
+	6650 500  6650 3700
+Wire Notes Line
+	6650 500  6700 500 
+Wire Notes Line
+	6650 3050 550  3050
+Wire Notes Line
+	6650 3700 11200 3700
+Text Notes 2100 5300 0    118  ~ 0
+This section intentionally left blank.
+Text Notes 7550 5200 0    118  ~ 0
+This section intentionally left blank.
+$EndSCHEMATC
