@@ -29,6 +29,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:switches
+LIBS:power-hull-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -230,7 +231,7 @@ F 0 "RV101" V 8975 2100 50  0000 C CNN
 F 1 "POT" V 9050 2100 50  0000 C CNN
 F 2 "Potentiometers:Potentiometer_Trimmer_Bourns_3296W" H 9150 2100 50  0001 C CNN
 F 3 "" H 9150 2100 50  0001 C CNN
-F 4 "3296W-103LF-ND" V 9150 2100 60  0001 C CNN "part number"
+F 4 "3296W-104LF-ND" V 9150 2100 60  0001 C CNN "part number"
 	1    9150 2100
 	0    -1   -1   0   
 $EndComp
