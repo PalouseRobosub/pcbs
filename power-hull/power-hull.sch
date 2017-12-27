@@ -318,7 +318,7 @@ Wire Wire Line
 	9000 3200 9000 2900
 Connection ~ 9000 2350
 Text Label 9150 1500 0    60   ~ 0
-Vbattery
+Vbulkhead
 Wire Wire Line
 	9150 1500 9150 1950
 NoConn ~ 9300 2100
