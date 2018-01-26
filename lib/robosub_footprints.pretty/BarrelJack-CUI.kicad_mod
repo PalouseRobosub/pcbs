@@ -13,8 +13,8 @@
   (pad 1 thru_hole circle (at 2.5 0) (size 2.5 2.5) (drill 1.7) (layers *.Cu *.Mask))
   (pad 2 thru_hole circle (at -2.5 0) (size 2.5 2.5) (drill 1.7) (layers *.Cu *.Mask))
   (model robosub.3dshapes/pj-031dh.wrl
-    (at (xyz -0.13 0 0.1))
-    (scale (xyz 2.5 2.5 2.5))
-    (rotate (xyz -90 0 90))
+    (at (xyz -0.115 0 0.09))
+    (scale (xyz 5.9 5.9 5.9))
+    (rotate (xyz 0 0 -90))
   )
 )

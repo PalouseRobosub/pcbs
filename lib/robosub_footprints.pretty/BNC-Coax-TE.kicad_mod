@@ -15,7 +15,7 @@
   (pad 2 thru_hole circle (at -2.54 0) (size 1.5 1.5) (drill 0.9) (layers *.Cu *.Mask))
   (model robosub.3dshapes/1-1634612-0.wrl
     (at (xyz 0 0.62 0.23))
-    (scale (xyz 7 7 7))
-    (rotate (xyz -90 0 180))
+    (scale (xyz 18 18 18))
+    (rotate (xyz 0 0 0))
   )
 )
