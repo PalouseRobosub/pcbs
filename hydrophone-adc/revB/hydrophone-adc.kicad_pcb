@@ -3,7 +3,7 @@
   (general
     (links 501)
     (no_connects 0)
-    (area 93.142999 36.399671 193.174941 104.45)
+    (area 93.142999 42.596999 184.225001 103.199001)
     (thickness 1.6)
     (drawings 74)
     (tracks 3873)
@@ -2776,8 +2776,8 @@
       (net 1 GNDREF))
     (model robosub.3dshapes/1-1634612-0.wrl
       (at (xyz 0 0.62 0.23))
-      (scale (xyz 7 7 7))
-      (rotate (xyz -90 0 180))
+      (scale (xyz 18 18 18))
+      (rotate (xyz 0 0 0))
     )
   )
 
@@ -2802,8 +2802,8 @@
       (net 1 GNDREF))
     (model robosub.3dshapes/1-1634612-0.wrl
       (at (xyz 0 0.62 0.23))
-      (scale (xyz 7 7 7))
-      (rotate (xyz -90 0 180))
+      (scale (xyz 18 18 18))
+      (rotate (xyz 0 0 0))
     )
   )
 
@@ -2828,8 +2828,8 @@
       (net 1 GNDREF))
     (model robosub.3dshapes/1-1634612-0.wrl
       (at (xyz 0 0.62 0.23))
-      (scale (xyz 7 7 7))
-      (rotate (xyz -90 0 180))
+      (scale (xyz 18 18 18))
+      (rotate (xyz 0 0 0))
     )
   )
 
@@ -2854,8 +2854,8 @@
       (net 1 GNDREF))
     (model robosub.3dshapes/1-1634612-0.wrl
       (at (xyz 0 0.62 0.23))
-      (scale (xyz 7 7 7))
-      (rotate (xyz -90 0 180))
+      (scale (xyz 18 18 18))
+      (rotate (xyz 0 0 0))
     )
   )
 
@@ -3491,9 +3491,9 @@
     (pad 2 thru_hole circle (at -2.5 0 270) (size 2.5 2.5) (drill 1.7) (layers *.Cu *.Mask)
       (net 8 GND))
     (model robosub.3dshapes/pj-031dh.wrl
-      (at (xyz -0.13 0 0.1))
-      (scale (xyz 2.5 2.5 2.5))
-      (rotate (xyz -90 0 90))
+      (at (xyz -0.115 0 0.09))
+      (scale (xyz 5.9 5.9 5.9))
+      (rotate (xyz 0 0 -90))
     )
   )
 
@@ -6968,8 +6968,8 @@
     (pad ~ thru_hole circle (at 22.1 0 180) (size 1.7 1.7) (drill 1.2) (layers *.Cu *.Mask))
     (model robosub.3dshapes/s61083-2x50-7.7mm.wrl
       (at (xyz 0 0 0))
-      (scale (xyz 0.3937 0.3937 0.3937))
-      (rotate (xyz -90 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
     )
   )
 
@@ -7190,8 +7190,8 @@
     (pad ~ thru_hole circle (at 22.1 0 180) (size 1.7 1.7) (drill 1.2) (layers *.Cu *.Mask))
     (model robosub.3dshapes/s61083-2x50-7.7mm.wrl
       (at (xyz 0 0 0))
-      (scale (xyz 0.3937 0.3937 0.3937))
-      (rotate (xyz -90 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
     )
   )
 
