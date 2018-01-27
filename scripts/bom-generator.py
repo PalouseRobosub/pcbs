@@ -2,157 +2,113 @@
 # @author Ryan Summers
 # @date 11-16-2016
 #
-# This script will take in an arbitrary number of netlists and export them to a
-# json file. Additionally, it can export the format into CSV for direct
-# uploading to Digikey or another part supplier. Mutliples of each netlist can
-# be specified to order multiple copies of a board.
+# This script will take in a netlists and export it to a
+# CSV file. Mutliples of each netlist can be specified to order multiple
+# copies of a board.
 
 import argparse
 import BeautifulSoup
-import json
-import re
-import os.path
 import sys
 
 # Create an empty tuple list for storing components.
 bom = {}
 
+
 if __name__ == '__main__':
 
-    parser = argparse.ArgumentParser(description='Generate a Bill-Of-Materials (BOM) from a number of KiCAD XML netlist exports.')
-    parser.add_argument('netlist', nargs='*', help='A list of KiCAD netlists exported in XML format.')
-    parser.add_argument('--bom', nargs=1, help='An existing BOM to load into memory and extend.')
-    parser.add_argument('--prefix', nargs=1, help='A prefix to append to component references.')
-    parser.add_argument('--quantity', nargs=1, help='Quantity multiple for each netlist specified. If no netlists are specified, this will multiply any BOM selected for export.')
-    parser.add_argument('--export', nargs=1, help='Specify that the output format should be exported to CSV.')
+    parser = argparse.ArgumentParser(description='Generate a CSV '
+            'Bill-Of-Materials (BOM) from a KiCAD XML netlist.')
+    parser.add_argument('netlist', help='The KiCAD netlist in XML format.')
+    parser.add_argument('export', help='The file where the BOM should be saved')
+    parser.add_argument('--quantity', help='Multiples of the board to order.')
 
     args = parser.parse_args()
 
-    if args.bom is not None:
-        print 'Extending the current BOM located at {}'.format(args.bom[0])
-        with open(args.bom[0]) as input_file:
-            bom = json.load(input_file)
-    else:
-        print 'Generating a new BOM.'
-
-    # Load any potential prefix supplied in the arguments.
-    prefix = ''
-    if args.prefix is not None:
-        prefix = str(args.prefix[0])
-
-    print 'Parsing the following netlists:'
-
-    if args.netlist and args.quantity:
-        multiple = int(args.quantity[0])
+    if args.quantity:
+        multiple = int(args.quantity)
     else:
         multiple = 1
 
-    for xml in args.netlist:
-        visited = {}
-        print xml
+    # Read in the XML file into a BeautifulSoup Python object.
+    with open(args.netlist, 'r') as f:
+        soup = BeautifulSoup.BeautifulSoup(f)
 
-        # Read in the XML file into a BeautifulSoup Python object.
-        soup = BeautifulSoup.BeautifulSoup(open(xml))
+    # Iterate through each of the components within the XML tree.
+    for comp in soup.components.findAll('comp'):
 
-        # Iterate through each of the components within the XML tree.
-        for comp in soup.components.findAll('comp'):
+        # Reset variables to ensure that components without listed
+        # parameters do not inherit the previous components properties.
+        reference = None
+        part_number = None
+        value = None
+        footprint = None
 
-            # Reset variables to ensure that components without listed
-            # parameters do not inherit the previous components properties.
-            reference = None
-            part_number = None
-            value = None
-            footprint = None
-            added = False;
+        # Extract the component reference from the XML node.
+        try:
+            reference = comp['ref']
+        except:
+            print 'FATAL: Failed to extract component reference.'
+            sys.exit(-1)
 
-            # Extract the component reference from the XML node.
-            try:
-                reference = comp['ref']
-            except:
-                print 'FATAL: Failed to extract component reference.'
-                sys.exit(-1)
+        try:
+            for field in comp.fields.findAll('field'):
+                if field['name'] == 'part number':
+                    part_number = str(field.contents[0])
+        except:
+            print 'WARN: Failed to find part number for component {}'.format(
+                    reference)
 
-            try:
-                for field in comp.fields.findAll('field'):
-                    if field['name'] == 'part number':
-                        part_number = str(field.contents[0])
-            except:
-                print 'Failed to find part number for component {}'.format(reference)
+        try:
+            value = comp.value.contents[0]
+        except:
+            print 'WARN: Failed to find value for component {}'.format(
+                    reference)
+            value = 'Unknown'
 
-            try:
-                value = comp.value.contents[0]
-            except:
-                print 'Failed to find value for component {}'.format(reference)
+        try:
+            footprint = comp.footprint.contents[0]
+        except:
+            print 'FATAL: Failed to find footprint for component {}'.format(
+                    reference)
+            sys.exit(-1)
 
-            try:
-                footprint = comp.footprint.contents[0]
-            except:
-                print 'FATAL: Failed to find footprint for component{}'.format(reference)
-                sys.exit(-1)
-
+        if part_number is not None:
             # If the part number already exists, increment the count.
-            if part_number is not None and part_number in bom:
+            if part_number in bom:
                 bom[part_number]['quantity'] += multiple
-                try:
-                    if visited[part_number] is True:
-                        visited[part_number] = True
-                except KeyError:
-                    print('Appending Prefix for {}'.format(part_number));
-                    bom[part_number]['references'] += prefix + ":"
-                    visited[part_number] = True
-                bom[part_number]['references'] += str(reference) + " "
-                added = True
-
-            # Check to see if an element of same value and footprint exists already.
-            if not added and part_number is not None:
-                for key in bom:
-                    if bom[key]['value'] == value and bom[key]['footprint'] == footprint:
-                        print 'Consolidating reference {} with digikey part {}.'.format(reference, key)
-                        try:
-                            if visited[key] is True:
-                                visited[key] = True
-                        except KeyError:
-                            bom[key]['references'] += prefix + ":"
-                            visited[key] = True
-                        bom[key]['quantity'] += multiple
-                        bom[key]['references'] += str(reference) + " "
-                        added = True
-                        break
-
-            # Finally, add the footprint to the list if it hasn't been added yet.
-            if not added and part_number is not None:
-                bom[part_number] = {'quantity': 0, 'footprint':'', 'references': '', 'value': ''}
-                bom[part_number]['quantity'] = multiple
-                bom[part_number]['references'] = prefix + ":" + str(reference) + ' '
-                bom[part_number]['value'] = str(value)
-                bom[part_number]['footprint'] = str(footprint)
-                visited[part_number] = True
-
-    if args.netlist:
-        output_file_name = os.path.basename(args.netlist[0]).split('.')[0]
-    else:
-        output_file_name = 'out'
-
-    if args.export is not None:
-        output_file_name = args.export[0] + '.csv'
-        with open(output_file_name, 'w+') as output_file:
-            output_file.write('Part Number, Quantity, References\n')
-
-            if not args.netlist and args.quantity:
-                multiple = int(args.quantity[0])
+                bom[part_number]['references'] += ' ' + str(reference)
             else:
-                multiple = 1
+                added = False
 
-            for part_key in bom:
-                output_file.write('{}, {}, {}\n'.format(str(part_key), int(bom[part_key]['quantity'])*multiple, bom[part_key]['references']))
-    else:
-        # Output the BOM in JSON format to an output file.
-        if args.bom is not None:
-            output_file_name = args.bom[0]
-        else:
-            output_file_name = output_file + '.json'
+                # Search for components with identical value and footprints.
+                for key in bom:
+                    if bom[key]['value'] == value and \
+                       bom[key]['value'] != 'Unknown' and \
+                       bom[key]['footprint'] == footprint:
+                        print 'Consolidating {} with part number {}.'.format(
+                                reference, key)
+                        bom[key]['quantity'] += multiple
+                        bom[key]['references'] += ' ' + str(reference)
+                        added = True
 
-        with open(output_file_name, 'w+') as output_file:
-            json.dump(bom, output_file, indent=4)
+                # If no identical footprint and part value was found, add a new
+                # entry to the BOM.
+                if not added:
+                    bom[part_number] = {
+                        'quantity': multiple,
+                        'footprint': str(footprint),
+                        'references': str(reference),
+                        'value': str(value)}
+
+
+    output_file_name = args.export + '.csv'
+    with open(output_file_name, 'w') as output_file:
+
+        output_file.write('Part Number, Quantity, References\n')
+        for part_key in bom:
+            output_file.write('{}, {}, {}\n'.format(
+                str(part_key),
+                int(bom[part_key]['quantity']),
+                bom[part_key]['references']))
 
     print 'BOM written to {}'.format(output_file_name)
