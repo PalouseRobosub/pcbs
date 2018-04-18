@@ -1,5 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:pneumatics-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -30,7 +29,6 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:robosub_parts
-LIBS:pneumatics-cache
 EELAYER 25 0
 EELAYER END
 $Descr A 11000 8500
@@ -60,13 +58,13 @@ $EndComp
 $Comp
 L CONN_02X03 P10
 U 1 1 57F7CD77
-P 6950 1550
-F 0 "P10" H 6950 1750 50  0000 C CNN
-F 1 "CONN_02X03" H 6950 1350 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x03_Pitch2.54mm" H 6950 350 50  0001 C CNN
-F 3 "" H 6950 350 50  0000 C CNN
-F 4 "A122812-ND" H 6950 1550 60  0001 C CNN "part number"
-	1    6950 1550
+P 8500 1550
+F 0 "P10" H 8500 1750 50  0000 C CNN
+F 1 "CONN_02X03" H 8500 1350 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x03_Pitch2.54mm" H 8500 350 50  0001 C CNN
+F 3 "" H 8500 350 50  0000 C CNN
+F 4 "A122812-ND" H 8500 1550 60  0001 C CNN "part number"
+	1    8500 1550
 	1    0    0    -1  
 $EndComp
 Text Label 8150 1450 2    60   ~ 0
@@ -559,15 +557,4 @@ Wire Notes Line
 	6500 2150 10500 2150
 Wire Notes Line
 	6500 4550 10500 4550
-$Comp
-L Conn_02x03_Odd_Even P10
-U 1 1 59ECFF7A
-P 8450 1550
-F 0 "P10" H 8500 1750 50  0000 C CNN
-F 1 "CONN_02x03" H 8500 1350 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x03_Pitch2.54mm" H 8450 1550 50  0001 C CNN
-F 3 "" H 8450 1550 50  0001 C CNN
-	1    8450 1550
-	1    0    0    -1  
-$EndComp
 $EndSCHEMATC
