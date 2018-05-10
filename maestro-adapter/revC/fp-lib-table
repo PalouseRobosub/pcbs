@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name MaestroJSTConnector)(type KiCad)(uri "$(KIPRJMOD)/MaestroJSTConnector.pretty")(options "")(descr ""))
+)

@@ -29,6 +29,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:robosub_parts
+LIBS:maestro-adapter-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -445,7 +446,7 @@ U 1 1 5800996A
 P 2650 2000
 F 0 "P15" H 2650 2350 50  0000 C CNN
 F 1 "CONN_01X06" V 2750 2000 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x04_Pitch2.54mm" H 2650 2000 50  0001 C CNN
+F 2 "MaestroJSTConnector:JST_PUD" H 2650 2000 50  0001 C CNN
 F 3 "" H 2650 2000 50  0000 C CNN
 F 4 "455-2485-ND" H 2650 2000 60  0001 C CNN "part number"
 F 5 "455-2468-ND" H 2650 2000 60  0001 C CNN "complementary conector"
@@ -1267,7 +1268,7 @@ U 1 1 58B3B66C
 P 1300 2000
 F 0 "P14" H 1300 2350 50  0000 C CNN
 F 1 "CONN_01X06" V 1400 2000 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x04_Pitch2.54mm" H 1300 2000 50  0001 C CNN
+F 2 "MaestroJSTConnector:JST_PUD" H 1300 2000 50  0001 C CNN
 F 3 "" H 1300 2000 50  0000 C CNN
 F 4 " 455-2485-ND" H 1300 2000 60  0001 C CNN "part number"
 F 5 "455-2468-ND" H 1300 2000 60  0001 C CNN "complementary connector"
