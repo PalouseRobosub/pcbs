@@ -1,1 +1,399 @@
 EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:system_blocks
+EELAYER 25 0
+EELAYER END
+$Descr A1 33110 23386
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L distribution_block U?
+U 1 1 5B1F585E
+P 27350 800
+F 0 "U?" H 27850 100 60  0000 C CNN
+F 1 "distribution_block" H 27450 1000 60  0000 C CNN
+F 2 "" H 27350 800 60  0000 C CNN
+F 3 "" H 27350 800 60  0000 C CNN
+	1    27350 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L fuse_block U?
+U 1 1 5B1F59DF
+P 29850 1050
+F 0 "U?" H 30150 1000 60  0000 C CNN
+F 1 "fuse_block" H 29600 1000 60  0000 C CNN
+F 2 "" H 29850 1050 60  0000 C CNN
+F 3 "" H 29850 1050 60  0000 C CNN
+	1    29850 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L ESC U?
+U 1 1 5B1F5BBD
+P 31550 900
+F 0 "U?" H 31950 600 60  0000 C CNN
+F 1 "ESC" H 31350 600 60  0000 C CNN
+F 2 "" H 31550 900 60  0000 C CNN
+F 3 "" H 31550 900 60  0000 C CNN
+	1    31550 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L ESC U?
+U 1 1 5B1F5C1C
+P 31550 1550
+F 0 "U?" H 31950 1250 60  0000 C CNN
+F 1 "ESC" H 31350 1250 60  0000 C CNN
+F 2 "" H 31550 1550 60  0000 C CNN
+F 3 "" H 31550 1550 60  0000 C CNN
+	1    31550 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L ESC U?
+U 1 1 5B1F5C56
+P 31550 2200
+F 0 "U?" H 31950 1900 60  0000 C CNN
+F 1 "ESC" H 31350 1900 60  0000 C CNN
+F 2 "" H 31550 2200 60  0000 C CNN
+F 3 "" H 31550 2200 60  0000 C CNN
+	1    31550 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L ESC U?
+U 1 1 5B1F5C93
+P 31550 2850
+F 0 "U?" H 31950 2550 60  0000 C CNN
+F 1 "ESC" H 31350 2550 60  0000 C CNN
+F 2 "" H 31550 2850 60  0000 C CNN
+F 3 "" H 31550 2850 60  0000 C CNN
+	1    31550 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	28100 700  29150 700 
+Wire Wire Line
+	28100 800  29150 800 
+Wire Wire Line
+	28100 900  29150 900 
+Wire Wire Line
+	28100 1000 29150 1000
+Wire Wire Line
+	30450 700  31050 700 
+Wire Wire Line
+	30450 1000 30450 2650
+Wire Wire Line
+	30450 2650 31050 2650
+Wire Wire Line
+	30450 900  30500 900 
+Wire Wire Line
+	30500 900  30500 2000
+Wire Wire Line
+	30500 2000 31050 2000
+Wire Wire Line
+	30450 800  30550 800 
+Wire Wire Line
+	30550 800  30550 1350
+Wire Wire Line
+	30550 1350 31050 1350
+Wire Wire Line
+	28100 1100 29300 1100
+Wire Wire Line
+	29300 1100 29300 1150
+Wire Wire Line
+	29300 1150 30600 1150
+Wire Wire Line
+	30600 1150 30600 800 
+Wire Wire Line
+	30600 800  31050 800 
+Wire Wire Line
+	28100 1200 29250 1200
+Wire Wire Line
+	29250 1200 29250 1450
+Wire Wire Line
+	29250 1450 31050 1450
+Wire Wire Line
+	28100 1300 29150 1300
+Wire Wire Line
+	29150 1300 29150 2100
+Wire Wire Line
+	29150 2100 31050 2100
+Wire Wire Line
+	28100 1400 29050 1400
+Wire Wire Line
+	29050 1400 29050 2750
+Wire Wire Line
+	29050 2750 31050 2750
+Wire Notes Line
+	26750 450  26750 6150
+Wire Notes Line
+	26750 3300 32650 3300
+Wire Notes Line
+	22000 6150 32650 6150
+Text Notes 26750 3300 0    60   ~ 0
+Right ESC case
+Text Notes 26750 6150 0    60   ~ 0
+Left ESC case
+$Comp
+L maestro_controller U?
+U 1 1 5B1F7A0C
+P 24950 2800
+F 0 "U?" H 25300 2750 60  0000 C CNN
+F 1 "maestro_controller" H 24700 2750 60  0000 C CNN
+F 2 "" H 24950 2800 60  0000 C CNN
+F 3 "" H 24950 2800 60  0000 C CNN
+	1    24950 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L USB_hub U?
+U 1 1 5B1F7B97
+P 22900 2200
+F 0 "U?" H 23100 2150 60  0000 C CNN
+F 1 "USB_hub" H 22650 2150 60  0000 C CNN
+F 2 "" H 22900 2200 60  0000 C CNN
+F 3 "" H 22900 2200 60  0000 C CNN
+	1    22900 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L BNO U?
+U 1 1 5B1F7CC2
+P 24750 3250
+F 0 "U?" H 24900 3200 60  0000 C CNN
+F 1 "BNO" H 24700 3200 60  0000 C CNN
+F 2 "" H 24750 3250 60  0000 C CNN
+F 3 "" H 24750 3250 60  0000 C CNN
+	1    24750 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L IMU U?
+U 1 1 5B1F7D17
+P 24800 3800
+F 0 "U?" H 24950 3750 60  0000 C CNN
+F 1 "IMU" H 24700 3750 60  0000 C CNN
+F 2 "" H 24800 3800 60  0000 C CNN
+F 3 "" H 24800 3800 60  0000 C CNN
+	1    24800 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Arduino U?
+U 1 1 5B1F7D50
+P 24700 4250
+F 0 "U?" H 25000 4200 60  0000 C CNN
+F 1 "Arduino" H 24750 4200 60  0000 C CNN
+F 2 "" H 24700 4250 60  0000 C CNN
+F 3 "" H 24700 4250 60  0000 C CNN
+	1    24700 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L depth_sensor U?
+U 1 1 5B1F7DF1
+P 24950 4900
+F 0 "U?" H 25300 4850 60  0000 C CNN
+F 1 "depth_sensor" H 24850 4850 60  0000 C CNN
+F 2 "" H 24950 4900 60  0000 C CNN
+F 3 "" H 24950 4900 60  0000 C CNN
+	1    24950 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED_controller U?
+U 1 1 5B1F82E0
+P 25000 5350
+F 0 "U?" H 25200 5300 60  0000 C CNN
+F 1 "LED_controller" H 24700 5300 60  0000 C CNN
+F 2 "" H 25000 5350 60  0000 C CNN
+F 3 "" H 25000 5350 60  0000 C CNN
+	1    25000 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	23400 1650 24450 1650
+Wire Wire Line
+	24450 1650 24450 2150
+Wire Wire Line
+	23400 1750 24350 1750
+Wire Wire Line
+	24350 1750 24350 3100
+Wire Wire Line
+	24350 3100 24400 3100
+Wire Wire Line
+	23400 1850 24250 1850
+Wire Wire Line
+	24250 1850 24250 3650
+Wire Wire Line
+	24250 3650 24400 3650
+Wire Wire Line
+	23400 1950 24150 1950
+Wire Wire Line
+	24150 1950 24150 4100
+Wire Wire Line
+	24150 4100 24400 4100
+Wire Wire Line
+	23400 2050 24050 2050
+Wire Wire Line
+	24050 2050 24050 4700
+Wire Wire Line
+	24050 4700 24400 4700
+Wire Wire Line
+	23400 2150 23950 2150
+Wire Wire Line
+	23950 2150 23950 5200
+Wire Wire Line
+	23950 5200 24400 5200
+Wire Notes Line
+	22000 450  22000 6150
+Text Notes 22000 6150 0    60   ~ 0
+USB hub
+$Comp
+L NUC U?
+U 1 1 5B1F97C5
+P 20000 1300
+F 0 "U?" H 20200 1250 60  0000 C CNN
+F 1 "NUC" H 19850 1250 60  0000 C CNN
+F 2 "" H 20000 1300 60  0000 C CNN
+F 3 "" H 20000 1300 60  0000 C CNN
+	1    20000 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L hydrophone U?
+U 1 1 5B1F98C6
+P 20250 1850
+F 0 "U?" H 20450 1800 60  0000 C CNN
+F 1 "hydrophone" H 20000 1800 60  0000 C CNN
+F 2 "" H 20250 1850 60  0000 C CNN
+F 3 "" H 20250 1850 60  0000 C CNN
+	1    20250 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L ethernet_switch U?
+U 1 1 5B1F9E55
+P 17850 1700
+F 0 "U?" H 18150 1650 60  0000 C CNN
+F 1 "ethernet_switch" H 17450 1650 60  0000 C CNN
+F 2 "" H 17850 1700 60  0000 C CNN
+F 3 "" H 17850 1700 60  0000 C CNN
+	1    17850 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L camera U?
+U 1 1 5B1F9F9C
+P 20150 2300
+F 0 "U?" H 20300 2250 60  0000 C CNN
+F 1 "camera" H 19900 2250 60  0000 C CNN
+F 2 "" H 20150 2300 60  0000 C CNN
+F 3 "" H 20150 2300 60  0000 C CNN
+	1    20150 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L camera U?
+U 1 1 5B1FA026
+P 20150 2750
+F 0 "U?" H 20300 2700 60  0000 C CNN
+F 1 "camera" H 19900 2700 60  0000 C CNN
+F 2 "" H 20150 2750 60  0000 C CNN
+F 3 "" H 20150 2750 60  0000 C CNN
+	1    20150 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L jetson U?
+U 1 1 5B1FA0DE
+P 20100 3200
+F 0 "U?" H 20450 3150 60  0000 C CNN
+F 1 "jetson" H 19900 3150 60  0000 C CNN
+F 2 "" H 20100 3200 60  0000 C CNN
+F 3 "" H 20100 3200 60  0000 C CNN
+	1    20100 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	20600 1050 20600 950 
+Wire Wire Line
+	20600 950  18400 950 
+Wire Wire Line
+	18400 1350 18750 1350
+Wire Wire Line
+	18750 1350 18750 2950
+Wire Wire Line
+	18750 2950 19550 2950
+Wire Wire Line
+	18400 1250 18900 1250
+Wire Wire Line
+	18900 1250 18900 2500
+Wire Wire Line
+	18900 2500 19550 2500
+Wire Wire Line
+	18400 1150 19000 1150
+Wire Wire Line
+	19000 1150 19000 2050
+Wire Wire Line
+	19000 2050 19550 2050
+Wire Wire Line
+	18400 1050 19150 1050
+Wire Wire Line
+	19150 1050 19150 1600
+Wire Wire Line
+	19150 1600 19550 1600
+Wire Wire Line
+	20600 1150 21900 1150
+Wire Wire Line
+	21900 1150 21900 1900
+Wire Wire Line
+	21900 1900 22400 1900
+Wire Wire Line
+	18400 1450 18650 1450
+Wire Wire Line
+	18650 1450 18650 3450
+Wire Wire Line
+	18650 3450 19550 3450
+Text Notes 18800 3450 0    60   ~ 0
+shore_connection
+$EndSCHEMATC
