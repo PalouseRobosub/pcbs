@@ -219,23 +219,23 @@ Text Label 31250 1350 2    60   ~ 0
 ESC_Vcc
 Text Label 31250 700  2    60   ~ 0
 ESC_Vcc
-Text Label 29400 1000 0    60   ~ 0
+Text Label 29650 900  0    60   ~ 0
 ESC_Vcc
-Text Label 29400 900  0    60   ~ 0
+Text Label 29650 800  0    60   ~ 0
 ESC_Vcc
-Text Label 29400 800  0    60   ~ 0
+Text Label 29650 700  0    60   ~ 0
 ESC_Vcc
-Text Label 29400 700  0    60   ~ 0
+Text Label 29650 600  0    60   ~ 0
 ESC_Vcc
 $Comp
 L fuse_block U?
 U 1 1 5B1F59DF
-P 28800 1050
-F 0 "U?" H 29100 1000 60  0000 C CNN
-F 1 "fuse_block" H 28550 1000 60  0000 C CNN
-F 2 "" H 28800 1050 60  0000 C CNN
-F 3 "" H 28800 1050 60  0000 C CNN
-	1    28800 1050
+P 29050 950
+F 0 "U?" H 29350 900 60  0000 C CNN
+F 1 "fuse_block" H 28800 900 60  0000 C CNN
+F 2 "" H 29050 950 60  0000 C CNN
+F 3 "" H 29050 950 60  0000 C CNN
+	1    29050 950 
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -328,23 +328,23 @@ Text Label 31250 4250 2    60   ~ 0
 ESC_Vcc
 Text Label 31250 3600 2    60   ~ 0
 ESC_Vcc
-Text Label 29400 3900 0    60   ~ 0
+Text Label 29600 3800 0    60   ~ 0
 ESC_Vcc
-Text Label 29400 3800 0    60   ~ 0
+Text Label 29600 3700 0    60   ~ 0
 ESC_Vcc
-Text Label 29400 3700 0    60   ~ 0
+Text Label 29600 3600 0    60   ~ 0
 ESC_Vcc
-Text Label 29400 3600 0    60   ~ 0
+Text Label 29600 3500 0    60   ~ 0
 ESC_Vcc
 $Comp
 L fuse_block U?
 U 1 1 5B212D31
-P 28800 3950
-F 0 "U?" H 29100 3900 60  0000 C CNN
-F 1 "fuse_block" H 28550 3900 60  0000 C CNN
-F 2 "" H 28800 3950 60  0000 C CNN
-F 3 "" H 28800 3950 60  0000 C CNN
-	1    28800 3950
+P 29000 3850
+F 0 "U?" H 29300 3800 60  0000 C CNN
+F 1 "fuse_block" H 28750 3800 60  0000 C CNN
+F 2 "" H 29000 3850 60  0000 C CNN
+F 3 "" H 29000 3850 60  0000 C CNN
+	1    29000 3850
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -448,6 +448,117 @@ F 3 "" H 10350 2250 60  0000 C CNN
 	1    10550 2250
 	1    0    0    -1  
 $EndComp
+$Comp
+L Battery BT?
+U 1 1 5B20D8F1
+P 5550 1950
+F 0 "BT?" H 5650 2000 50  0000 L CNN
+F 1 "Battery" H 5650 1900 50  0000 L CNN
+F 2 "" V 5550 1990 50  0000 C CNN
+F 3 "" V 5550 1990 50  0000 C CNN
+	1    5550 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW?
+U 1 1 5B20E950
+P 12000 1600
+F 0 "SW?" H 12150 1710 50  0000 C CNN
+F 1 "SW_PUSH" H 12000 1520 50  0000 C CNN
+F 2 "" H 12000 1600 50  0000 C CNN
+F 3 "" H 12000 1600 50  0000 C CNN
+	1    12000 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW?
+U 1 1 5B20ED86
+P 12000 1850
+F 0 "SW?" H 12150 1960 50  0000 C CNN
+F 1 "SW_PUSH" H 12000 1770 50  0000 C CNN
+F 2 "" H 12000 1850 50  0000 C CNN
+F 3 "" H 12000 1850 50  0000 C CNN
+	1    12000 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW?
+U 1 1 5B20EE03
+P 12000 2100
+F 0 "SW?" H 12150 2210 50  0000 C CNN
+F 1 "SW_PUSH" H 12000 2020 50  0000 C CNN
+F 2 "" H 12000 2100 50  0000 C CNN
+F 3 "" H 12000 2100 50  0000 C CNN
+	1    12000 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5B20F9B1
+P 5550 3000
+F 0 "#PWR?" H 5550 2750 50  0001 C CNN
+F 1 "GND" H 5550 2850 50  0000 C CNN
+F 2 "" H 5550 3000 50  0000 C CNN
+F 3 "" H 5550 3000 50  0000 C CNN
+	1    5550 3000
+	1    0    0    -1  
+$EndComp
+Text Label 7200 2600 0    60   ~ 0
+Vcc_thruster
+Text Label 26850 700  2    60   ~ 0
+Vcc_thruster
+$Comp
+L voltage_regulator U?
+U 1 1 5B21357C
+P 10650 3000
+F 0 "U?" H 10900 2950 60  0000 C CNN
+F 1 "voltage_regulator" H 10150 2950 60  0000 C CNN
+F 2 "" H 10650 3000 60  0000 C CNN
+F 3 "" H 10650 3000 60  0000 C CNN
+	1    10650 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L anderson_connector_block U?
+U 1 1 5B28FFD2
+P 12600 3800
+F 0 "U?" H 12950 3750 60  0000 C CNN
+F 1 "anderson_connector_block" H 12200 3750 60  0000 C CNN
+F 2 "" H 12600 3800 60  0000 C CNN
+F 3 "" H 12600 3800 60  0000 C CNN
+	1    12600 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L anderson_connector_block U?
+U 1 1 5B290423
+P 12600 5150
+F 0 "U?" H 12950 5100 60  0000 C CNN
+F 1 "anderson_connector_block" H 12200 5100 60  0000 C CNN
+F 2 "" H 12600 5150 60  0000 C CNN
+F 3 "" H 12600 5150 60  0000 C CNN
+	1    12600 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L anderson_connector_block U?
+U 1 1 5B2904CC
+P 12600 6450
+F 0 "U?" H 12950 6400 60  0000 C CNN
+F 1 "anderson_connector_block" H 12200 6400 60  0000 C CNN
+F 2 "" H 12600 6450 60  0000 C CNN
+F 3 "" H 12600 6450 60  0000 C CNN
+	1    12600 6450
+	1    0    0    -1  
+$EndComp
+Text Label 12000 3100 2    60   ~ 0
+Vcc_jetson
+Text Label 19550 3050 2    60   ~ 0
+Vcc_jetson
+Text Label 12000 3350 2    60   ~ 0
+Vcc_USB_hub
+Text Label 22400 1700 2    60   ~ 0
+Vcc_USB_hub
 Wire Notes Line
 	26750 450  26750 6150
 Wire Notes Line
@@ -515,9 +626,7 @@ Wire Wire Line
 Wire Wire Line
 	18400 1050 19150 1050
 Wire Wire Line
-	19150 1050 19150 1600
-Wire Wire Line
-	19150 1600 19550 1600
+	19150 1050 19150 1700
 Wire Wire Line
 	20600 1150 21900 1150
 Wire Wire Line
@@ -758,17 +867,6 @@ Wire Wire Line
 	8750 1600 9650 1600
 Connection ~ 8200 2200
 Connection ~ 8200 1500
-$Comp
-L Battery BT?
-U 1 1 5B20D8F1
-P 5550 1950
-F 0 "BT?" H 5650 2000 50  0000 L CNN
-F 1 "Battery" H 5650 1900 50  0000 L CNN
-F 2 "" V 5550 1990 50  0000 C CNN
-F 3 "" V 5550 1990 50  0000 C CNN
-	1    5550 1950
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5550 1800 5550 1500
 Connection ~ 7100 1500
@@ -778,45 +876,12 @@ Wire Wire Line
 	8200 1500 8200 1650
 Wire Wire Line
 	8850 2100 9650 2100
-$Comp
-L SW_PUSH SW?
-U 1 1 5B20E950
-P 12000 1600
-F 0 "SW?" H 12150 1710 50  0000 C CNN
-F 1 "SW_PUSH" H 12000 1520 50  0000 C CNN
-F 2 "" H 12000 1600 50  0000 C CNN
-F 3 "" H 12000 1600 50  0000 C CNN
-	1    12000 1600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	11350 1600 11700 1600
 Wire Wire Line
 	12300 1600 12300 1700
 Wire Wire Line
 	12300 1700 11350 1700
-$Comp
-L SW_PUSH SW?
-U 1 1 5B20ED86
-P 12000 1850
-F 0 "SW?" H 12150 1960 50  0000 C CNN
-F 1 "SW_PUSH" H 12000 1770 50  0000 C CNN
-F 2 "" H 12000 1850 50  0000 C CNN
-F 3 "" H 12000 1850 50  0000 C CNN
-	1    12000 1850
-	1    0    0    -1  
-$EndComp
-$Comp
-L SW_PUSH SW?
-U 1 1 5B20EE03
-P 12000 2100
-F 0 "SW?" H 12150 2210 50  0000 C CNN
-F 1 "SW_PUSH" H 12000 2020 50  0000 C CNN
-F 2 "" H 12000 2100 50  0000 C CNN
-F 3 "" H 12000 2100 50  0000 C CNN
-	1    12000 2100
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	11350 1850 11700 1850
 Wire Wire Line
@@ -829,17 +894,6 @@ Wire Wire Line
 	12300 2100 12300 2200
 Wire Wire Line
 	12300 2200 11350 2200
-$Comp
-L GND #PWR?
-U 1 1 5B20F9B1
-P 5550 3000
-F 0 "#PWR?" H 5550 2750 50  0001 C CNN
-F 1 "GND" H 5550 2850 50  0000 C CNN
-F 2 "" H 5550 3000 50  0000 C CNN
-F 3 "" H 5550 3000 50  0000 C CNN
-	1    5550 3000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5550 2100 5550 3000
 Wire Wire Line
@@ -864,26 +918,139 @@ Wire Wire Line
 	8200 2050 8200 2850
 Wire Wire Line
 	7100 2500 7100 2600
-Text Label 7200 2600 0    60   ~ 0
-Vcc_thruster
 Wire Wire Line
 	7100 2600 7200 2600
-Text Label 26850 700  2    60   ~ 0
-Vcc_thruster
-$Comp
-L voltage_regulator U?
-U 1 1 5B21357C
-P 10650 3000
-F 0 "U?" H 10900 2950 60  0000 C CNN
-F 1 "voltage_regulator" H 10150 2950 60  0000 C CNN
-F 2 "" H 10650 3000 60  0000 C CNN
-F 3 "" H 10650 3000 60  0000 C CNN
-	1    10650 3000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8200 2850 9800 2850
 Wire Wire Line
 	9550 2950 9800 2950
 Connection ~ 9550 2950
+Wire Wire Line
+	28100 700  28150 700 
+Wire Wire Line
+	28150 700  28150 600 
+Wire Wire Line
+	28150 600  28350 600 
+Wire Wire Line
+	28100 800  28200 800 
+Wire Wire Line
+	28200 800  28200 700 
+Wire Wire Line
+	28200 700  28350 700 
+Wire Wire Line
+	28100 900  28250 900 
+Wire Wire Line
+	28250 900  28250 800 
+Wire Wire Line
+	28250 800  28350 800 
+Wire Wire Line
+	28100 1000 28300 1000
+Wire Wire Line
+	28300 1000 28300 900 
+Wire Wire Line
+	28300 900  28350 900 
+Wire Wire Line
+	28100 3600 28150 3600
+Wire Wire Line
+	28150 3600 28150 3500
+Wire Wire Line
+	28150 3500 28300 3500
+Wire Wire Line
+	28100 3700 28200 3700
+Wire Wire Line
+	28200 3700 28200 3600
+Wire Wire Line
+	28200 3600 28300 3600
+Wire Wire Line
+	28100 3800 28250 3800
+Wire Wire Line
+	28250 3800 28250 3700
+Wire Wire Line
+	28250 3700 28300 3700
+Wire Wire Line
+	28100 3900 28300 3900
+Wire Wire Line
+	28300 3900 28300 3800
+Wire Wire Line
+	11450 2850 12000 2850
+Wire Wire Line
+	11450 2950 12000 2950
+Wire Wire Line
+	19150 1700 19550 1700
+Wire Wire Line
+	12000 3700 11900 3700
+Wire Wire Line
+	11900 3700 11900 4300
+Wire Wire Line
+	11900 4300 12000 4300
+Wire Wire Line
+	12000 4200 11800 4200
+Wire Wire Line
+	11800 4200 11800 3600
+Wire Wire Line
+	11800 3600 12000 3600
+Text Label 13100 2850 0    60   ~ 0
+Vcc_right_camera
+Text Label 19550 2150 2    60   ~ 0
+Vcc_right_camera
+Text Label 12000 4450 2    60   ~ 0
+Vcc_left_camera
+Text Label 19550 2600 2    60   ~ 0
+Vcc_left_camera
+Wire Wire Line
+	12000 5050 11900 5050
+Wire Wire Line
+	11900 5050 11900 5600
+Wire Wire Line
+	11900 5600 12000 5600
+Wire Wire Line
+	12000 4950 11800 4950
+Wire Wire Line
+	11800 4950 11800 5500
+Wire Wire Line
+	11800 5500 12000 5500
+Text Label 12000 4700 2    60   ~ 0
+Vcc_ethernet_switch
+Text Label 17100 1250 2    60   ~ 0
+Vcc_ethernet_switch
+Text Label 13100 4200 0    60   ~ 0
+Vcc_NUC
+Text Label 19550 1050 2    60   ~ 0
+Vcc_NUC
+Text Label 12000 5750 2    60   ~ 0
+Vcc_hydrophones
+Text Label 19550 1500 2    60   ~ 0
+Vcc_hydrophones
+Text Label 12000 3200 2    60   ~ 0
+GND
+Text Label 12000 3450 2    60   ~ 0
+GND
+Text Label 12000 4550 2    60   ~ 0
+GND
+Text Label 13100 4300 0    60   ~ 0
+GND
+Text Label 12000 4800 2    60   ~ 0
+GND
+Text Label 12000 5850 2    60   ~ 0
+GND
+Text Label 13100 2950 0    60   ~ 0
+GND
+Text Label 17100 1350 2    60   ~ 0
+GND
+Text Label 19550 1150 2    60   ~ 0
+GND
+Text Label 19550 1600 2    60   ~ 0
+GND
+Text Label 19550 2250 2    60   ~ 0
+GND
+Text Label 19550 2700 2    60   ~ 0
+GND
+Text Label 19550 3150 2    60   ~ 0
+GND
+Text Label 22400 1800 2    60   ~ 0
+GND
+Text Label 26850 800  2    60   ~ 0
+GND
+Text Label 26850 3700 2    60   ~ 0
+GND
 $EndSCHEMATC
