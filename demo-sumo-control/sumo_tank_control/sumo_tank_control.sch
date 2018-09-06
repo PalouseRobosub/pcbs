@@ -1,0 +1,234 @@
+EESchema Schematic File Version 4
+LIBS:sumo_tank_control-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Label 4150 2550 2    50   ~ 0
+GPIO_1
+Text Label 3450 2550 2    50   ~ 0
+GPIO_0
+Text Label 4950 2550 2    50   ~ 0
+GPIO_2
+Text Label 5700 2550 2    50   ~ 0
+GPIO_3
+$Comp
+L Device:R R1
+U 1 1 5B765F86
+P 3550 2050
+F 0 "R1" H 3620 2096 50  0000 L CNN
+F 1 "6k" H 3620 2005 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 3480 2050 50  0001 C CNN
+F 3 "~" H 3550 2050 50  0001 C CNN
+	1    3550 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5B765FC2
+P 4250 2050
+F 0 "R2" H 4320 2096 50  0000 L CNN
+F 1 "6k" H 4320 2005 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4180 2050 50  0001 C CNN
+F 3 "~" H 4250 2050 50  0001 C CNN
+	1    4250 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5B765FEE
+P 5050 2050
+F 0 "R3" H 5120 2096 50  0000 L CNN
+F 1 "6k" H 5120 2005 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4980 2050 50  0001 C CNN
+F 3 "~" H 5050 2050 50  0001 C CNN
+	1    5050 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5B766018
+P 5800 2050
+F 0 "R4" H 5870 2096 50  0000 L CNN
+F 1 "6k" H 5870 2005 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 5730 2050 50  0001 C CNN
+F 3 "~" H 5800 2050 50  0001 C CNN
+	1    5800 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5B766AB4
+P 4800 3500
+F 0 "#PWR02" H 4800 3250 50  0001 C CNN
+F 1 "GND" H 4805 3327 50  0000 C CNN
+F 2 "" H 4800 3500 50  0001 C CNN
+F 3 "" H 4800 3500 50  0001 C CNN
+	1    4800 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR01
+U 1 1 5B766B65
+P 4700 1900
+F 0 "#PWR01" H 4700 1750 50  0001 C CNN
+F 1 "+3.3V" H 4715 2073 50  0000 C CNN
+F 2 "" H 4700 1900 50  0001 C CNN
+F 3 "" H 4700 1900 50  0001 C CNN
+	1    4700 1900
+	1    0    0    -1  
+$EndComp
+Connection ~ 4700 1900
+Wire Wire Line
+	3550 3250 3550 3500
+Wire Wire Line
+	3550 3500 4250 3500
+Wire Wire Line
+	4800 3500 5050 3500
+Wire Wire Line
+	5800 3500 5800 3250
+Connection ~ 4800 3500
+Wire Wire Line
+	5050 3250 5050 3500
+Connection ~ 5050 3500
+Wire Wire Line
+	5050 3500 5800 3500
+Wire Wire Line
+	4250 3250 4250 3500
+Connection ~ 4250 3500
+Wire Wire Line
+	4250 3500 4800 3500
+Wire Wire Line
+	3550 1900 4250 1900
+Wire Wire Line
+	4700 1900 5050 1900
+Connection ~ 4250 1900
+Wire Wire Line
+	4250 1900 4700 1900
+Connection ~ 5050 1900
+Wire Wire Line
+	5050 1900 5800 1900
+Wire Wire Line
+	3550 2200 3550 2550
+Wire Wire Line
+	4250 2200 4250 2550
+Wire Wire Line
+	5050 2200 5050 2550
+Wire Wire Line
+	5800 2200 5800 2550
+Wire Wire Line
+	5700 2550 5800 2550
+Connection ~ 5800 2550
+Wire Wire Line
+	5800 2550 5800 2850
+Wire Wire Line
+	4950 2550 5050 2550
+Connection ~ 5050 2550
+Wire Wire Line
+	5050 2550 5050 2850
+Wire Wire Line
+	4150 2550 4250 2550
+Connection ~ 4250 2550
+Wire Wire Line
+	4250 2550 4250 2850
+Wire Wire Line
+	3450 2550 3550 2550
+Connection ~ 3550 2550
+Wire Wire Line
+	3550 2550 3550 2850
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5B7C3AD4
+P 3550 3050
+F 0 "SW1" V 3596 3002 50  0000 R CNN
+F 1 "SW_Push" V 3505 3002 50  0000 R CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H5mm" H 3550 3250 50  0001 C CNN
+F 3 "" H 3550 3250 50  0001 C CNN
+	1    3550 3050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW2
+U 1 1 5B7C3B3E
+P 4250 3050
+F 0 "SW2" V 4296 3002 50  0000 R CNN
+F 1 "SW_Push" V 4205 3002 50  0000 R CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H5mm" H 4250 3250 50  0001 C CNN
+F 3 "" H 4250 3250 50  0001 C CNN
+	1    4250 3050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW3
+U 1 1 5B7C3B82
+P 5050 3050
+F 0 "SW3" V 5096 3002 50  0000 R CNN
+F 1 "SW_Push" V 5005 3002 50  0000 R CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H5mm" H 5050 3250 50  0001 C CNN
+F 3 "" H 5050 3250 50  0001 C CNN
+	1    5050 3050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW4
+U 1 1 5B7C3BBC
+P 5800 3050
+F 0 "SW4" V 5846 3002 50  0000 R CNN
+F 1 "SW_Push" V 5755 3002 50  0000 R CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H5mm" H 5800 3250 50  0001 C CNN
+F 3 "" H 5800 3250 50  0001 C CNN
+	1    5800 3050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x06 J1
+U 1 1 5B7C3FD6
+P 1700 1750
+F 0 "J1" H 1700 1350 50  0000 C CNN
+F 1 "Conn_01x06" V 1850 1700 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 1700 1750 50  0001 C CNN
+F 3 "~" H 1700 1750 50  0001 C CNN
+	1    1700 1750
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3.3V #PWR03
+U 1 1 5B7C405E
+P 1900 1450
+F 0 "#PWR03" H 1900 1300 50  0001 C CNN
+F 1 "+3.3V" H 1915 1623 50  0000 C CNN
+F 2 "" H 1900 1450 50  0001 C CNN
+F 3 "" H 1900 1450 50  0001 C CNN
+	1    1900 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 5B7C4193
+P 1900 1950
+F 0 "#PWR04" H 1900 1700 50  0001 C CNN
+F 1 "GND" H 1905 1777 50  0000 C CNN
+F 2 "" H 1900 1950 50  0001 C CNN
+F 3 "" H 1900 1950 50  0001 C CNN
+	1    1900 1950
+	1    0    0    -1  
+$EndComp
+Text Label 1900 1550 0    50   ~ 0
+GPIO_0
+Text Label 1900 1650 0    50   ~ 0
+GPIO_1
+Text Label 1900 1750 0    50   ~ 0
+GPIO_2
+Text Label 1900 1850 0    50   ~ 0
+GPIO_3
+$EndSCHEMATC
