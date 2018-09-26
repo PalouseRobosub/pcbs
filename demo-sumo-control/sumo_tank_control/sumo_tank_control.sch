@@ -88,16 +88,12 @@ F 3 "" H 4700 1900 50  0001 C CNN
 	1    4700 1900
 	1    0    0    -1  
 $EndComp
-Connection ~ 4700 1900
 Wire Wire Line
 	3550 3250 3550 3500
-Wire Wire Line
-	3550 3500 4250 3500
 Wire Wire Line
 	4800 3500 5050 3500
 Wire Wire Line
 	5800 3500 5800 3250
-Connection ~ 4800 3500
 Wire Wire Line
 	5050 3250 5050 3500
 Connection ~ 5050 3500
@@ -105,17 +101,6 @@ Wire Wire Line
 	5050 3500 5800 3500
 Wire Wire Line
 	4250 3250 4250 3500
-Connection ~ 4250 3500
-Wire Wire Line
-	4250 3500 4800 3500
-Wire Wire Line
-	3550 1900 4250 1900
-Wire Wire Line
-	4700 1900 5050 1900
-Connection ~ 4250 1900
-Wire Wire Line
-	4250 1900 4700 1900
-Connection ~ 5050 1900
 Wire Wire Line
 	5050 1900 5800 1900
 Wire Wire Line
@@ -231,4 +216,63 @@ Text Label 1900 1750 0    50   ~ 0
 GPIO_2
 Text Label 1900 1850 0    50   ~ 0
 GPIO_3
+Wire Wire Line
+	3550 3500 4250 3500
+Connection ~ 4800 3500
+Connection ~ 4250 3500
+Wire Wire Line
+	4250 3500 4800 3500
+Wire Wire Line
+	3550 1900 4250 1900
+Connection ~ 4250 1900
+Wire Wire Line
+	4250 1900 4700 1900
+Connection ~ 5050 1900
+Connection ~ 4700 1900
+Wire Wire Line
+	4700 1900 5050 1900
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5B986895
+P 6400 950
+F 0 "#PWR?" H 6400 800 50  0001 C CNN
+F 1 "+3.3V" H 6415 1123 50  0000 C CNN
+F 2 "" H 6400 950 50  0001 C CNN
+F 3 "" H 6400 950 50  0001 C CNN
+	1    6400 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5B986938
+P 6800 950
+F 0 "#PWR?" H 6800 700 50  0001 C CNN
+F 1 "GND" H 6805 777 50  0000 C CNN
+F 2 "" H 6800 950 50  0001 C CNN
+F 3 "" H 6800 950 50  0001 C CNN
+	1    6800 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5B9869B4
+P 6400 950
+F 0 "#FLG?" H 6400 1025 50  0001 C CNN
+F 1 "PWR_FLAG" H 6400 1123 50  0000 C CNN
+F 2 "" H 6400 950 50  0001 C CNN
+F 3 "~" H 6400 950 50  0001 C CNN
+	1    6400 950 
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5B986A03
+P 6800 950
+F 0 "#FLG?" H 6800 1025 50  0001 C CNN
+F 1 "PWR_FLAG" H 6800 1124 50  0000 C CNN
+F 2 "" H 6800 950 50  0001 C CNN
+F 3 "~" H 6800 950 50  0001 C CNN
+	1    6800 950 
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
